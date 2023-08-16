@@ -1,0 +1,36 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+How old are you? | Check what financial support may be available if Coronavirus (COVID-19) has affected your income
+{% endblock %}
+
+{% block content %}
+
+<a href="start" class="govuk-back-link">Back</a>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form action="summary-scenarios-more-detail" method="post" id="question-form" novalidate>
+
+          <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                  <h1 class="govuk-fieldset__heading">
+                      How much did your household earn from paid work in your last monthly Universal Credit assessment period?
+                  </h1>      
+                      <input class="govuk-input govuk-input--width-10" id="age" name="age" type="text">
+                </legend>
+                
+      </fieldset>
+            </div>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+  
+      </form>
+    </div>
+  </div>
+
+
+{% endblock %}

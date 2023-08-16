@@ -1,0 +1,82 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+What are your present circumstances? | Check what financial support may be available if Coronavirus (COVID-19) has affected your income
+{% endblock %}
+
+{% block content %}
+
+<a href="q2-country" class="govuk-back-link">Back</a>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form action="summary-scenarios" method="post" id="question-form" novalidate>
+
+          <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                  <h1 class="govuk-fieldset__heading">
+                   Why do you need support?
+                  </h1>
+                  <span class="govuk-hint">
+                     Select all that apply
+                    </span>
+                </legend>
+                <div class="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="circumstance-1" name="circumstances" type="checkbox" value="unemployed">
+                      <label class="govuk-label govuk-checkboxes__label" for="circumstance-1">
+                        I'm out of work
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="circumstance-2" name="circumstances" type="checkbox" value="lowincome">
+                      <label class="govuk-label govuk-checkboxes__label" for="circumstance-2">
+                        I'm on a low income
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="circumstance-3" name="circumstances" type="checkbox" value="health">
+                      <label class="govuk-label govuk-checkboxes__label" for="circumstance-3">
+                        I have a health condition or disability
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="circumstance-4" name="circumstances" type="checkbox" value="caring">
+                        <label class="govuk-label govuk-checkboxes__label" for="circumstance-4">
+                          I'm caring for another adult
+                        </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="circumstance-5" name="circumstances" type="checkbox" value="children">
+                        <label class="govuk-label govuk-checkboxes__label" for="circumstance-5">
+                          I'm looking after children
+                        </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="circumstance-6" name="circumstances" type="checkbox" value="heathousing">
+                        <label class="govuk-label govuk-checkboxes__label" for="circumstance-6">
+                          I'm struggling with heating and housing costs
+                        </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="circumstance-7" name="circumstances" type="checkbox" value="death">
+                          <label class="govuk-label govuk-checkboxes__label" for="circumstance-7">
+                          Someone has died
+                          </label>
+                        </div>
+                  </div>
+
+
+      </fieldset>
+            </div>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+    </div>
+  </div>
+
+
+{% endblock %}

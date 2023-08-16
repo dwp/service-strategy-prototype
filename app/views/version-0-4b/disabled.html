@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Find new support because I have a health condition or disability
+{% endblock %}
+
+{% block main %}
+
+  <div class="govuk-width-container {{ containerClasses }}">
+
+      {% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+      {{ govukBreadcrumbs({
+        items: [
+          {
+            text: "Home",
+            href: "index"
+          },
+          {
+            text: "Benefits",
+            href: "benefits"
+          },
+          {
+            text: "Find new support because I have a health condition or disability"
+          }
+        ]
+      }) }}
+
+
+    <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+
+              <h1 class="govuk-heading-xl">Find new support because I have a health condition or disability</h1>
+
+              <h2 class="govuk-heading-l">Financial support</h2>
+                <ul class="govuk-list">
+                  <li><a href="https://www.gov.uk/financial-help-disabled/disability-and-sickness-benefits">Disability and sickness benefits</a></li>
+                  <li><a href="https://www.gov.uk/financial-help-disabled/vehicles-and-transport">Vehicle and transport</a></li>
+                  <li><a href="https://www.gov.uk/financial-help-disabled/home-and-housing">Home and housing</a></li>
+                  <li><a href="https://www.gov.uk/financial-help-disabled/on-a-low-salary">On a low income</a></li>
+                  <li><a href="https://www.gov.uk/financial-help-disabled/television-licence-discount">Television license Discount</a></li>
+                  <li><a href="https://www.gov.uk/financial-help-disabled/vat-relief">VAT relief for disabled people</a></li>
+                  <li><a href="https://www.gov.uk/financial-help-disabled/injuries-illness-caused-at-work">Work related injuries or illness</a></li>
+                  <li><a href="https://www.gov.uk/financial-help-disabled/armed-forces-compensation">Armed forces compensation</a></li>
+                </ul>
+
+          </div>
+      </div>
+
+    </main>
+  </div>
+{% endblock %}

@@ -1,0 +1,68 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Are you under the State Pension age? | Check what regular payments you could get if you're looking for work
+{% endblock %}
+
+{% block content %}
+
+<a href="financial-support-looking-for-work" class="govuk-back-link">Back</a>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form action="#" id="question-form" method="post" novalidate>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+              <h1 class="govuk-fieldset__heading">
+                Are you under State Pension age?
+              </h1>
+            </legend>
+            <span class="govuk-hint">
+              If you're not sure, you can <a href="https://www.gov.uk/state-pension-age">check your State Pension age</a>.
+            </span>
+            <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="radios-1" name="radios" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="radios-1">
+                  Yes, I am under State Pension age
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="radios-2" name="radios" type="radio" value="no">
+                <label class="govuk-label govuk-radios__label" for="radios-2">
+                  No, I have reached State Pension age
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <button class="govuk-button" id="continue-button">
+          Continue
+        </button>
+
+
+        <script type="text/javascript">
+
+var country = {{data.country|dump|safe}}
+console.log(country)
+
+document.getElementById("radios-1").onclick = function () {
+      var link = "q4-savings";
+  document.getElementById("question-form").action=link;
+}
+
+document.getElementById("radios-2").onclick = function () {
+      var link = "state-pension";
+  document.getElementById("question-form").action=link;
+}
+</script>
+      </form>
+    </div>
+  </div>
+
+
+{% endblock %}

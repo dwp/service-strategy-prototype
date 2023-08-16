@@ -1,0 +1,107 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Financial help if you’re looking for work
+{% endblock %}
+
+{% block main %}
+
+<div class="govuk-width-container {{ containerClasses }}">
+
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="#">Home</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="benefits">Benefits</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item active">
+            Financial help if you’re looking for work
+        </li>
+      </ol>
+    </div>
+
+    <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
+
+      <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+            <h1 class="govuk-heading-xl">Financial help if you’re looking for work</h1>
+
+            <!--  contents -->
+            <p class="govuk-body-s">Contents</p>
+
+    <ul class="govuk-list govuk-list--dashed govuk-body-s">
+                <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed gem-c-contents-list__list-item--active" aria-current="true">
+                    Regular payments if you're looking for work
+                  </li>
+
+                  <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+                      <a href="financial-support-looking-for-work-specific-costs">Other support if you're on a low income</a>
+                      </li>
+
+
+                  <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+                    <a href="financial-support-looking-for-work-other-help">Further help if you’re disabled, caring for someone, or looking after a family</a>
+                    </li>
+                    <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+                      <a href="financial-support-looking-for-work-apply-decide">Help to find and apply for the right benefits for you</a>
+
+                    </li>
+
+                </ul>
+            <!--  /contents -->
+
+
+            <h2 class="govuk-heading-l govuk-!-margin-top-6 overview-top-border">Regular payments if you're looking for work</h2>
+            <p>Depending on your situation, you might be able to get regular payments if you're looking for work.</p>
+
+            <h3 class="govuk-heading-m">If you're under State Pension age</h3>
+            <p>If you're under State Pension age, and do not have a health condition or disability that limits your ability to work, you will be expected to prepare for and look for work while you're getting financial support. You might be able to get:</p>
+
+            <ul class="govuk-list govuk-list--bullet">
+              <li><a href="https://www.gov.uk/jobseekers-allowance">New Style Jobseeker’s Allowance (JSA)</a> if you're under State Pension age, you're unemployed or are working less than 16 hours a week on average, and have made enough National Insurance contributions, usually over the last 2 to 3 years - your savings and partner’s income will not affect how much you get</li>
+              <li><a href="https://www.gov.uk/universal-credit">Universal Credit</a> if you or your partner are both under State Pension age and you have £16,000 or less in savings - if you're getting tax credits, these will stop when you or your partner applies for Universal Credit</li>
+            </ul>
+
+            <div class="govuk-inset-text">
+You might be able to get Universal Credit and New Style JSA at the same time. You'll need to apply for each benefit separately.
+</div>
+
+
+            <h3 class="govuk-heading-m">If you're over State Pension age</h3>
+            <p>If you're over State Pension age, you can get financial support without being expected to look for work. You might be able to get:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li><a href="https://www.gov.uk/pension-credit">Pension Credit</a> if both you and your partner have reached State Pension age or one of you is getting Housing Benefit for people over State Pension age</li>
+            </ul>
+
+            <h3 class="govuk-heading-m">If you have a limited ability to work</h3>
+            <p>If you have an illness, health condition or disability that limits your ability to work, you might be able to get <a href="financial-support-looking-for-work-other-help">further financial support</a>.</p>
+
+            <hr>
+
+            <h2 class="govuk-heading-l govuk-!-margin-top-5">If you're not sure which payments you could get</h2>
+              <p>Answer a few questions to check whether New Style JSA, Universal Credit or Pension Credit is best for your situation.</p>
+              <p>You can use this service if you live in England, Scotland or Wales.</p>
+              <a class="govuk-button" href="q3-pension">Check now</a>
+              <p>The online service is available in <a href="https://secure.dwp.gov.uk/regular-payments-looking-for-work/are-you-under-state-pension-age?lang=cy">Welsh (Cymraeg)</a>.</p>
+
+
+
+          </div>
+
+          <div class="govuk-grid-column-one-third">
+
+
+            </div>
+
+      </div>
+
+
+    </main>
+
+<!--  /govuk-width-container -->
+</div>
+
+{% endblock %}

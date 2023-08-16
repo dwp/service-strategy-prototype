@@ -1,0 +1,104 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Financial help if you’re looking for work
+{% endblock %}
+
+{% block main %}
+
+<div class="govuk-width-container {{ containerClasses }}">
+
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="#">Home</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="benefits">Benefits</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item active">
+            Financial help if you’re looking for work
+        </li>
+      </ol>
+    </div>
+
+    <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
+
+      <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+            <h1 class="govuk-heading-xl">Financial help if you’re looking for work</h1>
+
+            <!--  contents -->
+            <p class="govuk-body-s">Contents</p>
+
+    <ul class="govuk-list govuk-list--dashed govuk-body-s">
+        <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+            <a href="financial-support-looking-for-work">Regular payments if you're looking for work</a>
+            </li>
+
+                  <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+                    <a href="financial-support-looking-for-work-specific-costs">Other support if you're on a low income</a>
+                      </li>
+
+                    <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed gem-c-contents-list__list-item--active" aria-current="true">
+                        Further help if you’re disabled, caring for someone, or looking after a family
+                  </li>
+                  <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+                    <a href="financial-support-looking-for-work-apply-decide">Help to find and apply for the right benefits for you</a>
+
+                  </li>
+
+                </ul>
+            <!--  /contents -->
+
+
+            <h2 class="govuk-heading-l govuk-!-margin-top-6 overview-top-border">Further help if you’re disabled, caring for someone, or looking after a family</h2>
+
+                <p>You might be able to get further financial help depending on your needs and circumstances.</p>
+
+<h3 class="govuk-heading-m">If you're on a low income</h3>
+<p>You could get help with housing costs, Council Tax, public transport costs, NHS costs, one off expenses, home adaptations and heating your home.</p>
+<p><a href="financial-support-looking-for-work-specific-costs">Financial help if you're on a low income</a></p>
+
+<h3 class="govuk-heading-m">If you're temporarily unable to work</h3>
+<p>You could get help if you cannot work because you're ill or self-isolating. This includes Statutory Sick Pay, Universal Credit, and New Style Employment and Support Allowance (ESA).</p>
+<p><a href="https://www.gov.uk/browse/benefits/unable-to-work">Financial help if you're temporarily unable to work</a></p>
+
+<h3 class="govuk-heading-m">If you're disabled or have a health condition</h3>
+<p>You could get additional support if you're disabled or have a health condition. This includes both financial help and support with finding and staying in work.</p>
+<p><a href="https://www.gov.uk/browse/benefits/disability">Support if you're disabled or have a health condition</a></p>
+
+<h3 class="govuk-heading-m">If you're caring for someone</h3>
+<p>If you regularly spend time caring for someone, you could get Carer's Allowance, Carer's Credit or an extra amount in your Universal Credit or Pension Credit payment.</p>
+<p><a href="https://www.gov.uk/browse/benefits/help-for-carers">Financial help if you're caring for someone</a></p>
+
+<h3 class="govuk-heading-m">If you're looking after a family</h3>
+<p>You could get further support if you look after children, plan to have a baby, or are adopting a child. This includes Child Benefit, financial support if you take time off work, help with childcare costs, support if you're studying, and extra financial help if your child is disabled.</p>
+<p><a href="https://www.gov.uk/browse/benefits/families">Financial help for families</a></p>
+
+<h3 class="govuk-heading-m">If someone dies</h3>
+<p>If someone has died, you might be able to get help with funeral costs. You might also be able to get regular payments such as Bereavement Support Payment or Guardian's Allowance.</p>
+<p><a href="https://www.gov.uk/browse/benefits/bereavement">Financial help if someone has died</a></p>
+
+
+            <hr>
+
+
+
+          </div>
+
+          <div class="govuk-grid-column-one-third">
+
+
+            </div>
+
+      </div>
+
+
+    </main>
+
+<!--  /govuk-width-container -->
+</div>
+
+{% endblock %}

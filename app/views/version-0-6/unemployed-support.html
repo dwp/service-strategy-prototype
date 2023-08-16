@@ -1,0 +1,216 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+What is your date of birth? | Check what financial support may be available if Coronavirus (COVID-19) has affected your income
+{% endblock %}
+
+{% block content %}
+
+<a href="q3-circs" class="govuk-back-link">Back</a>
+
+<div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <span class="govuk-caption-xl">{{caption}}</span>
+            <h1 class="govuk-heading-xl" id="furlough">Find financial support if
+            you're out of work or on a low income</h1>
+            <h2 class="govuk-heading-s govuk-!-font-weight-regular">Contents</h2>
+            <ul class="govuk-list">
+                <li><a href="#help">Benefits and support that could help</a></li>
+                <li><a href="#support">Other financial support</a></li>
+                <li><a href="#work">Support getting back into work</a></li>
+              </ul>
+
+
+            <h2 class="govuk-heading-m" id="uc">Benefits and support that could help</h2>
+              <p>You might be able to apply for the following
+                benefits. Read the details we link to before applying, or
+                <a href="/version-0-8/start">answer some questions to find out what support fits your situation</a>.</p>
+
+                <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+          <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                  Universal Credit
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+              <p class='govuk-body'>Universal Credit is a payment to support living costs if you're out of work, working less or on a low income.</p>
+              <p>You could get it if:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                  <li>you’re on a low income or out of work</li>
+                  <li>you’re under State Pension age (or your partner is)</li>
+                  <li>you and your partner have £16,000 or less in savings between you</li>
+                  <li>you live in the UK</li>
+                </ul>
+              <p><a href="https://www.gov.uk/how-to-claim-universal-credit">Check how to apply</a></p>
+            </div>
+          </div>
+          <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+                  New Style Jobseeker's Allowance
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+              <p class='govuk-body'>New Style Jobseeker's Allowance is a payment to help when you’re looking for work.</p>
+              <p>You could get it if:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                  <li>you’re under State Pension age</li>
+                  <li>you’ve been employed in the last 2 to 3 years and paid National Insurance contributions</li>
+                  <li>you're not working at the moment, or you’re working less than 16 hours a week</li>
+                  <li>you live in England, Scotland or Wales</li>
+                  <li>you have the right to work in the UK</li>
+                </ul>
+              <p><a href="https://www.gov.uk/jobseekers-allowance/apply-new-style-jsa">Check how to apply</a></p>
+            </div>
+          </div>
+          <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                  Pension Credit
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+              <p class='govuk-body'>Pension Credit is a payment to help if you're over State Pension age and on a low income.</p>
+              <p>You could get it if:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                  <li>you’re over State Pension age</li>
+                  <li>Your weekly income is below £173.75 (for single people) or £265.20 (for couples)</li>
+                  <li>you live in England, Scotland or Wales</li>
+                </ul>
+              <p><a href="https://www.gov.uk/pension-credit/how-to-claim">Check how to apply</a></p>
+            </div>
+            <div class="govuk-accordion__section ">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading">
+                  <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                    Budgeting Loan
+                  </span>
+                </h2>
+              </div>
+              <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                <p class='govuk-body'>A Budgeting Loan can help with one-off expenses.</p>
+                <p>You could get it if you already get:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li>Income Support</li>
+                    <li>income-based Jobseeker’s Allowance</li>
+                    <li>Income-related Employment and Support Allowance</li>
+                    <li>Pension Credit</li>
+                  </ul>
+                <p><a href="https://www.gov.uk/budgeting-help-benefits/how-to-apply">Check how to apply</a></p>
+              </div>
+            </div>
+            <div class="govuk-accordion__section ">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading">
+                  <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+                    Prescription prepayment certificate (PPC)
+                  </span>
+                </h2>
+              </div>
+              <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+                <p class='govuk-body'>A PPC can make your prescriptions cheaper.</p>
+                <p>You could get it if you live in England.</p>
+                <p><a href="https://www.gov.uk/get-a-ppc">Check how to get a PPC</a></p>
+              </div>
+            </div>
+            <div class="govuk-accordion__section ">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading">
+                  <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                    Winter Fuel Payment
+                  </span>
+                </h2>
+              </div>
+              <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                <p class='govuk-body'>Winter Fuel Payment can help to cover your heating bills.</p>
+                <p>You could get it if you were born before 5 October 1954.</p>
+                <p><a href="https://www.gov.uk/winter-fuel-payment/how-to-claim">Check how to apply</a></p>
+              </div>
+            </div>
+              <div class="govuk-accordion__section ">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading">
+                    <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                      Support for Mortgage interest
+                    </span>
+                  </h2>
+                </div>
+                <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                  <p class='govuk-body'>Support for Mortgage interest can help towards interest payments on your mortgage.</p>
+                  <p>You could get it if you already get:</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                      <li>Universal Credit</li>
+                      <li>Income Support</li>
+                      <li>income-based Jobseeker’s Allowance</li>
+                      <li>Income-related Employment and Support Allowance</li>
+                      <li>Pension Credit</li>
+                    </ul>
+                  <p><a href="https://www.gov.uk/support-for-mortgage-interest/how-to-claim">Check how to apply</a></p>
+                </div>
+              </div>
+              <div class="govuk-accordion__section ">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading">
+                    <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                      Housing Benefit
+                    </span>
+                  </h2>
+                </div>
+                <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                  <p class='govuk-body'>Housing Benefit can help you pay your rent if you’re unemployed, on a low income or claiming benefits.</p>
+                  <p>You could get it if:</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                      <li>you’re getting the severe disability premium, or are entitled to it</li>
+                      <li>you got or were entitled to the severe disability premium within the last month and are still eligible for it</li>
+                      <li>you have reached State Pension age </li>
+                      <li>you’re in supported, sheltered or temporary housing</li>
+                    </ul>
+
+                  <p><a href="https://www.gov.uk/housing-benefit/how-to-claim">Check how to apply</a></p>
+                </div>
+              </div>
+              <div class="govuk-accordion__section ">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading">
+                    <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                      Council Tax Reduction
+                    </span>
+                  </h2>
+                </div>
+                <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                  <p class='govuk-body'>Apply for a discount on your Council Tax bill if you’re on a low income or claim benefits.</p>
+                  <p><a href="https://www.gov.uk/apply-council-tax-reduction">Check how to apply</a></p>
+                </div>
+              </div>
+              </div>
+              </div>
+              <h2 class="govuk-heading-m" id="uc">Other financial support</h2>
+              <p>There is also financial support available if:</p>
+
+              <ul class="govuk-list govuk-list--bullet">
+                  <li><a href="#uc">you're caring for another adult</a></li>
+                  <li><a href="#esa">you're looking after children, or about to</a></li>
+                  <li><a href="#ca">you're disabled or have a health condition</a></li>
+                  <li><a href="#died">someone has died</a></li>
+                </ul>
+
+              <h2 class="govuk-heading-m" id="uc">Support getting back into work</h2>
+
+              <p><a href="#uc">Check what help is available to get back to work</a>.</p>
+
+              <p>Use the <a href="#uc">Find a job service</a> to search and apply for jobs.</p>
+
+
+     </div>
+      </div>
+
+
+{% endblock %}
