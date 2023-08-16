@@ -1,0 +1,114 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Have you been employed and paid National Insurance over the last 2 to 3 years? | Check what financial support may be available if Coronavirus (COVID-19) has affected your income
+{% endblock %}
+
+{% block content %}
+
+{% if data.circumstance == 'employed' %}
+{% set caption = 'Being unable to work' %}
+{% endif %}
+{% if data.circumstance == 'lostjob' %}
+{% set caption = 'Being made unemployed' %}
+{% endif %}
+{% if data.circumstance == 'selfemployed' %}
+{% set caption = 'Being self-employed and earning less' %}
+{% endif %}
+{% if data.circumstance == 'benefits' %}
+{% set caption = 'Benefits I already get' %}
+{% endif %}
+
+<a href="bc-q3-savings" class="govuk-back-link">Back</a>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form action="#" method="post" id="question-form" novalidate>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                  <span class="govuk-caption-xl">{{caption}}</span>
+                  <h1 class="govuk-fieldset__heading">
+                    Have you worked over the last 2 to 3 years?
+                  </h1>
+                </legend>
+            <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="radios-1" name="nic" type="radio" value="emp">
+                <label class="govuk-label govuk-radios__label" for="radios-1">
+                  Yes – I've been employed
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="radios-2" name="nic" type="radio" value="selfemp">
+                <label class="govuk-label govuk-radios__label" for="radios-2">
+                  Yes – I've been self-employed
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="radios-3" name="nic" type="radio" value="no">
+                <label class="govuk-label govuk-radios__label" for="radios-3">
+                  No
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="radios-4" name="nic" type="radio" value="notsure">
+                <label class="govuk-label govuk-radios__label" for="radios-4">
+                  Not sure
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+        <script type="text/javascript">
+
+          var circumstance = {{data.whycantwork|dump|safe}}
+          console.log(circumstance)
+
+          var eligibleuc = {{data.eligibleuc|dump|safe}}
+          console.log(eligibleuc)
+
+
+          document.getElementById("radios-1").onclick = function () {
+            if (circumstance == 'ill') {
+                    if (eligibleuc == 'yes') {
+                    var link = "bc-o4-ill-health-uc";
+                  } else {
+                    var link = "bc-o5-ill-health";
+                  }
+              } else {
+                var link = "bc-q6-health";
+              }
+            document.getElementById("question-form").action=link;
+          }
+
+          document.getElementById("radios-2").onclick = function() {
+                var link = "bc-q5-national-insurance";
+            document.getElementById("question-form").action=link;
+          }
+
+          document.getElementById("radios-3").onclick = function() {
+                if (eligibleuc == 'yes') {
+                var link = "bc-o2-no-contributions-uc";
+              } else {
+                var link = "bc-o3-no-contributions";
+              }
+            document.getElementById("question-form").action=link;
+          }
+
+          document.getElementById("radios-4").onclick = function() {
+                var link = "bc-q5-national-insurance";
+            document.getElementById("question-form").action=link;
+          }
+      </script>
+      </form>
+    </div>
+  </div>
+
+
+{% endblock %}

@@ -1,0 +1,127 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Financial support if you’re unemployed or on a low income
+{% endblock %}
+
+{% block main %}
+
+  <div class="govuk-width-container {{ containerClasses }}">
+
+      {% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+      {{ govukBreadcrumbs({
+        items: [
+          {
+            text: "Home",
+            href: "index"
+          },
+          {
+            text: "Benefits",
+            href: "benefits"
+          },
+          {
+            text: "Financial support if you’re unemployed or on a low income"
+          }
+        ]
+      }) }}
+
+
+    <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+
+              <h1 class="govuk-heading-xl">Financial support if you’re unemployed or on a low income</h1>
+
+              <h2 class="govuk-heading-s govuk-!-font-weight-regular">Contents</h2>
+              <ul class="govuk-list">
+                <li><a href="#overview">Check what support you could apply for</a></li>
+                <li><a href="#benefits">Benefits you might get</a></li>
+                <li><a href="#other">Other support if you’re getting less or no work</a></li>
+              </ul>
+
+              <h2 class="govuk-heading-l" id="overview">Check what support you could apply for</h2>
+              <p>You might be able to get financial support (‘benefits’) if
+                you:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>have been made unemployed</li>
+                  <li>are on a low income</li>
+                  <li>have been told not to work by your employer (you're 'on furlough')</li>
+                  <li>are self-employed and earning less</li>
+                </ul>
+
+                <a href="/checker-0-7/bc-q1-pension" class="govuk-button">Check now</a>
+
+              <h2 class="govuk-heading-l" id="benefits">Benefits you might get</h2>
+              <h3 class="govuk-heading-m">Universal Credit</h3>
+              <p>Universal Credit is a monthly payment to help with your living
+                costs if you’re on a low income, out of work or you cannot work.
+
+              <p>You might be able to get Universal Credit if:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>you’re on a low income or out of work</li>
+                <li>you’re 18 or over (<a href="https://www.gov.uk/universal-credit/eligibility">check if you can get Universal Credit if
+                  you’re 16 to 17</a>)</li>
+                <li>you’re under <a href="https://www.gov.uk/state-pension-age">State Pension age</a> (or your partner is)</li>
+                <li>you and your partner have £16,000 or less in savings between
+                  you</li>
+                <li>you live in the UK</li>
+              </ul>
+
+                <p><a href="https://www.gov.uk/universal-credit/eligibility">Check
+                  how to apply for Universal Credit</a>.</p>
+              <p><strong>If you’re working</strong></p>
+              <p>You might still get Universal Credit if you're working. Your
+                Universal Credit payments will be reduced as you earn more and
+                go up if you earn less.</p>
+              <h3 class="govuk-heading-m">New Style Jobseeker’s Allowance (JSA)</h3>
+              <p>New Style JSA is a payment every 2 weeks to
+                help you while you look for work. To get it, you’ll need to have
+                worked as an employee and paid enough National Insurance
+                contributions, usually in the last 2 to 3 years.
+
+                <p>You'll also need to:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>be 18 or over</li>
+                  <li>be under <a href="https://www.gov.uk/state-pension-age">State Pension age</a></li>
+                  <li>not be in full-time education</li>
+                  <li>not be working at the moment, or be working less than 16
+                    hours a week</li>
+                  <li>live in England, Scotland or Wales</li>
+                  <li>have the right to work in the UK</li>
+                </ul>
+
+                <div class="govuk-inset-text">If you're eligible for Universal
+                  Credit, you might be able to get it with or
+                  instead of New Style JSA.
+                </div>
+
+                <p><a href="https://www.gov.uk/how-to-claim-new-style-jsa">Check how to apply for New Style JSA</a>.</p>
+
+              <h2 class="govuk-heading-l" id="other">Other support if you’re
+                getting less or no work</h2>
+
+              <p>You might be able to get other financial support if you are
+                unemployed or on a low income. This includes:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li><a href="https://www.gov.uk/employment-support-allowance">
+                  Employment and Support Allowance</a>, if you have a health
+                  condition or disability that affects how much you can work</li>
+                <li><a href="https://www.gov.uk/financial-help-disabled">support
+                  if you have a disability</a></li>
+                <li><a href="https://www.gov.uk/apply-council-tax-reduction">help
+                  with your Council Tax</a></li>
+                <li><a href="https://www.gov.uk/pension-credit">Pension Credit</a>
+                  to help with cost of living in retirement</li>
+                  <li><a href="https://www.gov.uk/support-for-mortgage-interest">help
+                    with mortgage interest payments,</a> if you get Universal Credit or Pension Credit</li>
+
+              </ul>
+
+          </div>
+      </div>
+
+    </main>
+  </div>
+{% endblock %}

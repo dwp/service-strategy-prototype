@@ -1,0 +1,126 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Financial support if you’re sick or self-isolating
+{% endblock %}
+
+{% block main %}
+
+  <div class="govuk-width-container {{ containerClasses }}">
+
+      {% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+      {{ govukBreadcrumbs({
+        items: [
+          {
+            text: "Home",
+            href: "index"
+          },
+          {
+            text: "Benefits",
+            href: "benefits"
+          },
+          {
+            text: "Financial support if you’re sick or self-isolating"
+          }
+        ]
+      }) }}
+
+
+    <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+
+              <h1 class="govuk-heading-xl">Financial support if you’re sick,
+                self-isolating or shielding</h1>
+
+              <h2 class="govuk-heading-s govuk-!-font-weight-regular">Contents</h2>
+              <ul class="govuk-list">
+                <li><a href="#overview">Check what support you could apply for</a></li>
+                <li><a href="#financial">Financial support you might get</a></li>
+                <li><a href="#other">Other support if you cannot work</a></li>
+              </ul>
+
+              <h2 class="govuk-heading-l" id="overview">Check what support you could apply for</h2>
+              <p><p>You might be able to get financial support ('benefits') if
+                you cannot work because you're:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>suffering from an illness or health condition</li>
+                <li>staying at home ('self-isolating') because you or someone
+                  you live with has symptoms of coronavirus (COVID-19)</li>
+                <li>at high risk from coronavirus (COVID-19) and have been told
+                  by the NHS to take extra steps to protect yourself (you're
+                  'shielding')</li>
+                </ul>
+
+                <a href="/checker-0-7/bc-q1-pension" class="govuk-button">Check now</a>
+
+              <h2 class="govuk-heading-l" id="financial">Financial support you might get</h2>
+              <h3 class="govuk-heading-m">Sick leave</h3>
+              <p>Tell your employer about your illness or health condition. They
+                should tell you if you’re covered by their sick leave policy.</p>
+
+              <h3 class="govuk-heading-m">Statutory Sick Pay (SSP)</h3>
+              <p>If you're not covered by your employer's sick leave policy, you
+                could get SSP. You must:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>be classed as an emloyee and have done some work for your
+                    employer</li>
+                  <li>earn an average of at least £120 a week</li>
+                  <li>have been ill, self-isolating or shielding for at least 4
+                    days in a row</li>
+                </ul>
+
+                <p><a href="https://www.gov.uk/statutory-sick-pay/eligibility">Check
+                  how to get SSP</a>.</p>
+
+              <h3 class="govuk-heading-m">New Style Employment
+                and Support Allowance (ESA)</h2>
+              <p>New Style ESA gives you money to help with living costs if
+                you're unable to work because of a health condition or disability.
+                To get it, you must:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>have worked as an employee or been self-employed</li>
+                <li>paid enough National Insurance contributions, usually in the
+                  last 2 to 3 years – <a href="https://www.gov.uk/national-insurance-credits">
+                    National Insurance credits</a> also count</li>
+                <li>not be getting the <a href="https://www.gov.uk/disability-premiums">
+                  severe disability premium</a>, or be entitled to it</li>
+                <li>not have got or been entitled to the severe disability premium
+                  in the last month</li>
+                <li>not be getting SSP from an employer</li>
+                </ul>
+
+                <p><strong>New Style ESA and coronavirus (COVID-19)</strong></p>
+
+                <p>You might also be able to get New Style ESA if:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>you or your child might have coronavirus or you’re
+                    recovering from it</li>
+                  <li>you or your child are self-isolating</li>
+                  <li>you're shielding</li>
+                </ul>
+
+                <p><a href="https://www.gov.uk/employment-support-allowance/how-to-claim">
+                  Check how to apply for New Style ESA</a>.</p>
+
+                <h2 class="govuk-heading-l" id="other">Other support if you
+                  cannot work</h2>
+
+                <p>You might be able to get other financial support if you're
+                  sick, self-isolating or shielding. This includes:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li><a href="https://www.gov.uk/universal-credit">Universal
+                    Credit</a> – you could get this with or instead of New Style
+                    ESA to help with living costs</li>
+                  <li><a href="https://www.gov.uk/financial-help-disabled">support
+                    if you have a disability</a></li>
+                </ul>
+
+          </div>
+      </div>
+
+    </main>
+  </div>
+{% endblock %}

@@ -1,0 +1,273 @@
+{% extends "layout.html" %}
+{% set bodyAttributes = { id: "corona" } %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block main %}
+
+    <div id="corona-content">
+        <div class="govuk-width-container">
+            <div class="govuk-grid-row  govuk-!-padding-bottom-5">
+                <div class="govuk-grid-column-two-thirds">
+                    <p class="govuk-body-s govuk-!-margin-bottom-5"><a href="#">Home</a></p>
+                    <p class="govuk-body-l white govuk-!-margin-top-5">Part of <a href="#">Coronavirus (COVID-19)</a></p>
+                    <h1 class="govuk-heading-xl govuk-!-margin-bottom-5">Work and financial support</h1>
+              <h2 class="govuk-heading-s">Coronavirus (COVID-19) support is available</h2>
+              <ul class="govuk-list govuk-list--bullet  govuk-!-margin-bottom-6">
+                  <li>some workplaces are starting to open - with social distancing</li>
+                  <li>plan your journey to avoid crowds</li>
+                  <li>financial support is available if you cannot work</li>
+              </ul>      
+              </div>
+            </div>
+    </div>
+  </div>
+
+  <div id="corona-content-light">
+      <div class="govuk-width-container">
+          <div class="govuk-grid-row  govuk-!-margin-bottom-5">
+              <div class="govuk-grid-column-two-thirds">
+
+                  <h3 class="govuk-heading-s landing-page__email-title">What you can do now</h3>
+
+                  <ul class="covid__list govuk-!-margin-bottom-8">
+                      <li class="covid__list-item">
+                          <div class="gem-c-action-link gem-c-action-link--dark-icon govuk-!-margin-bottom-0">
+                          <span class="gem-c-action-link__link-wrapper">
+                          <a class="govuk-link gem-c-action-link__link" href="https://www.gov.uk/find-coronavirus-local-restrictions">Check how local coronavirus restrictions affect you</a>
+                          </span>
+                          </div>  
+                        </li>
+
+                      <li class="covid__list-item">
+                          <div class="gem-c-action-link gem-c-action-link--dark-icon govuk-!-margin-bottom-0">
+                             <span class="gem-c-action-link__link-wrapper">
+                                <a class="govuk-link gem-c-action-link__link" href="https://www.gov.uk/guidance/coronavirus-covid-19-what-to-do-if-youre-employed-and-cannot-work">Get help if you’re off work or have less work because of coronavirus</a>
+                             </span>
+                          </div>
+                     </li>
+
+                      <li class="covid__list-item">
+                          <div class="gem-c-action-link gem-c-action-link--dark-icon govuk-!-margin-bottom-0">
+                             <span class="gem-c-action-link__link-wrapper">          
+                               <a class="govuk-link gem-c-action-link__link" href="https://www.gov.uk/guidance/coronavirus-covid-19-what-to-do-if-you-were-employed-and-have-lost-your-job">Get help if you’ve lost your job</a>
+                              </span>
+                              </div>
+                       </li>
+
+                      <li class="covid__list-item">
+                          <div class="gem-c-action-link gem-c-action-link--dark-icon govuk-!-margin-bottom-0">
+                            <span class="gem-c-action-link__link-wrapper">
+                               <a class="govuk-link gem-c-action-link__link" href="https://www.gov.uk/guidance/coronavirus-covid-19-what-to-do-if-youre-self-employed-and-getting-less-work-or-no-work">Get help if you’re self employed and getting less or no work</a>      
+                            </span>
+                           </div>
+                      </li>
+                  </ul>
+
+
+                  <svg class="app-c-email-link__icon" xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 0 459.334 459.334">
+                    <path fill="black" d="M177.216 404.514c-.001.12-.009.239-.009.359 0 30.078 24.383 54.461 54.461 54.461s54.461-24.383 54.461-54.461c0-.12-.008-.239-.009-.359H175.216zM403.549 336.438l-49.015-72.002v-89.83c0-60.581-43.144-111.079-100.381-122.459V24.485C254.152 10.963 243.19 0 229.667 0s-24.485 10.963-24.485 24.485v27.663c-57.237 11.381-100.381 61.879-100.381 122.459v89.83l-49.015 72.002a24.76 24.76 0 0 0 20.468 38.693H383.08a24.761 24.761 0 0 0 20.469-38.694z"></path>
+                  </svg>
+                  <h3 class="govuk-heading-s landing-page__email-title">Stay up to date with GOV.UK</h3>
+                  <a class="govuk-body govuk-link" data-module="track-click" data-track-category="emailAlertLinkClicked" data-track-action="/coronavirus" href="/email-signup?link=/government/topical-events/coronavirus-covid-19-uk-government-response">Sign up to get emails when we add new coronavirus worker support information</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="govuk-width-container {{ containerClasses }}">
+    <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
+        <div class="govuk-grid-row">
+
+            <div class="govuk-grid-column-two-thirds">
+              
+
+              <h2 class="govuk-heading-m">Guidance and support</h2>
+
+              <div data-module="track-click">
+                  <div data-module="toggle-attribute">
+                      <div class="gem-c-accordion govuk-accordion govuk-!-margin-bottom-3" id="default-id-841411d7" data-module="govuk-accordion"><div class="govuk-accordion__controls"></div>
+                      <div class="govuk-accordion__section">
+                        <div class="govuk-accordion__section-header">
+                          <h2 class="govuk-accordion__section-heading"><button type="button" id="default-id-841411d7-heading-1" class="govuk-accordion__section-button">Getting financial support<span class="govuk-accordion__icon" aria-hidden="true"></span></button></h2>
+                          
+                        </div>
+                        <div id="default-id-841411d7-content-1" class="govuk-accordion__section-content" aria-labelledby="default-id-841411d7-heading-1">    <div class="covid__accordion-inner">
+                        <ul class="covid__list covid__list--accordion">
+                      <li class="covid__list-item">
+                          <a class="govuk-link covid__accordion-link" href="what-to-do-if-youre-employed-and-cannot-work#closed">If your workplace has been told to close (on furlough)</a>
+                      </li>
+                      <li class="covid__list-item">
+                          <a class="govuk-link covid__accordion-link" href="what-to-do-if-youre-employed-and-cannot-work#less-work">Reduced hours – if your employer has less work for you</a>
+                      </li>
+                      <li class="covid__list-item">
+                          <a class="govuk-link covid__accordion-link" href="what-to-do-if-youre-employed-and-cannot-work#off-work">Unable to work – if you’re ill, self-isolating or shielding</a>
+                      </li>
+                      <li class="covid__list-item">
+                          <a class="govuk-link covid__accordion-link" href="what-to-do-if-you-were-employed-and-have-lost-your-job">Unemployed or redundant – if you’ve lost your job</a>
+                      </li>
+                      <li class="covid__list-item">
+                          <a class="govuk-link covid__accordion-link" href="what-to-do-if-youre-self-employed-and-cannot-work">Self-employed – if you’re getting less or no work</a>
+                      </li>
+                      <li class="covid__list-item">
+                          <a class="govuk-link covid__accordion-link" href="https://www.gov.uk/discrimination-your-rights/discrimination-at-work">Discrimination at work - your rights</a>
+                      </li>
+                  </ul>
+                
+                    </div>
+                </div>
+                </div>      <div class="govuk-accordion__section">
+                        <div class="govuk-accordion__section-header">
+                          <h2 class="govuk-accordion__section-heading"><button type="button" id="default-id-841411d7-heading-2" class="govuk-accordion__section-button">Help with redundancy and finding work<span class="govuk-accordion__icon" aria-hidden="true"></span></button></h2>
+                          
+                        </div>
+                        <div id="default-id-841411d7-content-2" class="govuk-accordion__section-content" aria-labelledby="default-id-841411d7-heading-2">    <div class="covid__accordion-inner">
+                          <h3 class="govuk-heading-s covid__accordion-heading">Redundancy</h3>
+                  <ul class="covid__list covid__list--accordion">
+                      <li class="covid__list-item">
+                          <a class="govuk-link covid__accordion-link" href="https://www.gov.uk/redundancy-your-rights">Your rights if you're made redundant</a>
+                      </li>
+                      <li class="covid__list-item">
+                          <a class="govuk-link covid__accordion-link" href="https://www.gov.uk/calculate-your-redundancy-pay">Work out your redundancy pay</a>
+                      </li>
+                      <li class="covid__list-item">
+                          <a class="govuk-link covid__accordion-link" href="https://www.gov.uk/guidance/coronavirus-covid-19-what-to-do-if-you-were-employed-and-have-lost-your-job">Financial support if you're made redundant</a>
+                      </li>
+                  </ul>
+                    <h3 class="govuk-heading-s covid__accordion-heading">Finding work</h3>
+                  <ul class="covid__list covid__list--accordion">
+                      <li class="covid__list-item">
+                          <a class="govuk-link covid__accordion-link" href="https://www.gov.uk/find-a-job">Find and apply for jobs</a>
+                      </li>
+                      <li class="covid__list-item">
+                          <a class="govuk-link covid__accordion-link" href="https://www.gov.uk/moving-from-benefits-to-work">Get help moving from benefits to work</a>
+                      </li>
+                      <li class="covid__list-item">
+                          <a class="govuk-link covid__accordion-link" href="https://www.gov.uk/career-skills-and-training">Find training to improve your skills and employability</a>
+                      </li>
+                  </ul>
+                
+                    </div>
+                </div>
+                </div>      <div class="govuk-accordion__section">
+                        <div class="govuk-accordion__section-header">
+                          <h2 class="govuk-accordion__section-heading"><button type="button" class="govuk-accordion__section-button" >Working safely<span class="govuk-accordion__icon" aria-hidden="true"></span></button></h2>
+                          
+                        </div>
+                        <div id="default-id-841411d7-content-3" class="govuk-accordion__section-content" aria-labelledby="default-id-841411d7-heading-3">    <div class="covid__accordion-inner">
+                        <ul class="covid__list covid__list--accordion">
+                      <li class="covid__list-item">
+                          <a class="govuk-link covid__accordion-link" href="https://www.gov.uk/check-how-to-return-to-work-safely">How to return to work safely if you cannot work from home</a>
+                      </li>
+                      <li class="covid__list-item">
+                          <a class="govuk-link covid__accordion-link" href="https://www.gov.uk/guidance/working-safely-during-coronavirus-covid-19">How social distancing could work in your workplace</a>
+                      </li>
+                      <li class="covid__list-item">
+                          <a class="govuk-link covid__accordion-link" href="https://www.gov.uk/government/publications/further-businesses-and-premises-to-close/further-businesses-and-premises-to-close-guidance">Which workplaces should be open</a>
+                      </li>
+                      <li class="covid__list-item">
+                          <a class="govuk-link covid__accordion-link" href="https://www.citizensadvice.org.uk/work/coronavirus-if-youre-worried-about-working/">Advice if you’re worried about working</a>
+                      </li>
+                      <li class="covid__list-item">
+                          <a class="govuk-link covid__accordion-link" href="https://www.gov.uk/government/publications/guidance-on-shielding-and-protecting-extremely-vulnerable-persons-from-covid-19/guidance-on-shielding-and-protecting-extremely-vulnerable-persons-from-covid-19">Protecting extremely vulnerable people at home</a>
+                      </li>
+                      <li class="covid__list-item">
+                          <a class="govuk-link covid__accordion-link" href="https://www.gov.uk/guidance/coronavirus-covid-19-safer-travel-guidance-for-passengers">Travel to work safely</a>
+                      </li>
+                  </ul>
+                    <h3 class="govuk-heading-s covid__accordion-heading">If you get symptoms</h3>
+                  <ul class="covid__list covid__list--accordion">
+                      <li class="covid__list-item">
+                          <a class="govuk-link covid__accordion-link" href="https://www.gov.uk/government/publications/covid-19-stay-at-home-guidance/stay-at-home-guidance-for-households-with-possible-coronavirus-covid-19-infection">What to do if you get symptoms</a>
+                      </li>
+                  </ul>
+                
+                    </div>
+                </div>
+                </div>      <div class="govuk-accordion__section">
+                        <div class="govuk-accordion__section-header">
+                          <h2 class="govuk-accordion__section-heading"><button type="button" class="govuk-accordion__section-button" >Working from home<span class="govuk-accordion__icon" aria-hidden="true"></span></button></h2>
+                          
+                        </div>
+                        <div id="default-id-841411d7-content-4" class="govuk-accordion__section-content" aria-labelledby="default-id-841411d7-heading-4">    <div class="covid__accordion-inner">
+                        <ul class="covid__list covid__list--accordion">
+                      <li class="covid__list-item">
+                          <a class="govuk-link covid__accordion-link" href="https://www.gov.uk/reasonable-adjustments-for-disabled-workers">Reasonable adjustments for working from home</a>
+                      </li>
+                      <li class="covid__list-item">
+                          <a class="govuk-link covid__accordion-link" href="https://www.gov.uk/tax-relief-for-employees/working-at-home">Claim tax relief for your work expenses</a>
+                      </li>
+                      <li class="covid__list-item">
+                          <a class="govuk-link covid__accordion-link" href="https://www.gov.uk/holiday-entitlement-rights">How annual leave is worked out</a>
+                      </li>
+                      <li class="covid__list-item">
+                          <a class="govuk-link covid__accordion-link" href="https://www.gov.uk/government/publications/access-to-work-factsheet/access-to-work-factsheet-for-customers">Claim Access to Work if you have a disability or long-term health condition</a>
+                      </li>
+                  </ul>
+                
+                    </div>
+                </div>
+                </div>      <div class="govuk-accordion__section">
+                        <div class="govuk-accordion__section-header">
+                          <h2 class="govuk-accordion__section-heading"><button type="button" class="govuk-accordion__section-button" >Childcare<span class="govuk-accordion__icon" aria-hidden="true"></span></button></h2>
+                          
+                        </div>
+                        <div id="default-id-841411d7-content-5" class="govuk-accordion__section-content" aria-labelledby="default-id-841411d7-heading-5">    <div class="covid__accordion-inner">
+                        <ul class="covid__list covid__list--accordion">
+                      <li class="covid__list-item">
+                            <div class="gem-c-action-link gem-c-action-link--simple govuk-!-margin-bottom-1">
+                
+                            <span class="gem-c-action-link__link-wrapper">
+                
+                          <a class="govuk-link gem-c-action-link__link" href="https://www.gov.uk/coronavirus/education-and-childcare">
+                                      Childcare and education
+                          
+                
+                </a>      </span>
+                
+                
+                  </div>
+                
+                            <p class="govuk-body covid__list-item-description">
+                              Coronavirus (COVID-19) information for parents, schools, colleges and universities: closures, exams, learning, health and wellbeing.
+                            </p>
+                      </li>
+                      <li class="covid__list-item">
+                          <a class="govuk-link covid__accordion-link" href="https://www.gov.uk//get-childcare">Get help paying for childcare</a>
+                      </li>
+                  </ul>
+                
+                    </div>
+                </div>
+                </div>      <div class="govuk-accordion__section">
+                        <div class="govuk-accordion__section-header">
+                          <h2 class="govuk-accordion__section-heading"><button type="button" class="govuk-accordion__section-button" >Holiday and sick leave<span class="govuk-accordion__icon" aria-hidden="true"></span></button></h2>
+                          
+                        </div>
+                        <div id="default-id-841411d7-content-6" class="govuk-accordion__section-content" aria-labelledby="default-id-841411d7-heading-6">    <div class="covid__accordion-inner">
+                        <ul class="covid__list covid__list--accordion">
+                      <li class="covid__list-item">
+                          <a class="govuk-link covid__accordion-link" href="https://www.gov.uk/holiday-entitlement-rights">How annual leave is worked out</a>
+                      </li>
+                      <li class="covid__list-item">
+                          <a class="govuk-link covid__accordion-link" href="what-to-do-if-youre-employed-and-cannot-work#off-work">Get financial support whilst you're off sick</a>
+                      </li>
+                  </ul>
+                
+                    </div>
+                </div>
+                </div>
+                </div>
+                  </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </main>
+  </div>
+{% endblock %}

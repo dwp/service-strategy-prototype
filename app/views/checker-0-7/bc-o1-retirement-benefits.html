@@ -1,0 +1,50 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+You may be eligible for Universal Credit and Employment Support Allowance | Check what financial support may be available if Coronavirus (COVID-19) has affected your income
+{% endblock %}
+
+{% block content %}
+
+        {% if data.circumstance == 'employed' %}
+          {% set caption = 'Being unable to work' %}
+        {% endif %}
+        {% if data.circumstance == 'lostjob' %}
+          {% set caption = 'Being made unemployed' %}
+        {% endif %}
+        {% if data.circumstance == 'selfemployed' %}
+          {% set caption = 'Being self-employed and earning less' %}
+        {% endif %}
+        {% if data.circumstance == 'benefits' %}
+          {% set caption = 'Benefits I already get' %}
+        {% endif %}
+
+<a href="bc-q2-pension" class="govuk-back-link">Back</a>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <span class="govuk-caption-xl">{{caption}}</span>
+        <h1 class="govuk-heading-xl" id="furlough">You might be able to get
+            financial support to go with your State Pension</h1>
+          <div class="govuk-inset-text">Based on your answers, you have reached State
+            Pension age. This means you're not eligible for employment-related benefits.
+          </div>
+          <h2 class="govuk-heading-m">Get your State Pension</h2>
+            <p class="govuk-body">You can <a class="govuk-link" href="https://www.gov.uk/get-state-pension">
+              get your State Pension online</a>, if you have not already claimed it.</p>
+          <h2 class="govuk-heading-m">Other financial support you could get</h2>
+            <p class="govuk-body">Check what other financial help you could get if you:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li><a class="govuk-link" href="https://www.gov.uk/pension-credit">are on a low income</a></li>
+              <li><a class="govuk-link" href="https://www.gov.uk/housing-benefit">need help paying your rent</a></li>
+              <li><a class="govuk-link" href="https://www.gov.uk/winter-fuel-payment">need help paying your heating bill</a></li>
+              <li><a class="govuk-link" href="https://www.gov.uk/cold-weather-payment">are claiming benefits and the weather is cold</a></li>
+              <li><a class="govuk-link" href="https://www.gov.uk/attendance-allowance">are disabled</a></li>
+            </ul>
+            <p>You can also get free bus travel if you <a class="govuk-link" href="https://www.gov.uk/apply-for-elderly-person-bus-pass">apply for a bus pass.</p>
+    </div>
+  </div>
+
+
+{% endblock %}

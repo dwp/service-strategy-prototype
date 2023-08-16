@@ -1,0 +1,71 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Does your employer pay sick pay? | Check what help and support is available if your circumstances have changed due to Coronavirus (COVID-19)
+{% endblock %}
+
+{% block content %}
+
+<a href="cv-q2-why-cant-work" class="govuk-back-link">Back</a>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form method="post" novalidate>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <span class="govuk-caption-xl">Being unable to work</span>
+              <h1 class="govuk-fieldset__heading">
+                Can you get sick pay from your employer?
+              </h1>
+            </legend>
+            <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="circumstance" name="circumstance" type="radio" value="ill">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                  Yes
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="circumstance-2" name="circumstance" type="radio" value="self-iso">
+                <label class="govuk-label govuk-radios__label" for="circumstance-2">
+                 No
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="circumstance-3" name="circumstance" type="radio" value="furlough">
+                <label class="govuk-label govuk-radios__label" for="circumstance-3">
+                  Not sure
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <a href="#" class="govuk-button" id="continue-button">
+          Continue
+        </a>
+
+        <script type="text/javascript">
+          document.getElementById("circumstance").onclick = function () {
+            document.getElementById("continue-button").href="cv-o1-emp-sick-pay";
+          }
+
+          document.getElementById("circumstance-2").onclick = function() {
+            document.getElementById("continue-button").href="cv-o2-stat-sick-pay";
+          }
+
+          document.getElementById("circumstance-3").onclick = function () {
+            document.getElementById("continue-button").href="cv-o3-dont-know";
+          }
+
+
+      </script>
+      </form>
+    </div>
+  </div>
+
+
+{% endblock %}
