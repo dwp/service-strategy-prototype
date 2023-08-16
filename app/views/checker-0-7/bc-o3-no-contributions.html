@@ -1,0 +1,64 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+You may be eligible for Universal Credit and Employment Support Allowance | Check what financial support may be available if Coronavirus (COVID-19) has affected your income
+{% endblock %}
+
+{% block content %}
+
+{% if data.circumstance == 'employed' %}
+{% set caption = 'Being unable to work' %}
+{% endif %}
+{% if data.circumstance == 'lostjob' %}
+{% set caption = 'Being made unemployed' %}
+{% endif %}
+{% if data.circumstance == 'selfemployed' %}
+{% set caption = 'Being self-employed and earning less' %}
+{% endif %}
+{% if data.circumstance == 'benefits' %}
+{% set caption = 'Benefits I already get' %}
+{% endif %}
+
+<a href="bc-q4-national-insurance" class="govuk-back-link">Back</a>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <span class="govuk-caption-xl">{{caption}}</span>
+        <h1 class="govuk-heading-xl" id="furlough">
+            You might not be eligible for employment-related
+            benefits
+          </h1>
+    
+          <p>Based on your answers, you might not be able to get:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li><a class="govuk-link" href="https://www.gov.uk/universal-credit/eligibility">Universal Credit</a></li>
+            <li><a class="govuk-link" href="https://www.gov.uk/guidance/new-style-employment-and-support-allowance#eligibility">New Style Employement and Support Allowance</a></li>
+            <li><a class="govuk-link" href="https://www.gov.uk/guidance/new-style-jobseekers-allowance#eligibility">New Style Jobseeker's Allowance</a></li>
+          </ul>
+    
+          <h2 class="govuk-heading-m">Check what other support you could get</h2>
+          <h3 class="govuk-heading-s">If you lost your job after 28 February 2020</h3>
+          <p>Your employer might be able to re-employ you and put you on temporary
+            leave instead. This is known as being ‘on furlough’.</p>
+          <p>Your employer could get a grant using the Coronavirus Job Retention
+            Scheme to help them pay for some of your wages. <a class="govuk-link" href="https://www.gov.uk/guidance/check-if-you-could-be-covered-by-the-coronavirus-job-retention-scheme">
+            Check if your employer can use it</a>.</p>
+    
+          <h3 class="govuk-heading-s">If you're self-employed and your income has been affected</h3>
+          <p>If you’re getting less work or no work because of coronavirus (COVID-19),
+          you might be able to <a class="govuk-link" href="https://www.gov.uk/guidance/claim-a-grant-through-the-coronavirus-covid-19-self-employment-income-support-scheme">
+          claim a grant through the coronavirus Self-employment Income Support Scheme</a>.</p>
+    
+          <h3 class="govuk-heading-s">Benefits calculators</h3>
+          <p><a class="govuk-link" href="https://www.gov.uk/benefits-calculators"<a>Use an independent benefits calculator</a> to find out:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>what other benefits you could get</li>
+            <li>how to claim</li>
+            <li>how any benefits you get will be affected if you start work</li>
+          </ul>
+    </div>
+  </div>
+
+
+{% endblock %}

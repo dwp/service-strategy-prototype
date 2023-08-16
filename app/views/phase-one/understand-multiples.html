@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block main %}
+
+  <div class="govuk-width-container {{ containerClasses }}">
+
+      <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+
+              <h1 class="govuk-heading-xl">Understand what financial support you can get</h1>
+             
+              <p class="govuk-body-l">The financial support you can get depends on your circumstances.</p>
+
+              <h2 class="govuk-heading-m">If you’re looking for work</h2>
+              <p>Check what financial support you can get if you’re out of work, affected by redundancy, or looking for new work.</p>
+              <p><a href="start">Financial support if you’re looking for work</a></p>
+              <h2 class="govuk-heading-m">If you’re temporarily unable to work</h2>
+              <p>Check what financial support you can get if you’re unable to work because you’re ill, on furlough, shielding or self-isolating.</p>
+              <p><a href="#">Financial support if you’re temporarily unable to work</a></p>
+              <h2 class="govuk-heading-m">If you’re on a low income</h2>
+              <p>Check what financial support you can get if you’re on a low income. You might be working just a few hours a week, or be retired.</p>
+              <p><a href="#">Financial support if you’re on a low income</a></p>
+              <h2 class="govuk-heading-m">If you're disabled or have a health condition</h2>
+              <p>Check what financial support you can get if you're disabled or have a health condition.</p>
+              <p><a href="#">Financial support if you're disabled or have a health condition</a></p>
+              <h2 class="govuk-heading-m">If you're caring for someone</h2>
+              <p>Check what financial support you can get if you spend time each week caring for someone.</p>
+              <p><a href="#">Financial support if you spend time each week caring for someone</a></p>
+              <h2 class="govuk-heading-m">If you’re looking after a family</h2>
+              <p>Check what financial support you can get if you’re bringing up children, or planning to.</p>
+              <p><a href="#">Financial support if you have children or are planning to</a></p>
+              <h2 class="govuk-heading-m">If someone has died</h2>
+              <p>Check what financial support you can get if someone has died.</p>
+              <p><a href="#">Financial support if someone has died</a></p>
+              
+             
+              <hr>
+              <h3 class="govuk-heading-s">Explore the topic</h3>
+              <ul class="govuk-list govuk-list--bullet">
+                <li><a href="">How benefits work</a></li>
+              </ul>
+
+
+            </div>
+
+            <div class="govuk-grid-column-one-third">
+
+              <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+            </div>
+          </div>
+        </main>
+
+  </div>
+
+
+
+{% endblock %}

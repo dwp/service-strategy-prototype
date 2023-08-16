@@ -1,0 +1,152 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Financial help if you’re looking for work
+{% endblock %}
+
+{% block main %}
+
+<div class="govuk-width-container {{ containerClasses }}">
+
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="#">Home</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="benefits">Benefits</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item active">
+            Financial help if you’re looking for work
+        </li>
+      </ol>
+    </div>
+
+    <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
+
+      <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+            <h1 class="govuk-heading-xl">Financial help if you’re looking for work</h1>
+
+            <!--  contents -->
+            <p class="govuk-body-s">Contents</p>
+
+    <ul class="govuk-list govuk-list--dashed govuk-body-s">
+        <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+            <a href="financial-support-looking-for-work">Regular payments if you're looking for work</a>
+            </li>
+            <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed gem-c-contents-list__list-item--active" aria-current="true">
+                      Other support if you're on a low income
+                      </li>
+
+
+                  <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+                    <a href="financial-support-looking-for-work-other-help">Further help if you’re disabled, caring for someone, or looking after a family</a>
+                    </li>
+                    <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+                      <a href="financial-support-looking-for-work-apply-decide">Help to find and apply for the right benefits for you</a>
+                    </li>
+                </ul>
+            <!--  /contents -->
+
+
+            <h2 class="govuk-heading-l govuk-!-margin-top-6 overview-top-border">Other support if you're on a low income</h2>
+
+                <p>You might be able to get the following support.</p>
+
+                <h2 class="govuk-heading-s govuk-!-margin-top-5">Housing Benefit</h2>
+                <p>Housing Benefit can help you pay your rent if you’re unemployed, on a low income or claiming benefits. You can make a new claim for Housing Benefit if you have reached <a href="https://www.gov.uk/state-pension-age">State Pension age</a> or you’re in supported, sheltered or temporary housing.</p>
+                <p><a href="https://www.gov.uk/housing-benefit">How to apply for Housing Benefit</a></p>
+
+                <h2 class="govuk-heading-s govuk-!-margin-top-5">Discretionary Housing Payments</h2>
+                <p>You might be able to get a Discretionary Housing Payment if your council decides you need extra money to pay your housing costs. You must either get Housing Benefit or get help with your housing costs from Universal Credit to apply.</p>
+                <p><a href="https://www.gov.uk/government/publications/claiming-discretionary-housing-payments/claiming-discretionary-housing-payments">How to claim Discretionary Housing Payments</a></p>
+
+                <h2 class="govuk-heading-s govuk-!-margin-top-5">Council Tax Reduction</h2>
+                <p>If you’re on a low income or claim benefits, your bill could be reduced by up to 100%. You can apply if you own your home, rent, are unemployed or working.</p>
+                <p><a href="https://www.gov.uk/council-tax-reduction/">How to apply for Council Tax Reduction</a></p>
+
+                <h2 class="govuk-heading-s govuk-!-margin-top-5">Bus pass for an older person</h2>
+                <p>You might be able to get a bus pass for free travel. When you can get it depends on whether you live in England, Northern Ireland, Scotland or Wales.</p>
+                <p><a href="https://www.gov.uk/apply-for-elderly-person-bus-pass">How to apply for a bus pass</a></p>
+
+                <h2 class="govuk-heading-s govuk-!-margin-top-5">Budgeting Advance</h2>
+                <p>You might be able to get a Budgeting Advance to help with certain one-off expenses. You must have been getting Universal Credit, Employment and Support Allowance, Income Support, Jobseeker’s Allowance or Pension Credit for 6 months or more, unless you need the money to help you start a new job or stay in work.</p>
+                <p><a href="https://www.gov.uk/universal-credit/other-financial-support#budgeting-advance">How to apply for a Budgeting Advance</a></p>
+
+                <h2 class="govuk-heading-s govuk-!-margin-top-5">Budgeting Loan</h2>
+                <p>You might be able to get a Budgeting Loan to help with certain one-off expenses. You must have been getting Income Support, income-based Jobseeker’s Allowance, income-related Employment and Support Allowance or Pension Credit for 6 months or more.</p>
+                <p><a href="https://www.gov.uk/budgeting-help-benefits/">How to apply for a Budgeting Loan</a></p>
+
+                <h2 class="govuk-heading-s govuk-!-margin-top-5">Support for Mortgage Interest</h2>
+                <p>If you’re a homeowner, you might be able to get a loan to help towards interest payments on your mortgage or home improvement loans. To qualify you usually need to be getting Income Support, income-based Jobseeker’s Allowance (JSA), income-related Employment and Support Allowance (ESA), Universal Credit or Pension Credit.</p>
+                <p><a href="https://www.gov.uk/support-for-mortgage-interest">How to apply for Support for Mortgage Interest</a></p>
+
+                <h2 class="govuk-heading-s govuk-!-margin-top-5">Mortgage Interest Run On</h2>
+                <p>You can claim Mortgage Interest Run On if you’ve stopped getting income-based Jobseeker’s Allowance, Income Support or income-related Employment and Support Allowance because you’re returning to work full-time, working more hours or earning more money.</p>
+                <p><a href="https://www.gov.uk/mortgage-interest-run-on">How to apply for Mortgage Interest Run On</a></p>
+
+                <h2 class="govuk-heading-s govuk-!-margin-top-5">Winter Fuel Payment</h2>
+                <p>If you were born on or before 5 October 1954 you could get between £100 and £300 to help you pay your heating bills.</p>
+                <p><a href="https://www.gov.uk/winter-fuel-payment">How to apply for Winter Fuel Payment</a></p>
+
+                <h2 class="govuk-heading-s govuk-!-margin-top-5">Warm Home Discount</h2>
+                <p>You could get £140 off your electricity bill for winter 2021 to 2022 under the Warm Home Discount Scheme. You might qualify for the Warm Home Discount Scheme if you get Pension Credit or you’re on a low income and meet your energy supplier’s criteria for the scheme.</p>
+                <p><a href="https://www.gov.uk/the-warm-home-discount-scheme">How to apply for the Warm Home Discount Scheme</a></p>
+
+                <h2 class="govuk-heading-s govuk-!-margin-top-5">Cold Weather Payment</h2>
+                <p>You might get a Cold Weather Payment if you’re getting Pension Credit, Income Support, income-based Jobseeker’s Allowance, income-related Employment and Support Allowance, Universal Credit or Support for Mortgage Interest. You do not need to apply. If you're eligible for it, you'll be paid it automatically.</p>
+                <p><a href="https://www.gov.uk/cold-weather-payment">Check if you'll get Cold Weather Payment</a></p>
+
+                <h2 class="govuk-heading-s govuk-!-margin-top-5">National Concessionary Fuel Scheme</h2>
+                <p>You could get free solid fuel or a cash allowance for fuel if you’re an ex-employee of the National Coal Board (NCB) or British Coal Corporation (BCC).</p>
+                <p><a href="https://www.gov.uk/national-concessionary-fuel-scheme">How to apply for the National Concessionary Fuel Scheme</a></p>
+
+                <h2 class="govuk-heading-s govuk-!-margin-top-5">Reduced Earnings Allowance</h2>
+                <p>If you cannot earn as much as you used to because of an accident or disease caused by your work, you could get up to £73.16 a week. You can only get it for accidents that happened, or diseases that started, before 1 October 1990.</p>
+                <p><a href="https://www.gov.uk/reduced-earnings-allowance">How to apply for Reduced Earnings Allowance</a></p>
+
+                <h2 class="govuk-heading-s govuk-!-margin-top-5">Blind Person's Allowance</h2>
+            <p>Blind Person’s Allowance is an extra amount of tax-free allowance. It means you can earn more before you start paying Income Tax if you’re registered blind or severely sight impaired.</p>
+            <p><a href="https://www.gov.uk/blind-persons-allowance">How to apply for Blind Person's Allowance</a></p>
+
+            <h2 class="govuk-heading-s govuk-!-margin-top-5">Television licence discount</h2>
+            <p>You can get 50% off the cost of your TV licence if you or someone you live with is registered blind or severely sight impaired.</p>
+            <p><a href="https://www.gov.uk/financial-help-disabled/television-licence-discount">How to apply for a television licence discount</a></p>
+
+               <h2 class="govuk-heading-s govuk-!-margin-top-5">Disabled Facilities Grant</h2>
+              <p>You could get a grant from your council if you’re disabled and need to make changes to your home, for example to widen doors, install a stairlift or make heating controls easier to use.</p>
+              <p><a href="https://www.gov.uk/disabled-facilities-grants">How to apply for a Disabled Facilities Grant</a></p>
+
+              <h2 class="govuk-heading-s govuk-!-margin-top-5">Help with NHS prescriptions and health costs</h2>
+              <p>You might be able to get free NHS prescriptions, dental treatment, eye tests and help with other NHS costs.</p>
+              <p><a href="https://www.gov.uk/help-nhs-costs">Check if you can get help with NHS costs</a></p>
+
+              <h2 class="govuk-heading-s govuk-!-margin-top-5">NHS prescription prepayment certificates</h2>
+              <p>If you live in England, you can buy prescription prepayment certificates from the NHS which make your prescriptions cheaper.</p>
+              <p><a href="https://www.gov.uk/get-a-ppc">How to get NHS prescription prepayment certificates</a></p>
+
+
+
+
+
+
+            <hr>
+
+          </div>
+
+          <div class="govuk-grid-column-one-third">
+
+
+            </div>
+
+      </div>
+
+
+    </main>
+
+<!--  /govuk-width-container -->
+</div>
+
+{% endblock %}

@@ -1,1 +1,1 @@
-# service-strategy-prototype
+# Prototype template
