@@ -1,0 +1,655 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block main %}
+
+  <div class="govuk-width-container {{ containerClasses }}">
+
+      {% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+      {{ govukBreadcrumbs({
+        items: [
+          {
+            text: "Home",
+            href: "index"
+          },
+          {
+            text: "Benefits"
+          }
+        ]
+      }) }}
+
+
+    <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
+
+        <div class="govuk-grid-row margin-top-minus-fifty">
+            <div class="govuk-grid-column-full">
+              <h1 class="govuk-visually-hidden">Browse GOV.UK</h1>
+              <div class="browse" id="browsecontainer">
+              <div class="browse-panes section" data-state="section" data-module="track-click">
+
+                <div id="subsectionone" class="subsection-pane pane" style="display: none;">
+                <div class="pane-inner curated-list">
+                  <h2 tabindex="-1" class="js-heading">Manage an existing benefit or claim</h2>
+                  <h3 class="list-header">Sign in to your account</h3>
+                  <ul class="govuk-list">
+                      <li><a class="govuk-link" href="#">Sign in to your Universal Credit account</a></li>
+                      <li><a class="govuk-link" href="#">Sign in to your tax credits account</a></li>
+                      <li><a class="govuk-link" href="#">Sign in to your childcare account</a></li>
+                      <li><a class="govuk-link" href="#">Sign in to your Help to Save account</a></li>
+                  </ul>
+                  <h3 class="list-header">Changes of circumstance</h3>
+                  <ul class="govuk-list">
+                      
+                      <li><a class="govuk-link" href="#">Benefits: report a change in your circumstances</a></li>
+                      <li><a class="govuk-link" href="#">Manage your tax credits</a></li>
+                      <li><a class="govuk-link" href="#">Claiming benefits if you live, move or travel abroad</a></li>
+                      <li><a class="govuk-link" href="#">Going into hospital if you get benefits</a></li>
+                      <li><a class="govuk-link" href="#">Benefits and prison</a></li>
+                  </ul>
+                  <h3 class="list-header">Total amount of benefits you can get</h3>
+                  <ul class="govuk-list">
+                      
+                      <li><a class="govuk-link" href="#">Benefit cap</a></li>
+                      <li><a class="govuk-link" href="#">Benefit calculator</a></li>
+                      
+                  </ul>
+                  <h3 class="list-header">Appeal or complain about a decision</h3>
+                  <ul class="govuk-list">
+                      <li><a class="govuk-link" href="#">Challenge a benefit decision (mandatory reconsideration)</a></li>
+                      <li><a class="govuk-link" href="#">Appeal a benefit decision</a></li>
+                      <li><a class="govuk-link" href="#">Complain to the Independent Case Examiner</a></li>
+                      <li><a class="govuk-link" href="#">Child benefit complaints</a></li>
+                      <li><a class="govuk-link" href="#">Tax credits: appeals and complaints</a></li>
+                      <li><a class="govuk-link" href="#">Appeal a housing benefit decision</a></li>
+                  </ul>
+                  <h3 class="list-header">Overpayments and fraud</h3>
+                  <ul class="govuk-list">
+                      <li><a class="govuk-link" href="#">Benefit overpayments</a></li>
+                      <li><a class="govuk-link" href="#">Benefit fraud</a></li>
+                      <li><a class="govuk-link" href="#">Fraud and Error Prevention Service centres</a></li>
+                  </ul>
+
+                </div>
+              </div>
+
+
+                 <div id="subsectionthree" class="subsection-pane pane" style="display: none;">
+                  <div class="pane-inner curated-list">
+                      <h2 tabindex="-1" class="js-heading">Support if you're on a low income or out of work</h2>
+                      <h3 class="list-header">Find out what you can get</h3>
+                      <ul class="govuk-list">
+                          <li><a class="govuk-link" href="start">Check what regular payments you could get</a></li>
+                      </ul>
+                      <h3 class="list-header">Benefits you could get</h3>
+                      <ul class="govuk-list">
+                          <li><a class="govuk-link" href="#">Universal Credit</a></li>
+                          <li><a class="govuk-link" href="#">Jobseeker's Allowance (JSA)</a></li>
+                          <li><a class="govuk-link" href="#">Employment and Support Allowance (ESA)</a></li>
+                          <li><a class="govuk-link" href="#">Pension Credit</a></li>
+                      </ul>
+                      <h3 class="list-header">How to apply</h3>
+                      <ul class="govuk-list">
+                          <li><a class="govuk-link" href="#">Apply for Universal Credit: step by step</a></li>
+                          <li><a class="govuk-link" href="#">Apply for new style JSA: step by step</a></li>
+                          <li><a class="govuk-link" href="#">Apply for new style ESA: step by step</a></li>
+                      </ul>
+                      <h3 class="list-header">After you've applied</h3>
+                      <ul class="govuk-list">
+                          <li><a class="govuk-link" href="#">Sign in to your Universal Credit account</a></li>
+                          <li><a class="govuk-link" href="#">Sign in to your tax credits account</a></li>
+                      </ul>
+                      <h3 class="list-header">Other support</h3>
+                      <ul class="govuk-list">
+                          <li><a class="govuk-link" href="#">Help with moving from benefits to work</a></li>
+                          <li><a class="govuk-link" href="#">Work and health programme</a></li>
+                          <li><a class="govuk-link" href="#">Get support in work if you have disability or health condition (Access to Work)</a></li>
+                          <li><a class="govuk-link" href="#">Get help with savings if you’re on a low income (Help to Save</a></li>
+                          <li><a class="govuk-link" href="#">Budgeting Loan</a></li>
+
+                      </ul>
+
+
+                  </div>
+                </div>
+
+                <div id="subsectionfour" class="subsection-pane pane" style="display: none;">
+                  <div class="pane-inner curated-list">
+                      <h2 tabindex="-1" class="js-heading">Support for families</h2>
+                      <h3 class="list-header">Find out what you can get</h3>
+                      <ul class="govuk-list">
+                          <li><a class="govuk-link" href="#">Benefit calculators</a></li>
+                      </ul>
+
+                      <h3 class="list-header">Time off and pay when you have a child</h3>
+                      <ul class="govuk-list">
+                          <li><a class="govuk-link" href="#">Maternity pay and leave</a></li>
+                          <li><a class="govuk-link" href="#">Maternity allowance</a></li>
+                          <li><a class="govuk-link" href="#">Paternity pay and leave</a></li>
+                          <li><a class="govuk-link" href="#">Shared parental leave and pay</a></li>
+                          <li><a class="govuk-link" href="#">Adoption leave and pay</a></li>
+                          <li><a class="govuk-link" href="#">Unpaid parental leave</a></li>
+                      </ul>
+
+                      <h3 class="list-header">Child Benefit</h3>
+                      <ul class="govuk-list">
+                          <li><a class="govuk-link" href="#">Claim Child Benefit</a></li>
+                          <li><a class="govuk-link" href="#">Report changes that affect your Child Benefit</a></li>
+                        
+                          <li><a class="govuk-link" href="#">Child Benefit when your child turns 16</a></li>
+                          <li><a class="govuk-link" href="#">Child Benefit tax calculator</a></li>
+                          <li><a class="govuk-link" href="#">High Income Benefit Tax Charge</a></li>
+                          <li><a class="govuk-link" href="#">Child benefit payment dates</a></li>
+                      </ul>
+
+                      <h3 class="list-header">Support for disabled children</h3>
+                      <ul class="govuk-list">
+                          <li><a class="govuk-link" href="#">Disability Living Allowance (DLA) for children </a></li>
+                          <li><a class="govuk-link" href="#">Help if you have a disabled child</a></li>
+                          <li><a class="govuk-link" href="#">Disabled facilities grants</a></li>
+                      </ul>
+
+                      <h3 class="list-header">Help with childcare costs</h3>
+                      <ul class="govuk-list">
+                          <li><a class="govuk-link" href="#">Get childcare: step by step </a></li>
+                          <li><a class="govuk-link" href="#">Help paying for childcare </a></li>
+                          <li><a class="govuk-link" href="#">Childcare Grant</a></li>
+                          <li><a class="govuk-link" href="#">Care to Learn</a></li>
+                      </ul>
+
+                      <h3 class="list-header">Other support</h3>
+                      <ul class="govuk-list">
+                          <li><a class="govuk-link" href="#">Apply for free school meals</a></li>
+                          <li><a class="govuk-link" href="#">Healthy Start</a></li>
+                      </ul>
+                   </div>
+                </div>
+
+                <div id="subsectionfive" class="subsection-pane pane" style="display: none;">
+                  <div class="pane-inner curated-list">
+                      <h2 tabindex="-1" class="js-heading">Support if you're disabled or have a health condition</h2>
+                  <h3 class="list-header">Find out what you can get</h3>
+                  <ul class="govuk-list">
+                      <li><a class="govuk-link" href="#">Benefit calculators</a></li>
+                      <li><a class="govuk-link" href="#">Financial help if you're disabled</a></li>
+                      <li><a class="govuk-link" href="#">Get benefits if you're terminally ill</a></li>
+                  </ul>
+                  <h3 class="list-header">Benefits you could get</h3>
+                  <ul class="govuk-list">
+                      <li><a class="govuk-link" href="#">Universal Credit</a></li>
+                      <li><a class="govuk-link" href="#">Employment Support Allowance (ESA)</a></li>
+                      <li><a class="govuk-link" href="#">Personal Independence Payment (PIP) </a></li>
+                      <li><a class="govuk-link" href="#">Attendance Allowance</a></li>
+                      <li><a class="govuk-link" href="#">Disability Living Allowance (DLA) for children</a></li>
+                      <li><a class="govuk-link" href="#">Disability premiums</a></li>
+                      <li><a class="govuk-link" href="#">Income Support</a></li>
+                      <li><a class="govuk-link" href="#">Housing Benefit</a></li>
+                      <li><a class="govuk-link" href="#">Child Tax Credit</a></li>
+                      <li><a class="govuk-link" href="#">Working Tax credit</a></li>
+                      <li><a class="govuk-link" href="#">Disability Living Allowance (DLA) for adults</a></li>
+                      <li><a class="govuk-link" href="#">Blind Person's Allowance</a></li>
+                      <li><a class="govuk-link" href="#">Disabled Facilities Grants</a></li>
+                      <li><a class="govuk-link" href="#">Specialist Employability Support</a></li>
+                      <li><a class="govuk-link" href="#">Vaccine Damage Payment</a></li>
+                      <li><a class="govuk-link" href="#">Industrial Injuries Disablement Benefit</a></li>
+                  </ul>
+                  <h3 class="list-header">Other support</h3>
+                  <ul class="govuk-list">
+                      <li><a class="govuk-link" href="#">Work and health programme</a></li>
+                      <li><a class="govuk-link" href="#">Intensive Personalised Support</a></li>
+                      <li><a class="govuk-link" href="#">Help if you're a student with a learning difficulty, health problem or disability</a></li>
+                      <li><a class="govuk-link" href="#">Help if you have a disabled child</a></li>
+                      <li><a class="govuk-link" href="#">Get support in work if you have disability or health condition (Access to Work)</a></li>
+                      
+                  </ul>
+                  <h3 class="list-header">How to apply</h3>
+                  <ul class="govuk-list">
+                      <li><a class="govuk-link" href="#">Apply for Universal Credit: step by step</a></li>
+                      <li><a class="govuk-link" href="#">Apply for new style ESA: step by step</a></li>
+                  </ul>
+                  <h3 class="list-header">After you've claimed</h3>
+                  <ul class="govuk-list">
+                      <li><a class="govuk-link" href="#">Sign in to UC</a></li>
+                      <li><a class="govuk-link" href="#">Send a fit note for your ESA claim</a></li>
+                  </ul>
+                  
+               </div>
+                </div>
+
+                <div id="subsectionsix" class="subsection-pane pane" style="display: none;">
+                  <div class="pane-inner curated-list">
+                      <h2 tabindex="-1" class="js-heading">Support if you're caring for someone</h2>
+
+                      <h3 class="list-header">Find out what you can get</h3>
+                          <ul>
+                            <li><a class="govuk-link" href="#">Benefit calculators</a></li>
+                          </ul>
+
+                  <h3 class="list-header">Financial support for you</h3>
+                  <ul class="govuk-list">
+                      <li><a href="#">Carer's Allowance</a></li>
+                      <li><a href="#">Carer's Credit</a></li>
+                      <li><a href="#">Pension Credit</a></li>
+                  </ul>
+
+                  <h3 class="list-header">Other support</h3>
+                  <ul class="govuk-list">
+                      <li><a href="#">Become an appointee for someone claiming benefits</a></li>
+                      <li><a href="#">Work and health programme</a></li>
+                  </ul>
+
+                  
+                  </div>
+                </div>
+
+
+                <div id="subsectionseven" class="subsection-pane pane" style="display: none;">
+                  <div class="pane-inner curated-list">
+                      <h2 tabindex="-1" class="js-heading">Support with heating and housing</h2>
+
+                      <h3 class="list-header">Find out what you can get</h3>
+                          <ul>
+                            <li><a class="govuk-link" href="#">Benefit calculators</a></li>
+                          </ul>
+
+                      <h3 class="list-header">Heating and housing benefits</h3>
+                      <ul class="govuk-list">
+                        <li><a href="#">Housing Benefit</a></li>
+                        <li><a href="#">Apply for Council Tax Reduction</a></li>
+                        <li><a href="#">Housing Benefit information from your council</a></li>
+                        <li><a href="#">Appeal a Housing Benefit decision</a></li>
+                      </ul>
+
+                      <h3 class="list-header">Heating benefits</h3>
+                      <ul class="govuk-list">
+                        <li><a href="#">Cold Weather Payment</a></li>
+                        <li><a href="#">Warm Home Discount Scheme</a></li>
+                        <li><a href="#">Winter Fuel Payment</a></li>
+                        <li><a href="#">National Concessionary Fuel Scheme</a></li>
+                      </ul>
+
+                      <h3 class="list-header">Other help available</h3>
+                      <ul class="govuk-list">
+                          <li><a href="#">Disabled Facilities Grants</a></li>
+                        <li><a href="#">Get a free or discounted TV licence</a></li>
+                        <li><a href="#">Help paying bills using your benefits</a></li>
+                        <li><a href="#">Support for Mortgage Interest (SMI)</a></li>
+                        <li><a href="#">Mortgage Interest Run On</a></li>
+                      </ul>
+
+            </div>
+                </div>
+
+                <div id="subsectioneight" class="subsection-pane pane" style="display: none;">
+                    <div class="pane-inner curated-list">
+                        <h2 tabindex="-1" class="js-heading">Support if someone has died</h2>
+                        <h3 class="list-header">Find out what you can get</h3>
+                          <ul>
+                            <li><a class="govuk-link" href="#">Benefit calculators</a></li>
+                          </ul>
+                          <h3 class="list-header">Benefits you could get</h3>
+                          <ul>
+                            <li><a href="#">Bereavement Support Payment</a></li>
+                            <li><a href="#">Child Benefit if a child or parent dies</a></li>
+                            <li><a href="#">Get help with funeral costs (Funeral Expenses Payment)</a></li>
+                            <li><a href="#">Guardian's Allowance</a></li>
+                            <li><a href="#">Support for child funeral costs (Children’s Funeral Fund for England)</a></li>
+                            <li><a href="#">Parental bereavement pay and leave</a></li>
+                            <li><a href="#">Widowed Parent's Allowance</a></li>
+                            <li><a href="#">War Widow(er) Pension</a></li>
+                        </ul>
+                        <h3 class="list-header">Other support</h3>
+                        <ul>
+                          <li><a href="#">What to do when someone dies: step by step</a></li>
+                          <li><a href="#">Your benefits, tax and pension after the death of a spouse</a></li>
+                        </ul>
+                    </div>
+                  </div>
+
+                  
+
+              <div id="section" class="section-pane pane with-sort">
+                <div class="pane-inner curated">
+              <h2 tabindex="-1" class="js-heading govuk-heading-m">Benefits</h2>
+              <ul>
+                  <li class="">
+                    <a class="govuk-link" id="subone">
+                      <h3>Manage an existing benefit or claim</h3>
+                      <p>Sign in to your account, changes of circumstance, overpayments and appeal a decision</p>
+            </a>      </li>
+                  <li class="">
+                    <a class="govuk-link" id="subthree">
+                      <h3>Support if you're on a low income or out of work</h3>
+                      <p>Getting Universal Credit, new style Jobseeker's Allowance, Budgeting Loans and how to apply.</p>
+            </a>      </li>
+            <li class="">
+              <a class="govuk-link" id="subfive">
+                <h3>Support if you're disabled or have a health condition</h3>
+                <p>Help with living and transport costs if you are disabled or have a health condition</p>
+      </a>      </li>  
+                  <li class="">
+                    <a class="govuk-link" id="subsix">
+                      <h3>Support if you're caring for someone</h3>
+                      <p>Help if you spend time each week caring for someone</p>
+            </a>      </li>
+            <li class="">
+              <a class="govuk-link" id="subfour">
+                <h3>Support for families</h3>
+                <p>Help if you are bringing up children, or planning to</p>
+      </a>      </li>
+                  <li class="">
+                    <a class="govuk-link" id="subseven">
+                      <h3>Support with heating and housing</h3>
+                      <p>Getting Housing Benefit, Winter Fuel Payment, Cold Weather Payment and other help for housing costs</p>
+            </a>      </li>
+
+
+                  <li class="">
+                      <a class="govuk-link" id="subeight">
+                        <h3>Support if someone has died</h3>
+                        <p>Help with living costs and funeral expenses after someone has died
+                          </p>
+              </a>      </li>
+              </ul>
+
+            </div>
+
+              </div>
+
+              <div id="root" class="pane root-pane">
+              <h2 class="govuk-visually-hidden" tabindex="-1">All categories</h2>
+              <ul>
+                  <li class="active">
+                    <a class="govuk-link" href="/browse/benefits">Benefits</a>
+                  </li>
+                  <li class="">
+                    <a class="govuk-link" href="/browse/births-deaths-marriages">Births, deaths, marriages and care</a>
+                  </li>
+                  <li class="">
+                    <a class="govuk-link" href="/browse/business">Business and self-employed</a>
+                  </li>
+                  <li class="">
+                    <a class="govuk-link" href="/browse/childcare-parenting">Childcare and parenting</a>
+                  </li>
+                  <li class="">
+                    <a class="govuk-link" href="/browse/citizenship">Citizenship and living in the UK</a>
+                  </li>
+                  <li class="">
+                    <a class="govuk-link" href="/browse/justice">Crime, justice and the law</a>
+                  </li>
+                  <li class="">
+                    <a class="govuk-link" href="/browse/disabilities">Disabled people</a>
+                  </li>
+                  <li class="">
+                    <a class="govuk-link" href="/browse/driving">Driving and transport</a>
+                  </li>
+                  <li class="">
+                    <a class="govuk-link" href="/browse/education">Education and learning</a>
+                  </li>
+                  <li class="">
+                    <a class="govuk-link" href="/browse/employing-people">Employing people</a>
+                  </li>
+                  <li class="">
+                    <a class="govuk-link" href="/browse/environment-countryside">Environment and countryside</a>
+                  </li>
+                  <li class="">
+                    <a class="govuk-link" href="/browse/housing-local-services">Housing and local services</a>
+                  </li>
+                  <li class="">
+                    <a class="govuk-link" href="/browse/tax">Money and tax</a>
+                  </li>
+                  <li class="">
+                    <a class="govuk-link" href="/browse/abroad">Passports, travel and living abroad</a>
+                  </li>
+                  <li class="">
+                    <a class="govuk-link" href="/browse/visas-immigration">Visas and immigration</a>
+                  </li>
+                  <li class="">
+                    <a class="govuk-link" href="/browse/working">Working, jobs and pensions</a>
+                  </li>
+              </ul>
+            </div>
+
+            </div>
+
+            </div>
+
+            </div>
+        </div>
+
+    </main>
+  </div>
+
+  <script type="text/javascript">
+
+document.getElementById("subone").onclick = function () {
+  document.getElementById("subsectionone").style.display = "block";
+  document.getElementById("subsectionthree").style.display = "none";
+  document.getElementById("subsectionfour").style.display = "none";
+  document.getElementById("subsectionfive").style.display = "none";
+  document.getElementById("subsectionsix").style.display = "none";
+  document.getElementById("subsectionseven").style.display = "none";
+  document.getElementById("subsectioneight").style.display = "none";
+
+  var subone = document.getElementById("subone");
+  var subthree = document.getElementById("subthree");
+  var subfour = document.getElementById("subfour");
+  var subfive = document.getElementById("subfive");
+  var subsix = document.getElementById("subsix");
+  var subseven = document.getElementById("subseven");
+  var subeight = document.getElementById("subeight");
+
+  $(subone).parent('li').removeClass('active');
+  $(subthree).parent('li').removeClass('active');
+  $(subfour).parent('li').removeClass('active');
+  $(subfive).parent('li').removeClass('active');
+  $(subsix).parent('li').removeClass('active');
+  $(subseven).parent('li').removeClass('active');
+  $(subeight).parent('li').removeClass('active');
+
+  var element = document.getElementById("browsecontainer");
+  element.classList.add("menuopen");
+  $(this).parent('li').addClass('active');
+
+  window.scrollTo(0, 0);
+}
+
+document.getElementById("subthree").onclick = function () {
+  document.getElementById("subsectionone").style.display = "none";
+  document.getElementById("subsectionthree").style.display = "block";
+  document.getElementById("subsectionfour").style.display = "none";
+  document.getElementById("subsectionfive").style.display = "none";
+  document.getElementById("subsectionsix").style.display = "none";
+  document.getElementById("subsectionseven").style.display = "none";
+  document.getElementById("subsectioneight").style.display = "none";
+
+  var subone = document.getElementById("subone");
+  var subthree = document.getElementById("subthree");
+  var subfour = document.getElementById("subfour");
+  var subfive = document.getElementById("subfive");
+  var subsix = document.getElementById("subsix");
+  var subseven = document.getElementById("subseven");
+  var subeight = document.getElementById("subeight");
+
+  $(subone).parent('li').removeClass('active');
+  $(subthree).parent('li').removeClass('active');
+  $(subfour).parent('li').removeClass('active');
+  $(subfive).parent('li').removeClass('active');
+  $(subsix).parent('li').removeClass('active');
+  $(subseven).parent('li').removeClass('active');
+  $(subeight).parent('li').removeClass('active');
+
+  var element = document.getElementById("browsecontainer");
+  element.classList.add("menuopen");
+  $(this).parent('li').addClass('active');
+
+  window.scrollTo(0, 0);
+}
+
+document.getElementById("subfour").onclick = function () {
+  document.getElementById("subsectionone").style.display = "none";
+  document.getElementById("subsectionthree").style.display = "none";
+  document.getElementById("subsectionfour").style.display = "block";
+  document.getElementById("subsectionfive").style.display = "none";
+  document.getElementById("subsectionsix").style.display = "none";
+  document.getElementById("subsectionseven").style.display = "none";
+  document.getElementById("subsectioneight").style.display = "none";
+
+  var subone = document.getElementById("subone");
+  var subthree = document.getElementById("subthree");
+  var subfour = document.getElementById("subfour");
+  var subfive = document.getElementById("subfive");
+  var subsix = document.getElementById("subsix");
+  var subseven = document.getElementById("subseven");
+  var subeight = document.getElementById("subeight");
+
+  $(subone).parent('li').removeClass('active');
+  $(subthree).parent('li').removeClass('active');
+  $(subfour).parent('li').removeClass('active');
+  $(subfive).parent('li').removeClass('active');
+  $(subsix).parent('li').removeClass('active');
+  $(subseven).parent('li').removeClass('active');
+  $(subeight).parent('li').removeClass('active');
+
+  var element = document.getElementById("browsecontainer");
+  element.classList.add("menuopen");
+  $(this).parent('li').addClass('active');
+
+  window.scrollTo(0, 0);
+}
+
+document.getElementById("subfive").onclick = function () {
+  document.getElementById("subsectionone").style.display = "none";
+  document.getElementById("subsectionthree").style.display = "none";
+  document.getElementById("subsectionfour").style.display = "none";
+  document.getElementById("subsectionfive").style.display = "block";
+  document.getElementById("subsectionsix").style.display = "none";
+  document.getElementById("subsectionseven").style.display = "none";
+  document.getElementById("subsectioneight").style.display = "none";
+
+  var subone = document.getElementById("subone");
+  var subthree = document.getElementById("subthree");
+  var subfour = document.getElementById("subfour");
+  var subfive = document.getElementById("subfive");
+  var subsix = document.getElementById("subsix");
+  var subseven = document.getElementById("subseven");
+  var subeight = document.getElementById("subeight");
+
+  $(subone).parent('li').removeClass('active');
+  $(subthree).parent('li').removeClass('active');
+  $(subfour).parent('li').removeClass('active');
+  $(subfive).parent('li').removeClass('active');
+  $(subsix).parent('li').removeClass('active');
+  $(subseven).parent('li').removeClass('active');
+  $(subeight).parent('li').removeClass('active');
+
+  var element = document.getElementById("browsecontainer");
+  element.classList.add("menuopen");
+  $(this).parent('li').addClass('active');
+
+  window.scrollTo(0, 0);
+}
+
+document.getElementById("subsix").onclick = function () {
+  document.getElementById("subsectionone").style.display = "none";
+  document.getElementById("subsectionthree").style.display = "none";
+  document.getElementById("subsectionfour").style.display = "none";
+  document.getElementById("subsectionfive").style.display = "none";
+  document.getElementById("subsectionsix").style.display = "block";
+  document.getElementById("subsectionseven").style.display = "none";
+  document.getElementById("subsectioneight").style.display = "none";
+
+  var subone = document.getElementById("subone");
+  var subthree = document.getElementById("subthree");
+  var subfour = document.getElementById("subfour");
+  var subfive = document.getElementById("subfive");
+  var subsix = document.getElementById("subsix");
+  var subseven = document.getElementById("subseven");
+  var subeight = document.getElementById("subeight");
+
+  $(subone).parent('li').removeClass('active');
+  $(subthree).parent('li').removeClass('active');
+  $(subfour).parent('li').removeClass('active');
+  $(subfive).parent('li').removeClass('active');
+  $(subsix).parent('li').removeClass('active');
+  $(subseven).parent('li').removeClass('active');
+  $(subeight).parent('li').removeClass('active');
+
+  var element = document.getElementById("browsecontainer");
+  element.classList.add("menuopen");
+  $(this).parent('li').addClass('active');
+
+  window.scrollTo(0, 0);
+}
+
+document.getElementById("subseven").onclick = function () {
+  document.getElementById("subsectionone").style.display = "none";
+  document.getElementById("subsectionthree").style.display = "none";
+  document.getElementById("subsectionfour").style.display = "none";
+  document.getElementById("subsectionfive").style.display = "none";
+  document.getElementById("subsectionsix").style.display = "none";
+  document.getElementById("subsectionseven").style.display = "block";
+  document.getElementById("subsectioneight").style.display = "none";
+
+  var subone = document.getElementById("subone");
+  var subthree = document.getElementById("subthree");
+  var subfour = document.getElementById("subfour");
+  var subfive = document.getElementById("subfive");
+  var subsix = document.getElementById("subsix");
+  var subseven = document.getElementById("subseven");
+  var subeight = document.getElementById("subeight");
+
+  $(subone).parent('li').removeClass('active');
+  $(subthree).parent('li').removeClass('active');
+  $(subfour).parent('li').removeClass('active');
+  $(subfive).parent('li').removeClass('active');
+  $(subsix).parent('li').removeClass('active');
+  $(subseven).parent('li').removeClass('active');
+  $(subeight).parent('li').removeClass('active');
+
+  var element = document.getElementById("browsecontainer");
+  element.classList.add("menuopen");
+  $(this).parent('li').addClass('active');
+
+  window.scrollTo(0, 0);
+}
+
+document.getElementById("subeight").onclick = function () {
+  document.getElementById("subsectionone").style.display = "none";
+  document.getElementById("subsectionthree").style.display = "none";
+  document.getElementById("subsectionfour").style.display = "none";
+  document.getElementById("subsectionfive").style.display = "none";
+  document.getElementById("subsectionsix").style.display = "none";
+  document.getElementById("subsectionseven").style.display = "none";
+  document.getElementById("subsectioneight").style.display = "block";
+
+  var subone = document.getElementById("subone");
+  var subthree = document.getElementById("subthree");
+  var subfour = document.getElementById("subfour");
+  var subfive = document.getElementById("subfive");
+  var subsix = document.getElementById("subsix");
+  var subseven = document.getElementById("subseven");
+  var subeight = document.getElementById("subeight");
+
+  $(subone).parent('li').removeClass('active');
+  $(subthree).parent('li').removeClass('active');
+  $(subfour).parent('li').removeClass('active');
+  $(subfive).parent('li').removeClass('active');
+  $(subsix).parent('li').removeClass('active');
+  $(subseven).parent('li').removeClass('active');
+  $(subeight).parent('li').removeClass('active');
+
+  var element = document.getElementById("browsecontainer");
+  element.classList.add("menuopen");
+  $(this).parent('li').addClass('active');
+
+  window.scrollTo(0, 0);
+
+}
+
+</script>
+
+{% endblock %}

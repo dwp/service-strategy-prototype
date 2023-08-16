@@ -3,11 +3,10 @@
     "dev": "govuk-prototype-kit dev",
     "serve": "govuk-prototype-kit serve",
     "start": "govuk-prototype-kit start"
-  
-},
+  },
   "dependencies": {
     "govuk-frontend": "4.6.0",
     "govuk-prototype-kit": "13.7.1",
-    "gulp": "^4.0.2"
+    "gulp": "^3.9.1"
   }
 }

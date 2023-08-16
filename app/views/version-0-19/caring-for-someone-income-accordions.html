@@ -1,0 +1,132 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Help with your income if you are caring for someone | GOV.UK
+{% endblock %}
+
+{% block main %}
+
+  <div class="govuk-width-container {{ containerClasses }}">
+
+<div class="govuk-breadcrumbs ">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="benefits">Benefits</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="#">Support if you're caring for someone</a>
+            </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="#">Regular payments</a>
+          </li>
+        </ol>
+      </div>
+
+      <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
+<div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h1 class="govuk-heading-xl">Regular payments if you're caring for someone</h1>
+            <p class="govuk-body-l">The following financial support is available, depending on your situation.</p>
+
+                  <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+
+                      <div class="govuk-accordion__section">
+                          <div class="govuk-accordion__section-header">
+                            <h2 class="govuk-accordion__section-heading">
+                                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                                    Carer's Allowance
+                                </span>
+                              </h2>
+                            </div>
+                            <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                              <p>Carer's Allowance is a weekly payment to help cover the cost of caring for someone.</p>
+                              <p class="govuk-body">You could get it if:</p>
+                              <ul class="govuk-list govuk-list--bullet">
+                                <li>the person you're caring for gets certain benefits</li>
+                                <li>you’re 16 or over</li>
+                                <li>you spend at least 35 hours a week caring for someone</li>
+                                <li>you normally live in England, Scotland or Wales</li>
+                                <li>you’re not studying for 21 hours a week or more</li>
+                                <li>you earn £128 or less a week after tax, National Insurance and
+                                  expenses</li>
+                                </ul>
+                                <p>You do not have to be related to, or live with, the person you care for.</p>
+                                <p>You do not get paid extra if you care for more than one person.</p>
+                                <p>If someone else also cares for the same person as you, only one of you can claim Carer’s Allowance.</p>
+
+
+                            <p><a href="https://www.gov.uk/carers-allowance/how-to-claim">How to apply for Carer's Allowance</a></p>
+                            </div>
+                          </div>
+
+                      <div class="govuk-accordion__section">
+                      <div class="govuk-accordion__section-header">
+                        <h2 class="govuk-accordion__section-heading">
+                            <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                                Carer's Credit
+                            </span>
+                          </h2>
+                        </div>
+                        <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                            <p>Carer's Credit helps to fill gaps in your National Insurance record. This means you can care for someone without affecting your ability to qualify for the State Pension.</p>
+                            <p class="govuk-body">You could get it if:</p>
+                            <ul class="govuk-list govuk-list--bullet">
+                              <li>the person you're caring for gets certain benefits</li>
+                              <li>you’re 16 or over</li>
+                              <li>under <a href="https://www.gov.uk/state-pension-age">State Pension age</a></li>
+                              <li>you spend at least 20 hours a week caring for someone</li>
+                            </ul>
+                            <p><a href="https://www.gov.uk/carers-credit/how-to-claim">How to apply for Carer's Credit</a></p>
+
+                      </div>
+                      </div>
+                      </div>
+
+                      <h3 class="govuk-heading-m govuk-!-margin-top-7">Regular payments for the person you care for</h3>
+
+                      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+                      <div class="govuk-accordion__section">
+                          <div class="govuk-accordion__section-header">
+                            <h2 class="govuk-accordion__section-heading">
+                                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                                    Attendance Allowance
+                                </span>
+                              </h2>
+                            </div>
+                            <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                              <p>The person you are caring for might be eligible for Attendance Allowance.</p>
+                              <p>Attendance Allowance helps with extra costs if someone has a disability severe enough that they need someone to help look after them.</p>
+                              <p>They might be able to get it if:</p>
+                              <ul class="govuk-list govuk-list--bullet">
+                                  <li>they've reached <a href="https://www.gov.uk/state-pension-age">State Pension age</a></li>
+                                  <li>they're disabled</li>
+                              </ul>
+
+                              <p><a href="https://www.gov.uk/attendance-allowance/how-to-claim">How to apply for Attendance Allowance</a></p>
+                              <div class="govuk-inset-text">The person you are caring for might be able to <a href="health-condition-disabled-income-accordions">get other financial support if they are disabled or have a health condition</a>.</div>
+                            </div>
+                          </div>
+              </div>
+              <p>Other help is also available if:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                  <li><a href="http://localhost:3000/version-0-15/benefits">you're looking for work</a>
+                    <li><a href="http://localhost:3000/version-0-15/benefits">you're temporarily unable to work</a>
+                    <li><a href="http://localhost:3000/version-0-15/benefits">you're on a low income</a>
+                    <li><a href="http://localhost:3000/version-0-15/benefits">you're disabled or have a health condition</a>
+                    <li><a href="http://localhost:3000/version-0-15/benefits">you're looking after a family</li>
+                    <li><a href="http://localhost:3000/version-0-15/benefits">someone has died</li>
+              </ul>
+
+
+        </div>
+
+
+          </div>
+
+        </main>
+
+        </div>
+
+
+{% endblock %}

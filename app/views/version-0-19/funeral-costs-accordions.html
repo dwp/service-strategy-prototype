@@ -1,0 +1,78 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Financial Support with funeral costs | GOV.UK
+{% endblock %}
+
+{% block main %}
+
+  <div class="govuk-width-container {{ containerClasses }}">
+
+<div class="govuk-breadcrumbs ">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="benefits">Benefits</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="benefits">Support if someone has died</a>
+            </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="#">Help with funeral costs</a>
+          </li>
+        </ol>
+      </div>
+
+      <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
+<div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h1 class="govuk-heading-xl">Help with funeral costs</h1>
+            <p class="govuk-body-l">You might be able to get the following financial support, depending on your situation.</p>
+
+                  <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+
+                      <div class="govuk-accordion__section">
+                          <div class="govuk-accordion__section-header">
+                            <h2 class="govuk-accordion__section-heading">
+                                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                                    Funeral Expenses Payment
+                                </span>
+                              </h2>
+                            </div>
+                            <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                                <p>You could get a Funeral Expenses Payment (also called a Funeral Payment) if you get certain benefits and need help to pay for a funeral you’re arranging.</p>
+                            <p><a href="https://www.gov.uk/funeral-payments/how-to-claim">How to apply for a Funeral Expenses Payment</a></p>
+                            </div>
+                          </div>
+
+                          <div class="govuk-accordion__section">
+                              <div class="govuk-accordion__section-header">
+                                <h2 class="govuk-accordion__section-heading">
+                                    <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                                        Help with the cost of a child's funeral
+                                    </span>
+                                  </h2>
+                                </div>
+                                <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+                                  <p>The Children’s Funeral Fund for England can help to pay for some of the costs of a funeral for a child under 18 or a baby stillborn after the 24th week of pregnancy.</p>
+                                  <p>It is not means-tested: what you earn or how much you have in savings will not affect what you get.</p>
+                                  <p>The burial or cremation must take place in England.</p>
+                                        <p><a href="https://www.gov.uk/child-funeral-costs">How to apply for help with the cost of a child's funeral</a></p>
+                                </div>
+                              </div>
+
+              </div>
+
+
+
+        </div>
+
+
+          </div>
+
+        </main>
+
+        </div>
+
+
+{% endblock %}

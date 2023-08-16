@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get new support if you're caring for someone
+{% endblock %}
+
+{% block main %}
+
+  <div class="govuk-width-container {{ containerClasses }}">
+
+      {% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+      {{ govukBreadcrumbs({
+        items: [
+          {
+            text: "Home",
+            href: "index"
+          },
+          {
+            text: "Benefits",
+            href: "benefits"
+          },
+          {
+            text: "Caring for someone"
+          }
+        ]
+      }) }}
+
+
+    <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+
+              <h1 class="govuk-heading-xl">Get new support if you're caring for someone</h1>
+
+              <h2 class="govuk-heading-l">Financial support</h2>
+                <ul class="govuk-list">
+                  <li><a href="https://www.gov.uk/carers-allowance">Carer's allowance</a></li>
+                  <li><a href="https://www.gov.uk/carers-credit">Carer's Credit</a></li>
+                  <li><a href="https://www.gov.uk/pension-credit">Check what I might be eligible for</a></li>
+                </ul>
+
+                <h2 class="govuk-heading-l">Financial support for the person you're caring for</h2>
+                <p>The person you are caring for may also be able to claims support as a result of you caring for them</p>
+                <ul class="govuk-list">
+                    <li><a href="https://www.gov.uk/attendance-allowance">Attendance allowance</a></li>
+                  </ul>
+
+                  <h2 class="govuk-heading-l">Other support</h2>
+                  <ul class="govuk-list">
+                      <li><a href="https://www.gov.uk/become-appointee-for-someone-claiming-benefits">Become an appointee for someone claiming benefits</a></li>
+                      <li><a href="https://www.gov.uk/work-health-programme">Work and health programme</a></li>
+                      <li><a href="https://www.gov.uk/carers-uk">Carers UK</a></li>
+                  </ul>
+                  
+
+          </div>
+      </div>
+
+    </main>
+  </div>
+{% endblock %}

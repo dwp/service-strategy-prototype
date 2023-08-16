@@ -1,0 +1,101 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Financial help if you’re looking for work 
+{% endblock %}
+
+{% block main %}
+
+<div class="govuk-width-container {{ containerClasses }}">
+
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="#">Home</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="benefits">Benefits</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item active">
+            Financial help if you’re looking for work
+        </li>
+      </ol>
+    </div>
+
+    <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
+
+      <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+            <h1 class="govuk-heading-xl">Financial help if you’re looking for work</h1>
+            
+            <!--  contents -->
+            <p class="govuk-body-s">Contents</p>
+
+    <ul class="govuk-list govuk-list--dashed govuk-body-s">
+        <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+            <a href="financial-support-looking-for-work">Regular payments</a>
+            </li>
+        
+                  <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+                      <a href="financial-support-looking-for-work-specific-costs">Help with specific living costs</a>
+                      </li>
+        
+                  <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+                    <a href="financial-support-looking-for-work-apply-decide">Help with applying or deciding which benefit is right for you</a>
+          
+                  </li>
+                  
+                    <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed gem-c-contents-list__list-item--active" aria-current="true">
+                        A-to-Z of financial support
+                  </li>
+                   
+                </ul>
+            <!--  /contents -->
+                
+                
+            <h2 class="govuk-heading-l govuk-!-margin-top-6 overview-top-border">A-to-Z of financial support</h2>
+
+            <ul class="govuk-list">
+             
+              <li><a href="https://www.gov.uk/blind-persons-allowance">Blind Person's Allowance</a></li>
+              <li><a href="https://www.gov.uk/budgeting-help-benefits">Budgeting Loans </a></li>
+              <li><a href="https://www.gov.uk/guidance/universal-credit-advances#get-a-budgeting-advance">Budgeting Advance</a></li>
+              <li><a href="https://www.gov.uk/apply-for-elderly-person-bus-pass">Bus Pass (Older Persons)</a></li>
+              <li><a href="https://www.gov.uk/cold-weather-payment">Cold Weather Payment</a></li>
+              <li><a href="https://www.gov.uk/apply-council-tax-reduction">Council Tax Reduction</a></li>
+              <li><a href="https://www.gov.uk/disabled-facilities-grants">Disabled Facilities Grants</a></li>
+              <li><a href="https://www.gov.uk/government/publications/claiming-discretionary-housing-payments/claiming-discretionary-housing-payments">Discretionary Housing Payments</a></li>
+              <li><a href="https://www.gov.uk/help-nhs-costs">Help with NHS prescriptions and health costs</a></li>
+              <li><a href="https://www.gov.uk/housing-benefit">Housing Benefit</a></li>
+              <li><a href="https://www.gov.uk/mortgage-interest-run-on/how-to-claim">Mortgage interest run on</a></li>
+              <li><a href="https://www.gov.uk/get-a-ppc">NHS prescription prepayment certificates</a></li>
+              <li><a href="https://www.gov.uk/severe-disablement-allowance">Reduced Earnings Allowance</a></li>
+              <li><a href="https://www.gov.uk/support-for-mortgage-interest">Support for Mortgage Interest Loan</a></li>
+              <li><a href="https://www.gov.uk/free-discount-tv-licence">TV License Discount</a></li>
+              <li><a href="https://www.gov.uk/the-warm-home-discount-scheme">Warm Home Discount</a></li>
+              <li><a href="https://www.gov.uk/winter-fuel-payment">Winter Fuel Payment</a></li>
+
+          </ul>
+
+
+            <hr>
+
+            
+
+          </div>
+
+          <div class="govuk-grid-column-one-third">
+              
+              
+            </div>
+          
+      </div>
+
+
+    </main>
+
+<!--  /govuk-width-container -->
+</div>
+
+{% endblock %}

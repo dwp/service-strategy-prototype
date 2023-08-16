@@ -1,0 +1,160 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+You might be able to get financial support | Check what regular payments you could get if you're looking for work
+{% endblock %}
+
+{% block content %}
+
+<a href="q5-work" class="govuk-back-link">Back</a>
+
+
+
+  <div class="govuk-grid-row">
+              <div class="govuk-grid-column-two-thirds">
+
+                  <div class="govuk-panel govuk-panel--confirmation">
+                      <h1 class="govuk-panel__title">
+                              You might be able to get financial support
+                      </h1>
+                    </div>
+
+                    <h2 class="govuk-heading-m govuk-!-margin-top-7">Based on your answers, this is what you could get</h2>
+
+
+                <h3 class="govuk-heading-s">New Style Jobseeker's Allowance (JSA)</h3>
+
+                 <details class="govuk-details" data-module="govuk-details">
+                  <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">
+                        New Style JSA - why you might be eligible
+                    </span>
+                  </summary>
+                  <div class="govuk-details__text">
+                    <p>To get New Style JSA, you must be under <a href="https://www.gov.uk/state-pension-age">State Pension age</a> and working less than 16 hours per week on average.</p>
+                    <p>You also need to have paid or been credited with enough National Insurance contributions, usually over the last 2 to 3 years.</p>
+                    <p>Your savings and your partner’s income will not affect your claim.</p>
+                    <p>You might be able to get Universal Credit at the same time as New Style JSA. You'll need to apply for each benefit separately.</p>
+
+                  </div>
+                </details>
+
+                <hr>
+
+                <h2 class="govuk-heading-s govuk-!-font-weight-regular">You might not be able to get Universal Credit or Pension Credit.</h2>
+
+
+                     <details class="govuk-details" data-module="govuk-details">
+                        <summary class="govuk-details__summary">
+                          <span class="govuk-details__summary-text">
+                            Universal Credit - why you might not be eligible
+                          </span>
+                        </summary>
+                        <div class="govuk-details__text">
+                            <p>You can only get Universal Credit if:</p>
+                            <ul class="govuk-list govuk-list--bullet">
+                                <li>you’re under <a href="https://www.gov.uk/state-pension-age">State Pension age</a>, or your partner is</li>
+
+                                <li>you’re 18 or over (there are some <a href="https://www.gov.uk/universal-credit/eligibility#if-youre-16-or-17">exceptions if you’re 16 to 17</a>)</li>
+                                <li>you’re on a low income or out of work</li>
+                                <li>you and your partner have £16,000 or less in savings between you</li>
+                                <li>you live in the UK</li>
+                            </ul>
+                            <p>If you want to apply anyway, find out <a href="https://www.gov.uk/universal-credit/how-to-claim">how to apply for Universal Credit</a>.</p>
+                          </div>
+                          </details>
+
+
+                 <details class="govuk-details" data-module="govuk-details">
+                    <summary class="govuk-details__summary">
+                      <span class="govuk-details__summary-text">
+                        Pension Credit - why you might not be eligible
+                      </span>
+                    </summary>
+                    <div class="govuk-details__text">
+                      <p>You can only get Pension Credit if you and your partner have both reached <a href="https://www.gov.uk/state-pension-age">State Pension age</a>, or one of you is getting Housing Benefit for people over State Pension age. You can start an application for Pension Credit up to 4 months before you reach State Pension age.</p>
+                        <p>If you want to apply for Pension Credit anyway, find out how:</p>
+                        <ul class="govuk-list govuk-list--bullet">
+                          <li>in <a href="https://www.gov.uk/pension-credit/how-to-claim">England, Scotland and Wales</a></li>
+                          <li>in <a href="https://www.nidirect.gov.uk/articles/understanding-pension-credit">Northern Ireland</a></li>
+                        </ul>
+                    </div>
+                  </details>
+
+                  <hr>
+
+                  <form action="#" id="question-form" method="post" novalidate>
+
+                          <div class="govuk-form-group  govuk-!-margin-top-7">
+                            <fieldset class="govuk-fieldset">
+                              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                                <h2 class="govuk-heading-m">
+                                    Do you want to find out how to apply for New Style Jobseeker's Allowance?
+                                </h2>
+                              </legend>
+
+
+
+
+
+
+                              <div class="govuk-radios">
+                                <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="radios-2" name="radios" type="radio" value="no">
+                          <label class="govuk-label govuk-radios__label" for="radios-2">
+                              Yes
+                          </label>
+                        </div>
+
+                          <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="radios-5" name="radios" type="radio" value="no">
+                              <label class="govuk-label govuk-radios__label" for="radios-5">
+                                  No, I want to look at all available financial support
+                              </label>
+                            </div>
+                      </div>
+                    </fieldset>
+                  </div>
+
+
+                    <button class="govuk-button" id="continue-button">
+                      Continue
+                    </button>
+
+                    <script type="text/javascript">
+
+                      var country = {{data.country|dump|safe}}
+                      console.log(country)
+
+
+                      document.getElementById("radios-2").onclick = function () {
+                            var link = "details-jsa";
+                        document.getElementById("question-form").action=link;
+                      }
+
+                      document.getElementById("radios-5").onclick = function () {
+                            var link = "benefits";
+                        document.getElementById("question-form").action=link;
+                      }
+
+                      </script>
+
+
+                  </form>
+
+          </div>
+
+
+
+
+
+
+      <div class="govuk-grid-column-one-third">
+
+      </div>
+
+      </div>
+
+
+{% endblock %}

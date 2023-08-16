@@ -1,0 +1,70 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+What is your date of birth? | Check what financial support may be available if Coronavirus (COVID-19) has affected your income
+{% endblock %}
+
+{% block content %}
+
+<a href="q8-health" class="govuk-back-link">Back</a>
+
+<div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <span class="govuk-caption-xl">{{caption}}</span>
+            <h1 class="govuk-heading-xl" id="furlough">You might be able to get
+              financial support</h1>
+          </div>
+          </div>
+
+          <div class="govuk-grid-row">
+              <div class="govuk-grid-column-two-thirds">
+
+              <p>You told us that you need:</p>
+
+              <ul class="govuk-list govuk-list--bullet">
+                  <li><a href="#uc">support because you're out of work</a></li>
+                  <li><a href="#esa">support with a health condition or disability</a></li>
+                  <li><a href="#ca">support to care for another adult</a></li>
+                  <li><a href="#died">support because someone has died</a></li>
+                </ul>
+
+                <p>The following benefits are based on the answers you have given.</p>
+
+
+          <hr>
+          <h2 class="govuk-heading-m" id="uc">Support because you're out of work</h2>
+          <p><a class="govuk-link" href="/version-0-5/summary-out-of-work">Check what financial support is available when you're out of work</a>.</p>
+          <a class="govuk-button" href="q4-partner">Answer more questions</a>
+
+          <hr>
+          <h2 class="govuk-heading-m" id="esa">Support with a health condition or disability</h2>
+          <p><a class="govuk-link" href="/version-0-5/summary-carers">Check what financial support is available to help when you have a health condition or disability</a>.</p>
+
+          <hr>
+          <h2 class="govuk-heading-m" id="ca">Support to care for another adult</h2>
+          <p><a class="govuk-link" href="/version-0-5/summary-carers">Check what financial support is available to help cover the cost of caring for someone</a>.</p>
+
+          <hr>
+          <h2 class="govuk-heading-m" id="ca">Support because someone has died</h2>
+          <p><a class="govuk-link" href="https://www.gov.uk/when-someone-dies">Check what financial support is available to help you after a death</a>.</p>
+
+          <hr>
+          <h2 class="govuk-heading-m">Applying for other benefits</h2>
+          <p>You can still <a class="govuk-link" href="/version-0-4b/benefits">apply for other benefits</a> but you might not be
+          eligible for them.</p>
+
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+          <div class="return-me">
+          <h2 class="govuk-heading-m return-header">Send these results</h2>
+          <p>Choose to have these results sent by email, or use a reference code to see them.</p>
+          <a class="govuk-button" href="send">Continue</a>
+          </div>
+      </div>
+
+      </div>
+
+
+{% endblock %}

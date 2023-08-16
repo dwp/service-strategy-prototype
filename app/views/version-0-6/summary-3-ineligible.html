@@ -1,0 +1,53 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+What is your date of birth? | Check what financial support may be available if Coronavirus (COVID-19) has affected your income
+{% endblock %}
+
+{% block content %}
+
+<a href="q8-health" class="govuk-back-link">Back</a>
+
+<div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <span class="govuk-caption-xl">{{caption}}</span>
+            <h1 class="govuk-heading-xl" id="furlough">Based on your answers,
+              there are no options that fit your situation</h1>
+          </div>
+          </div>
+
+          <div class="govuk-grid-row">
+              <div class="govuk-grid-column-two-thirds">
+
+              <p>You might not be eligible for financial support because you told us you:</p>
+
+              <ul class="govuk-list govuk-list--bullet">
+                  <li>have more than £16,000 in savings or investments</li>
+                  <li>have not been employed and paid National Insurance over the last 2 to 3 years</li>
+                </ul>
+          <h2 class="govuk-heading-m" id="uc">What to do next</h2>
+
+          <p>Check what financial support is available if:</p>
+
+          <ul class="govuk-list govuk-list--bullet">
+              <li><a href="/version-0-6/unemployed-support">you're unemployed or on a low income</a></li>
+              <li><a href="/version-0-6/summary-carers">you're caring for another adult</a></li>
+              <li><a href="https://www.gov.uk/browse/childcare-parenting/financial-help-children">you're looking after children, or about to</a></li>
+              <li><a href="https://www.gov.uk/financial-help-disabled">you're disabled or have a health condition</a></li>
+              <li><a href="https://www.gov.uk/when-someone-dies">someone has died</a></li>
+            </ul>
+          </div>
+
+      <div class="govuk-grid-column-one-third">
+          <div class="return-me">
+          <h2 class="govuk-heading-m return-header">Keep these results</h2>
+          <p>Email these results to yourself, or use a reference code to see them.</p>
+          <a class="govuk-button" href="send">Continue</a>
+          </div>
+      </div>
+
+      </div>
+
+
+{% endblock %}

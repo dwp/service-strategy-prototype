@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get support if you're unemployed or on a low income
+{% endblock %}
+
+{% block main %}
+
+  <div class="govuk-width-container {{ containerClasses }}">
+
+      {% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+      {{ govukBreadcrumbs({
+        items: [
+          {
+            text: "Home",
+            href: "index"
+          },
+          {
+            text: "Benefits",
+            href: "benefits"
+          },
+          {
+            text: "Unemployed or on a low income"
+          }
+        ]
+      }) }}
+
+
+    <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+
+              <h1 class="govuk-heading-xl">Get support if you're unemployed or on a low income</h1>
+
+              <h2 class="govuk-heading-l">Most common financial support</h2>
+                <ul class="govuk-list">
+                  <li><a href="https://www.gov.uk/universal-credit">Universal Credit</a></li>
+                  <li><a href="https://www.gov.uk/jobseekers-allowance">Job Seeker's Allowance</a></li>
+                  <li><a href="https://www.gov.uk/pension-credit">Pension Credit</a></li>
+                  <li><a href="/checker-0-7/bc-q1-pension">Check what I might be entitled to</a></li>
+                </ul>
+
+                <h2 class="govuk-heading-l">Additional financial support</h2>
+                <ul class="govuk-list">
+                    <li><a href="https://www.gov.uk/budgeting-help-benefits">Budgeting loans</a></li>
+                    <li><a href="https://www.gov.uk/christmas-bonus">Christmas bonus</a></li>
+                    <li><a href="https://www.gov.uk/get-a-ppc">Get a prescription prepayment certificate</a></li>
+                    <li><a href="https://www.gov.uk/help-nhs-costs">Get help with NHS prescriptions and health costs</a></li>
+                    <li><a href="https://www.gov.uk/winter-fuel-payment">Winter fuel payment</a></li>
+                    <li><a href="https://www.gov.uk/apply-for-elderly-person-bus-pass">Elderly person's bus pass</a></li>
+                    <li><a href="https://www.gov.uk/cold-weather-payment">Cold weather payment</a></li>
+                    <li><a href="https://www.gov.uk/the-warm-home-discount-scheme">Warm home discount scheme</a></li>
+                    <li><a href="https://www.gov.uk/mortgage-interest-run-on">Mortgage interest run on</a></li>
+                    <li><a href="https://www.gov.uk/reduced-earnings-allowance">Reduced earnings allowance</a></li>
+                    <li><a href="https://www.gov.uk/get-help-savings-low-income">Get help with savings (Help to save)</a></li>
+                    <li><a href="https://www.gov.uk/support-for-mortgage-interest">Support for Mortgage interest</a></li>
+                    <li><a href="https://www.gov.uk/housing-benefit">Housing benefit</a></li>
+                    <li><a href="https://www.gov.uk/apply-council-tax-reduction">Council Tax Reduction</a></li>
+                    <li><a href="https://www.gov.uk/national-concessionary-fuel-scheme">National concessionary fuel scheme</a></li>
+                    <li><a href="https://www.gov.uk/financial-help-disabled/television-licence-discount">Television Licence Discount</a></li>
+                  </ul>
+
+                  <h2 class="govuk-heading-l">Support getting back into work</h2>
+                  <ul class="govuk-list">
+                      <li><a href="https://www.gov.uk/moving-from-benefits-to-work">Help with moving from benefits to work</a></li>
+                      <li><a href="https://www.gov.uk/work-health-programme">Work and health programme</a></li>
+                  </ul>
+
+               
+
+          </div>
+      </div>
+
+    </main>
+  </div>
+{% endblock %}

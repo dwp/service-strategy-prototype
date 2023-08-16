@@ -1,0 +1,87 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+What is your date of birth? | Check what financial support may be available if Coronavirus (COVID-19) has affected your income
+{% endblock %}
+
+{% block content %}
+
+<a href="q8-health" class="govuk-back-link">Back</a>
+
+<div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <span class="govuk-caption-xl">{{caption}}</span>
+            <h1 class="govuk-heading-xl" id="furlough">You might be able to get
+              financial support</h1>
+          </div>
+          </div>
+
+          <div class="govuk-grid-row">
+              <div class="govuk-grid-column-two-thirds">
+
+              <p>You told us that you need:</p>
+
+              <ul class="govuk-list govuk-list--bullet">
+                  <li><a href="#uc">support because you're on a low income</a></li>
+                  <li><a href="#esa">support with a health condition or disability</a></li>
+                  <li><a href="#ca">support to care for another adult</a></li>
+                </ul>
+
+                <p>The following benefits are based on the answers you have given.</p>
+
+
+          <hr>
+          <h2 class="govuk-heading-m" id="uc">Support because you're on a low income</h2>
+          <p><strong>State Pension</strong></p>
+          <p>You can get your State Pension online, if you have not already claimed it.</p>
+          <a class="govuk-button" href="https://www.gov.uk/universal-credit/how-to-claim">Start now</a>
+
+          <p><strong>Pension Credit</strong></p>
+          <p>Pension Credit can top up your weekly income if it is below a certain amount.
+          It could also give you an extra payment if you have saved up some money towards your retirement.</p>
+          <div class="govuk-inset-text">Use the <a href="#uc">Pension Credit calculator</a> to work out how much you might get.</div>
+          <a class="govuk-button" href="https://www.gov.uk/universal-credit/how-to-claim">Apply now</a>
+
+          <p><strong>More support because you're on a low income</strong></p>
+          <p>Depending on your situation, you could also apply for:
+
+            <ul class="govuk-list govuk-list--bullet">
+                <li><a href="#uc">Winter Fuel Payment </a> to help you pay your heating bills</li>
+                <li><a href="#uc">Housing Benefit</a> to help you pay your rent</li>
+                <li><a href="#esa">an older person's bus pass</a> for free bus travel</li>
+                <li><a href="#ca">a discount on your electricity bill</a> through the Warm Home Discount Scheme</li>
+                <li><a href="#died">a free or discounted TV licence</a></li>
+              </ul>
+
+          <hr>
+          <h2 class="govuk-heading-m" id="esa">Support with a health condition or disability</h2>
+          <p><strong>New Style Employment and Support Allowance (ESA)</strong></p>
+          <p>New Style ESA is a payment to help with your living costs if you if you have a disability or health condition that affects how much you can work.</p>
+           <a class="govuk-button" href="https://www.gov.uk/employment-support-allowance/how-to-claim">Apply now</a>
+
+           <p><a class="govuk-link" href="/version-0-5/summary-carers">Check what other financial support you could get to help with a health condition or disability</a>.</p>
+
+          <hr>
+          <h2 class="govuk-heading-m" id="ca">Support to care for another adult</h2>
+          <p><a class="govuk-link" href="/version-0-5/summary-carers">Check what financial support you could get to help cover the cost of caring for someone</a>.</p>
+
+          <hr>
+          <h2 class="govuk-heading-m">Applying for other benefits</h2>
+          <p>You can still <a class="govuk-link" href="/version-0-4b/benefits">apply for other benefits</a> but you might not be
+          eligible for them.</p>
+
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+          <div class="return-me">
+          <h2 class="govuk-heading-m return-header">Send these results</h2>
+          <p>Choose to have these results sent by email, or use a reference code to see them.</p>
+          <a class="govuk-button" href="send">Continue</a>
+          </div>
+      </div>
+
+      </div>
+
+
+{% endblock %}

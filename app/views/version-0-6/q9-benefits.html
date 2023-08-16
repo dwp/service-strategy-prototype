@@ -1,0 +1,83 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Have you been employed and paid National Insurance over the last 2 to 3 years? | Check what financial support may be available if Coronavirus (COVID-19) has affected your income
+{% endblock %}
+
+{% block content %}
+
+<a href="summary-scenarios" class="govuk-back-link">Back</a>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form action="q10-income-uc" method="post" id="question-form" novalidate>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                  <span class="govuk-caption-xl">{{caption}}</span>
+                  <h1 class="govuk-fieldset__heading">
+                   Do you get any of the following benefits?
+                  </h1>
+                </legend>
+                <span class="govuk-hint">
+                    Select all that apply
+                   </span>
+               </legend>
+               <div class="govuk-checkboxes">
+                   <div class="govuk-checkboxes__item">
+                     <input class="govuk-checkboxes__input" id="circumstance-1" name="circumstances" type="checkbox" value="unemployed">
+                     <label class="govuk-label govuk-checkboxes__label" for="circumstance-1">
+                       Income based Employment Support Allowance
+                     </label>
+                   </div>
+                   <div class="govuk-checkboxes__item">
+                     <input class="govuk-checkboxes__input" id="circumstance-2" name="circumstances" type="checkbox" value="lowincome">
+                     <label class="govuk-label govuk-checkboxes__label" for="circumstance-2">
+                       Income based Job Seeker's Allowance
+                     </label>
+                   </div>
+                   <div class="govuk-checkboxes__item">
+                     <input class="govuk-checkboxes__input" id="circumstance-3" name="circumstances" type="checkbox" value="health">
+                     <label class="govuk-label govuk-checkboxes__label" for="circumstance-3">
+                       Income Support
+                     </label>
+                   </div>
+                   <div class="govuk-checkboxes__item">
+                       <input class="govuk-checkboxes__input" id="circumstance-4" name="circumstances" type="checkbox" value="caring">
+                       <label class="govuk-label govuk-checkboxes__label" for="circumstance-4">
+                         Pension Credit
+                       </label>
+                     </div>
+                     <div class="govuk-checkboxes__item">
+                       <input class="govuk-checkboxes__input" id="circumstance-5" name="circumstances" type="checkbox" value="children">
+                       <label class="govuk-label govuk-checkboxes__label" for="circumstance-5">
+                         Universal Credit
+                       </label>
+                     </div>
+                     <div class="govuk-checkboxes__item">
+                       <input class="govuk-checkboxes__input" id="circumstance-6" name="circumstances" type="checkbox" value="heathousing">
+                       <label class="govuk-label govuk-checkboxes__label" for="circumstance-6">
+                         Working Tax Credit
+                       </label>
+                     </div>
+                     <div class="govuk-checkboxes__item">
+                         <input class="govuk-checkboxes__input" id="circumstance-7" name="circumstances" type="checkbox" value="death">
+                         <label class="govuk-label govuk-checkboxes__label" for="circumstance-7">
+                         Eligible for Working Tax Credit and getting Child Tax Credit
+                         </label>
+                       </div>
+                 </div>
+          </fieldset>
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+        
+      </form>
+    </div>
+  </div>
+
+
+{% endblock %}
