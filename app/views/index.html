@@ -1,8 +1,7 @@
-
-{% extends "layout.html" %}
+{% extends "layouts/main.html" %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% block content %}
@@ -14,10 +13,17 @@
         <span class="govuk-caption-xl">{{releaseVersion}}</span>
       </h1>{{releaseVersion | log }}
 
+      <h2 class="govuk-heading-l">
+        <span class="govuk-caption-l">February 2024 to date</span>
+        Service Modernisation Programme- Future State Design Team
+      </h2>
 
-<h2 class="govuk-heading-l">Latest version</h2>
+      <h2 class="govuk-heading-l">
+        <span class="govuk-caption-l">- to July 2022</span>
+        SCE Signposting Team
+      </h2>
 
-<p><a href="version-2/">Version 2</a></p>
+<p><a href="/signposting/version-2/">Version 2</a></p>
 
 <p>Main changes:</p>
 <ul class="govuk-list govuk-list--bullet">
