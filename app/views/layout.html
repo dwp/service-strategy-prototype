@@ -46,7 +46,22 @@
     serviceUrl: "/",
     containerClasses: "govuk-width-container"
   }) }}
+
+  <div class="govuk-width-container">
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag govuk-tag--blue">
+          PROTOTYPE
+        </strong>
+        <span class="govuk-phase-banner__text">
+        This is a prototype and may not represent the live journey. It was last updated in April 2024. <a href="/change-log" class="govuk-link">View change log</a>.
+      </span>
+      </p>
+    </div>
+  </div>
 {% endblock %}
+
+
 
 {% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %}
 
