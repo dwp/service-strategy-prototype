@@ -1,0 +1,111 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "#"
+      },
+      {
+        text: "Benefits",
+        href: "#"
+      },
+      {
+        text: "Benefits and financial support if you're on a low income"
+      }
+    ]
+  }) }}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Check benefits and financial support you can get
+      </h1>
+
+      <p>Find out what support you might be able to get to help with your living costs. You can get benefits and other financial support if you’re eligible.</p>
+      <div class="govuk-inset-text">
+        This tool does not include all the ways you can get help with living costs. It will be updated with more types of support.      </div>
+
+      {{ govukButton({
+        text: "Check what you can get",
+        href: "check-benefits-signin",
+        isStartButton: true
+      }) }}
+
+      <h2 class="govuk-heading-m">
+        More information
+      </h2>
+
+      <p>Find out more about other ways to <a href="https://www.gov.uk/cost-of-living">get help with the cost of living</a>.</p>
+    
+      <div>
+        <div class="govuk-related-navigation">
+          <br><br>
+      <h2 class="govuk-heading-m">Explore the topic</h2>
+  
+    <ul class="gov-related-navigation__link-list">
+          <li class="govuk-related-navigation__link"><a href="#">Benefits and financial support for families</a></li>
+          <li class="govuk-related-navigation__link"><a href="#">Benefits and financial support if you're caring for someone</a></li>
+          <li class="govuk-related-navigation__link"><a href="#">Benefits and financial support if you're disabled or have a health condition</a></li>
+          <li class="govuk-related-navigation__link"><a href="#">Benefits and financial support if you're looking for work</a></li>
+          <li class="govuk-related-navigation__link"><a href="#">Benefits and financial support if you're on a low income</a></li>
+          <li class="govuk-related-navigation__link"><a href="#">Benefits and financial support if you're temporarily unable to work</a></li>
+  
+    </ul>
+  
+  </div>
+    </div>
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Related content
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                Benefits calculators
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Cost of Living Payments 2023 to 2024
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <h3 class="govuk-related-navigation__sub-heading">Collection </h3>
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#" style="font-weight: bold">
+                Universal Credit: information for employers
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+
+{% endblock %}

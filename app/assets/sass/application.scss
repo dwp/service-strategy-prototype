@@ -4,6 +4,31 @@
 // 
 
 // Add extra styles here
+// GOV.UK Eligibility checker //
+.govuk-related-navigation {
+    color: #0b0c0c;
+    border-top: 2px solid #1d70b8;
+    margin-bottom: 60px;
+  }
+  .gov-related-navigation__link-list {
+    padding: 0;
+  }
+  .govuk-related-navigation__link {
+    list-style-type: none;
+    margin-top: 15px;
+    font-size: 1rem;
+    line-height: 1.45;
+    font-weight: bold;
+  }
+  .govuk-related-navigation__sub-heading {
+    font-family:"GDS Transport",arial,sans-serif;
+    font-weight:400;
+    font-size: 1rem;
+    line-height:1.1428571429;
+    border-top:1px solid #b1b4b6;
+    padding-top:15px
+  }
+
 .govuk-back-link { margin-top:-30px; margin-bottom: 30px; }
 
 hr { border-top:1px solid #b1b4b6; border-bottom:0; height:0px; margin-bottom:30px; }
