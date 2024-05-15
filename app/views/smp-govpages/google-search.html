@@ -1,0 +1,5094 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="origin" name="referrer">
+    <title>Google Search</title>
+    <style>
+      html,
+      body,
+      h1,
+      input,
+      select {
+        font-family: arial, sans-serif
+      }
+
+      body,
+      h1 {
+        font-size: 14px;
+      }
+
+      h1 {
+        font-weight: normal;
+        margin: 0;
+        padding: 0
+      }
+
+      h3 {
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        line-height: 1.3
+      }
+
+      body {
+        margin: 0;
+        background: #fff;
+        color: var(--COEmY);
+      }
+
+      a {
+        color: var(--JKqx2);
+        text-decoration: none;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, .1)
+      }
+
+      a:visited {
+        color: #681da8
+      }
+
+      a:hover {
+        text-decoration: underline
+      }
+
+      a:hover h3 {
+        text-decoration: underline
+      }
+
+      a.a-no-hover-decoration:hover,
+      a.a-no-hover-decoration:hover h3 {
+        text-decoration: none
+      }
+
+      cite,
+      cite a:link,
+      cite a:visited {
+        color: #4d5156;
+        font-style: normal
+      }
+
+      button {
+        margin: 0
+      }
+
+      ol li {
+        list-style: none
+      }
+
+      ol,
+      ul,
+      li {
+        margin: 0;
+        padding: 0
+      }
+
+      input {
+        font-size: 14px
+      }
+
+      em {
+        font-weight: bold;
+        font-style: normal
+      }
+
+      .aCOpRe em,
+      .yXK7lf em {
+        color: #5f6368;
+      }
+
+      .aCOpRe a em {
+        color: inherit
+      }
+
+      .z1asCe {
+        display: inline-block;
+        fill: currentColor;
+        height: 24px;
+        line-height: 24px;
+        position: relative;
+        width: 24px
+      }
+
+      .z1asCe svg {
+        display: block;
+        height: 100%;
+        width: 100%
+      }
+
+      .ynAwRc {
+        color: #1a0dab
+      }
+
+      a:visited .ynAwRc,
+      a:visited.ynAwRc {
+        color: #681da8
+      }
+
+      .JIFdL {
+        color: #1a0dab
+      }
+
+      .zIamNc {
+        color: var(--COEmY);
+        font-family: arial, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px
+      }
+
+      .NUnG9d {
+        color: var(--COEmY);
+        font-family: arial, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px
+      }
+
+      .kqEaA {
+        color: var(--IXoxUe);
+        font-family: arial, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px
+      }
+
+      .vJtJab {
+        color: var(--JKqx2);
+        font-family: arial, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px
+      }
+
+      .hWgrdb {
+        font-style: italic
+      }
+
+      .Z5bgrc {
+        font-family: arial, sans-serif-medium, sans-serif;
+        font-weight: 500
+      }
+
+      .l97dzf {
+        font-weight: 400
+      }
+
+      .N8MDs {
+        font-family: arial, sans-serif-light, sans-serif
+      }
+
+      .z8gr9e {
+        color: var(--bbQxAb)
+      }
+
+      .KHW3x {
+        color: #fff
+      }
+
+      .ZYHQ7e {
+        color: var(--IXoxUe)
+      }
+
+      .x2sBq {
+        color: #b3261e
+      }
+
+      .tGXccd {
+        color: #146c2e
+      }
+
+      .OvuNCb {
+        color: #b06000
+      }
+
+      .yNSCTe {
+        color: #202124
+      }
+
+      .XEI2lf {
+        color: #fff
+      }
+
+      .u2fAP {
+        color: #1f1f1f
+      }
+
+      .Q7PwXb {
+        text-decoration: none
+      }
+
+      .NyOyWb {
+        text-overflow: clip;
+        overflow: hidden
+      }
+
+      .U2GSdd {
+        height: calc(16px*2);
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        white-space: normal
+      }
+
+      .GnYZ5c {
+        height: calc(16px*3);
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        white-space: normal
+      }
+
+      .potOpf {
+        max-height: calc(24px*2);
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        white-space: normal
+      }
+
+      .n4krj {
+        height: calc(22px*2);
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        white-space: normal
+      }
+
+      .NnEaBd {
+        text-align: right
+      }
+
+      .xLQxIf {
+        text-transform: capitalize
+      }
+
+      .uKdaQe {
+        text-transform: lowercase
+      }
+
+      .MUmB9 {
+        text-transform: none
+      }
+
+      .iUh30 {
+        font-size: 12px;
+        line-height: 1.3
+      }
+
+      .f {
+        color: var(--IXoxUe);
+        line-height: 1.58
+      }
+
+      .g {
+        font-family: arial, sans-serif;
+        font-size: 14px;
+      }
+
+      .g {
+        line-height: 1.58;
+        text-align: left
+      }
+
+      .g {
+        width: 600px;
+        margin-top: 0;
+        margin-bottom: 30px
+      }
+
+      .iUh30 {
+        padding-top: 1px;
+      }
+
+      .vk_arc {
+        border-top: 1px solid var(--gS5jXb);
+        cursor: pointer;
+        height: 0;
+        margin-bottom: -19px;
+        overflow: hidden;
+        padding: 20px 0;
+        text-align: center
+      }
+
+      .vk_ard {
+        top: -11px
+      }
+
+      .vk_aru {
+        bottom: -6px
+      }
+
+      .vk_ard,
+      .vk_aru {
+        background-color: #ebebeb;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        height: 6px;
+        width: 64px
+      }
+
+      .vk_ard:after,
+      .vk_ard:before,
+      .vk_aru:after,
+      .vk_aru:before {
+        content: ' ';
+        height: 0;
+        left: 0;
+        position: absolute;
+        width: 0;
+        border-left: 32px solid rgba(255, 255, 255, 0);
+        border-right: 32px solid rgba(255, 255, 255, 0)
+      }
+
+      .vk_ard:before {
+        border-top: 16px solid #ebebeb;
+        top: 6px
+      }
+
+      .vk_aru:before {
+        border-bottom: 16px solid #ebebeb;
+        bottom: 6px
+      }
+
+      .vk_ard:after {
+        top: 0;
+        border-top: 16px solid var(--xhUGwc)
+      }
+
+      .vk_aru:after {
+        bottom: 0;
+        border-bottom: 16px solid var(--xhUGwc)
+      }
+
+      .jC7Epd.vk_ard,
+      .jC7Epd.vk_aru {
+        background-color: #202124
+      }
+
+      .jC7Epd.vk_ard:before {
+        border-top-color: #202124
+      }
+
+      .jC7Epd.vk_aru:before {
+        border-bottom-color: #202124
+      }
+
+      .xpdclps,
+      .xpdxpnd {
+        overflow: hidden
+      }
+
+
+      .xpdxpnd,
+      .xpdopen .xpdclps,
+      .xpdopen .xpdxpnd.xpdnoxpnd {
+        max-height: 0
+      }
+
+      .xpdopen .xpdxpnd {
+        max-height: none
+      }
+
+      .xpdopen .xpdbox .xpdxpnd,
+      .xpdopen .xpdbox.xpdopen .xpdclps {
+        max-height: 0
+      }
+
+      .xpdopen .xpdbox.xpdopen .xpdxpnd,
+      .xpdopen .xpdbox .xpdclps {
+        max-height: none
+      }
+
+      .xpdclose .k5nfEc {
+        display: none
+      }
+
+      .fp-i .SzDvzc {
+        display: none
+      }
+
+      .fp-f {
+        bottom: 0;
+        height: auto;
+        left: 0;
+        position: fixed !important;
+        right: 0;
+        top: 0;
+        width: auto;
+        z-index: 127
+      }
+
+      .fp-h:not(.fp-nh) {
+        display: none !important
+      }
+
+      .fp-zh.fp-h:not(.fp-nh) {
+        display: block !important;
+        height: 0;
+        overflow: hidden;
+        transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+      }
+
+      .fp-i .fp-c {
+        display: block;
+        min-height: 100vh
+      }
+
+      li.fp-c {
+        list-style: none
+      }
+
+      .fp-w {
+        box-sizing: border-box;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1217px;
+        right: 0
+      }
+
+      .ellip {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap
+      }
+
+      html:not(.zAoYTe) [tabindex],
+      html:not(.zAoYTe) [href],
+      html:not(.zAoYTe) button,
+      html:not(.zAoYTe) iframe,
+      html:not(.zAoYTe) input,
+      html:not(.zAoYTe) select,
+      html:not(.zAoYTe) textarea,
+      html:not(.zAoYTe) .F0azHf {
+        outline: 0
+      }
+
+      .tF2Cxc {
+        position: relative
+      }
+
+      .Jb0Zif .BDNLRc {
+        margin: 16px 16px -11px
+      }
+
+      .RUXr2d {
+        display: inline
+      }
+
+      .MTB56 {
+        margin-right: 12px;
+        vertical-align: middle
+      }
+
+      .Pthbuf {
+        display: flex;
+        align-items: center
+      }
+
+      .m164Nd {
+        vertical-align: middle;
+        display: inline-block
+      }
+
+      .qpGQpf {
+        clear: both;
+        padding-top: 6px
+      }
+
+      .aCOpRe {
+        line-height: 1.58;
+        word-wrap: break-word
+      }
+
+      .aCOpRe sup {
+        line-height: 0.9
+      }
+
+      .yuRUbf {
+        font-weight: normal;
+        font-size: small;
+        line-height: 1.58;
+      }
+
+      .IsZvec {
+        max-width: 48em;
+        color: #4d5156;
+        line-height: 1.58
+      }
+
+      .uo4vr {
+        color: var(--IXoxUe);
+        line-height: 1.58
+      }
+
+      .IjZ7ze {
+        display: inline-block;
+        color: var(--IXoxUe);
+        font-size: 12px;
+        line-height: 1.34;
+        white-space: nowrap
+      }
+
+      .FyYA1e {
+        margin: 5px 0
+      }
+
+      .P1usbc {
+        display: table;
+        white-space: nowrap;
+        margin: 5px 0;
+        line-height: 1.58;
+        color: var(--IXoxUe);
+      }
+
+      .G1Rrjc {
+        display: table-cell;
+        padding-left: 15px;
+        vertical-align: baseline
+      }
+
+      .i4vd5e {
+        display: table-cell
+      }
+
+      .VNLkW {
+        display: table-row;
+        vertical-align: top
+      }
+
+      .h7mcFf {
+        color: var(--IXoxUe)
+      }
+
+      .k6DEPe {
+        display: table-row;
+        width: 100%
+      }
+
+      .VNLkW.Pr4Y6d {
+        display: flex;
+        white-space: normal
+      }
+
+      .Pr4Y6d .i4vd5e {
+        display: flex;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%
+      }
+
+      .Pr4Y6d .G1Rrjc {
+        display: flex;
+        flex-shrink: 0
+      }
+
+      .TXwUJf {
+        color: var(--IXoxUe)
+      }
+
+      .PcHvNb {
+        position: absolute
+      }
+
+      .N3nEGc {
+        background-color: #fff;
+        float: left;
+        margin-top: 4px
+      }
+
+      .wEQKyf.N3nEGc {
+        float: right;
+        margin: 7px 0 5px 12px
+      }
+
+      .wEQKyf.Ik9SRc.N3nEGc {
+        margin: 2px 0 0 0
+      }
+
+      .Ixi80c {
+        margin-top: 0
+      }
+
+      .i0PvJb {
+        background-color: #000
+      }
+
+      .mWTy7c {
+        border-top-left-radius: 2px;
+        bottom: 0;
+        font-size: 11px;
+        padding: 1px 3px;
+        position: absolute;
+        right: 0;
+        background-color: rgba(0, 0, 0, .7);
+        color: #fff
+      }
+
+      .rGhul {
+        display: block;
+        position: relative;
+        overflow: hidden
+      }
+
+      .rGhul:focus {
+        outline-style: solid;
+        outline-width: 2px
+      }
+
+      .vYWbhc {
+        margin-top: 0
+      }
+
+      .q0vns a.fl {
+        font-size: 12px
+      }
+
+      .TQc1id .qLRx3b {
+        font-size: 14px;
+        line-height: 1.58
+      }
+
+      .HGLrXd {
+        display: inline-block;
+        -webkit-text-size-adjust: none
+      }
+
+      .q0vns {
+        display: inline-block;
+        padding-bottom: 2px;
+        padding-top: 1px
+      }
+
+      .NJjxre {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%
+      }
+
+      .M8OgIe .VWCdhc.Mjve0e .q0vns {
+        width: max-content
+      }
+
+      #rhs {
+        position: relative;
+        margin-left: var(--rhs-margin);
+        flex: 0 auto;
+        width: var(--rhs-width);
+        padding-bottom: 15px;
+        transition: opacity 0.3s
+      }
+
+      #rhs .VjDLd {
+        border: 1px solid #f8f9fa;
+        padding-left: 17px;
+        padding-right: 16px;
+        position: relative;
+        box-sizing: border-box
+      }
+
+      .s6JM6d .SwlyWb {
+        display: none
+      }
+
+      #rhs.k5T88b .VjDLd {
+        width: var(--rhs-width);
+      }
+
+      #rhs.N4Xssf .VjDLd {
+        width: 457px
+      }
+
+      .k5T88b .nmrhhd {
+        background: none !important;
+        display: none !important
+      }
+
+      .N4Xssf .SwlyWb {
+        background: none !important;
+        display: none !important
+      }
+
+      .srp.DfE4Hf {
+        --rhs-width: 457px
+      }
+
+      .dURPMd {
+        margin-top: 6px
+      }
+
+      .IUOThf {
+        display: flex;
+        -ms-overflow-style: none;
+        gap: 6px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scrollbar-width: none;
+        white-space: nowrap
+      }
+
+      .IUOThf::-webkit-scrollbar {
+        display: none
+      }
+
+      .PHj8of {
+        flex-direction: column;
+        display: flex;
+        gap: 12px;
+      }
+
+      .FpfXM {
+        flex: 1;
+        align-items: center;
+        display: flex;
+        position: relative;
+      }
+
+      .qogDvd {
+        flex-direction: row;
+        display: flex;
+        gap: 2px;
+        justify-content: space-between;
+        width: 670px;
+      }
+
+      .QlojWb {
+        display: flex;
+        z-index: 1
+      }
+
+      .EqNE2e {
+        flex: 1;
+      }
+
+      .sohiBf .UqcIvb {
+        margin: 0 12px
+      }
+
+      .RWhoyd span {
+        display: flex
+      }
+
+      .FMKtTb {
+        font-family: Google Sans, arial, sans-serif-medium, sans-serif;
+        font-size: 14px;
+        width: fit-content
+      }
+
+      .FMKtTb span {
+        display: inline-block
+      }
+
+      .GKS7s {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        justify-content: center;
+        border: 1px solid #dadce0;
+        box-sizing: border-box;
+        background: var(--xhUGwc);
+        border-radius: 20px;
+        min-width: 38px;
+        cursor: pointer;
+      }
+
+      [selected].GKS7s {
+        background-color: #e8f0fe;
+        border-color: #e8f0fe;
+        margin: 0;
+        outline: solid 2px var(--xhUGwc);
+      }
+
+      .GKS7s:hover {
+        background-color: #e5edff
+      }
+
+      .GKS7s .RWhoyd {
+        color: #1a73e8
+      }
+
+      [selected].GKS7s .RWhoyd {
+        color: #001d35;
+      }
+
+      .GKS7s .FMKtTb,
+      .GKS7s .RWhoyd.mol54e {
+        color: #202124
+      }
+
+      .XAHwbe {
+        background: #a3c9ff;
+        border-radius: 20px 0 0 20px;
+        width: 28px;
+        margin-right: -18px;
+        display: flex;
+        align-items: center;
+        height: 40px;
+        justify-content: flex-start
+      }
+
+      .Ps6jAe {
+        display: flex;
+        align-items: center
+      }
+
+      .UqcIvb {
+        margin: 0 16px
+      }
+
+      .GKS7s .RWhoyd.It8jtb {
+        margin: 0 4px 0 8px
+      }
+
+      .GKS7s .FMKtTb.DNJVhe {
+        margin-right: 14px
+      }
+
+      .GKS7s .RWhoyd.niUbQb {
+        margin: 0 6px 0 10px
+      }
+
+      .GKS7s .FMKtTb.niUbQb {
+        margin-right: 12px
+      }
+
+      .GKS7s .FMKtTb.QpeSYd,
+      .ePSouf .FMKtTb.QpeSYd {
+        margin-left: 16px
+      }
+
+      .GKS7s .RWhoyd.QpeSYd,
+      .ePSouf .RWhoyd.QpeSYd {
+        margin-right: 8px
+      }
+
+      .GKS7s .Mko8Ne.QpeSYd,
+      .ePSouf .Mko8Ne.QpeSYd {
+        margin-right: 8px
+      }
+
+      .xwtLye {
+        display: flex;
+        align-items: center;
+        height: 100%
+      }
+
+      .GKS7s.sohiBf {
+        box-sizing: content-box;
+        border: none;
+        border-radius: 12px;
+        height: 30px
+      }
+
+      :not([selected]).GKS7s.sohiBf:hover {
+        background-color: #e5edff
+      }
+
+      [selected].GKS7s.sohiBf {
+        background-color: #a3c9ff
+      }
+
+      [selected].GKS7s {
+        background-color: #a3c9ff;
+        border-color: #a3c9ff
+      }
+
+      [selected].GKS7s.sohiBf .FMKtTb {
+        color: #001d35
+      }
+
+      .Tl6lnd {
+        display: flex;
+        align-items: center;
+        padding-bottom: 10px;
+        height: 20px;
+        color: #70757a;
+        font-family: Google Sans, arial, sans-serif-medium, sans-serif;
+        font-size: 14px;
+        width: fit-content
+      }
+
+      .Tl6lnd .RWhoyd {
+        margin-right: 4px
+      }
+
+      [selected].Tl6lnd {
+        color: #1a73e8;
+        border-bottom: 3px solid #1a73e8;
+        padding-bottom: 8px;
+      }
+
+      .SvoXfb {
+        box-sizing: border-box;
+        align-items: center;
+        appearance: none;
+        background-color: transparent;
+        border: none;
+        border-radius: 50%;
+        bottom: 0;
+        cursor: pointer;
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        opacity: 0;
+        outline: none;
+        margin-right: 0;
+        position: absolute;
+        top: 0;
+        width: 40px;
+        visibility: hidden
+      }
+
+      .SvoXfb:hover {
+        background-color: #f1f3f4
+      }
+
+      .x5f7Bc {
+        fill: var(--amnPwe);
+        height: 24px;
+        width: 24px
+      }
+
+      .SvoXfb:hover>.x5f7Bc {
+        fill: var(--bbQxAb)
+      }
+
+      .SvoXfb.vezEod .x5f7Bc {
+        transform: scale(-1)
+      }
+
+      .F9Idpe {
+        background: linear-gradient(to right, transparent 0%, var(--xhUGwc) 60%, var(--xhUGwc));
+        height: 100%;
+        opacity: 0;
+        margin-right: 0;
+        position: absolute;
+        top: 0;
+        visibility: hidden;
+        width: 100px;
+        pointer-events: none
+      }
+
+      .F9Idpe.Iy1nvd {
+        background: linear-gradient(to left, transparent 0%, var(--xhUGwc) 60%, var(--xhUGwc))
+      }
+
+      .Iy1nvd {
+        left: 0
+      }
+
+      .vezEod {
+        right: 0
+      }
+
+      .vBfb5 {
+        opacity: 1;
+        visibility: visible
+      }
+
+      .crJ18e {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+      }
+
+      .YmvwI {
+        display: flex;
+        height: 20px;
+        color: #70757a;
+        font-family: Google Sans, arial, sans-serif-medium, sans-serif;
+        width: fit-content;
+        padding-bottom: 10px;
+        align-items: center;
+        justify-content: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px
+      }
+
+      [selected].YmvwI {
+        color: #1a73e8;
+        border-bottom: 3px solid #1a73e8;
+        padding-bottom: 8px;
+      }
+
+      .rfiSsc {
+        position: relative;
+      }
+
+      .sBbkle {
+        display: flex;
+        height: max-content
+      }
+
+      .nfdoRb,
+      .PHj8of {
+        padding-bottom: 12px
+      }
+
+      .q9ZDaf .PHj8of:not(.J1AhHd) {
+        padding-bottom: 0
+      }
+
+      .sBbkle {
+        padding-left: var(--center-abs-margin)
+      }
+
+      .sBbkle.Pusuaf {
+        border-bottom: 1px solid var(--gS5jXb)
+      }
+
+      .TrmO7 {
+        white-space: nowrap;
+        flex: 1;
+        min-width: 0;
+        position: relative;
+        z-index: 127;
+        width: 100%
+      }
+
+      .sSeWs {
+        display: flex;
+        flex: 1;
+        justify-content: space-between
+      }
+
+      .BaegVc.hdtb-tl-sel {
+        background-color: #e8f0fe;
+        color: var(--rrJJUc)
+      }
+
+      .BaegVc.hdtb-tl-sel:hover {
+        background-color: #d2e3fc;
+        color: var(--rrJJUc)
+      }
+
+      .xhjkHe {
+        position: relative;
+        display: flex;
+        flex: 1;
+        max-width: calc(var(--center-width) + var(--rhs-margin) + var(--rhs-width) + 20px);
+      }
+
+      .xhjkHe .TrmO7 {
+        width: 0
+      }
+
+      .sKb6pb {
+        align-items: center;
+        display: flex;
+        justify-content: flex-end
+      }
+
+      .WRhYSc {
+        box-sizing: border-box;
+        font-family: Google Sans, arial, sans-serif;
+        margin-top: 4px;
+        height: 30px;
+        margin-left: 24px;
+        margin-right: 11px;
+        white-space: nowrap
+      }
+
+      .WRhYSc .hdtb-mitem a {
+        color: var(--amnPwe);
+        text-decoration: none
+      }
+
+      @media (max-width:1435px) {
+        .xhjkHe.CEXVle:not(.YoVbHc) {
+          width: calc(100% - 155px)
+        }
+      }
+
+      .xhjkHe.YoVbHc {
+        flex: unset;
+        width: calc(var(--center-width) + 20px)
+      }
+
+      @media (max-width:1300px) {
+        .xhjkHe.YoVbHc {
+          width: calc(var(--center-width) + 4px)
+        }
+      }
+
+      .IDFSOe {
+        background-color: var(--mXZkqc);
+        width: 1px;
+        height: 20px;
+        margin-left: 3px;
+        margin-right: 3px
+      }
+
+      .XtQzZd {
+        height: 57px;
+        pointer-events: none
+      }
+
+      .Y4umW {
+        pointer-events: initial
+      }
+
+      .JryvJ {
+        position: relative;
+        height: 0;
+        z-index: 1;
+        top: 45px;
+      }
+
+      .qogDvd .Ap1Qsc {
+        padding-top: 14px
+      }
+
+      .qogDvd .T3FoJb {
+        padding-top: 12px
+      }
+
+      .nPDzT {
+        align-items: center;
+        display: inline-flex
+      }
+
+      .GyAeWb {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        max-width: calc(var(--center-abs-margin) + var(--center-width) + var(--rhs-margin) + var(--rhs-width) + var(--lhs-refinements-width));
+      }
+
+      .srp {
+        --center-abs-margin: 180px;
+        --center-width: 652px;
+        --rhs-margin: 76px;
+        --rhs-width: 372px;
+        --lhs-refinements-width: 0px;
+        --lhs-margin: 24px;
+        --lhs-width: calc(var(--center-abs-margin) - var(--lhs-margin) - var(--center-margin));
+        --center-margin: 24px;
+        position: relative;
+        min-height: 100vh
+      }
+
+      @media (min-width:1475px) and (max-width:1675px) {
+        .srp {
+          --center-abs-margin: calc(25vw + -188.75px)
+        }
+      }
+
+      @media (min-width:1675px) {
+        .srp {
+          --center-abs-margin: 230px
+        }
+      }
+
+      @media (min-width:1124px) and (max-width:1300px) {
+        .srp {
+          --center-abs-margin: calc((100vw - 1068px)/2)
+        }
+      }
+
+      @media (max-width:1124px) {
+        .srp {
+          --center-abs-margin: 28px
+        }
+      }
+
+      .eqAnXb {
+        font-size: medium;
+        font-weight: normal;
+      }
+
+      .main {
+        min-width: calc(var(--center-abs-margin) + var(--center-width) + var(--rhs-margin) + var(--rhs-width) + var(--lhs-refinements-width));
+        width: 100%;
+      }
+
+      .s6JM6d {
+        position: relative;
+        width: var(--center-width);
+        flex: 0 auto;
+        margin-left: var(--center-abs-margin);
+      }
+
+      .e9EfHf {
+        font-family: arial, sans-serif;
+        clear: both;
+        margin-left: 0;
+        padding-top: 20px;
+      }
+
+      .dodTBe {
+        height: 68px
+      }
+
+      .appbar {
+        background: var(--xhUGwc);
+        position: relative;
+        padding-left: var(--center-abs-margin)
+      }
+    </style>
+  </head>
+  <body jsmodel="hspDDf " class="srp" jscontroller="Eox39d" marginheight="3" topmargin="3" jsaction="rcuQ6b:npT2md" id="gsr">
+    <style>
+      .wYq63b {
+        display: flex;
+        left: 0;
+        position: absolute;
+        top: 0;
+        z-index: 1001
+      }
+
+      .S6VXfe {
+        align-items: center;
+        background-color: #fff;
+        border-radius: 0 2px 2px 0;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .16), 0 0 0 1px rgba(0, 0, 0, .08);
+        display: flex;
+        margin: 80px auto 8px 0;
+        overflow: hidden
+      }
+
+      .gyPpGe,
+      .gyPpGe:visited,
+      .qlVNAd {
+        border: 2px solid rgba(0, 0, 0, .16);
+        border-radius: 2px;
+        color: #681da8;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 6px 11px;
+        min-height: 32px;
+        text-decoration: underline;
+        text-align: center;
+        width: 106px
+      }
+
+      .gyPpGe:not(:focus) {
+        clip: rect(1px, 1px, 1px, 1px);
+        overflow: hidden;
+        position: absolute;
+        padding: 0
+      }
+
+      .kur4we {
+        display: none
+      }
+
+      .CvDJxb {
+        min-width: 1124px;
+        width: 100%;
+        z-index: 128;
+        position: absolute;
+        top: 20px;
+        margin-top: 6px;
+      }
+
+      #gb {
+        min-width: unset;
+        position: relative
+      }
+
+      .tsf {
+        width: calc(var(--center-abs-margin) + 652px);
+      }
+
+      .NDnoQ {
+        display: flex;
+        justify-content: space-between
+      }
+
+      .Q3DXx {
+        display: flex
+      }
+
+      .Q3DXx #gb,
+      .Q3DXx #gb>div {
+        float: none
+      }
+
+      .Q3DXx #gb>div {
+        padding-left: 0
+      }
+
+      .sfbg {
+        background: var(--xhUGwc);
+        height: 69px;
+        left: 0;
+        position: absolute;
+        width: 100%
+      }
+
+      .minidiv .sfbg {
+        height: 72px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28)
+      }
+
+      .A8SBwf,
+      .IormK {
+        width: 692px;
+        padding-left: 27px
+      }
+
+      .A8SBwf {
+        margin: 0 auto;
+        margin-left: calc(var(--center-abs-margin) - 47px);
+        position: relative
+      }
+
+      .RNNXgb {
+        display: flex;
+        z-index: 3;
+        position: relative;
+        min-height: 44px;
+        background: #fff;
+        border: 1px solid transparent;
+        box-shadow: 0 2px 5px 1px rgba(64, 60, 67, .16);
+        border-radius: 24px;
+        margin: 0 auto;
+        width: 690px;
+      }
+
+      .emcav .RNNXgb {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        box-shadow: 0 2px 8px 1px rgba(64, 60, 67, .24);
+        border-color: transparent
+      }
+
+      .minidiv .emcav .RNNXgb {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+        border-color: transparent
+      }
+
+      .RNNXgb:hover,
+      .sbfc .RNNXgb {
+        background: #fff;
+        box-shadow: 0 2px 8px 1px rgba(64, 60, 67, .24);
+        border-color: transparent
+      }
+
+      .minidiv .RNNXgb:hover,
+      .minidiv .sbfc .RNNXgb {
+        border-color: transparent;
+        box-shadow: 0 1px 6px rgba(32, 33, 36, .28)
+      }
+
+      .SDkEP {
+        flex: 1;
+        display: flex;
+        padding: 5px 4px 0 14px
+      }
+
+      .logo {
+        position: absolute;
+        top: 6px;
+        padding: 4px 28px 0 30px;
+        left: -139px
+      }
+
+      .iblpc span {
+        display: none
+      }
+
+      .sbfc .iblpc span,
+      .emcav .iblpc span {
+        display: block
+      }
+
+      .sbfc .iblpc,
+      .emcav .iblpc {
+        padding-right: 14px;
+        margin-left: -1px
+      }
+
+      .sbfc.A8SBwf,
+      .emcav.A8SBwf {
+        padding-left: 0;
+        width: 719px
+      }
+
+      .sbfc .RNNXgb,
+      .emcav .RNNXgb {
+        width: 717px
+      }
+
+      @media (min-width:0) {
+        .emcav.A8SBwf.pD4qTd {
+          width: calc(var(--center-width) + var(--rhs-margin) + var(--rhs-width) + 47px)
+        }
+
+        .emcav.pD4qTd .RNNXgb {
+          width: calc(var(--center-width) + var(--rhs-margin) + var(--rhs-width) + 45px)
+        }
+
+        @media (max-width:1300px) {
+          .emcav.A8SBwf.pD4qTd {
+            width: calc(var(--rhs-margin) + var(--rhs-width) + var(--center-width) + -105px)
+          }
+
+          .emcav.pD4qTd .RNNXgb {
+            width: calc(var(--rhs-margin) + var(--rhs-width) + var(--center-width) + -107px)
+          }
+        }
+      }
+
+      .iblpc {
+        display: flex;
+        align-items: center;
+        padding-right: 6px;
+        margin-top: -7px;
+        height: 46px
+      }
+
+      .M8H8pb {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: inherit;
+        width: inherit
+      }
+
+      @media (max-width:1300px) {
+        .A8SBwf {
+          margin-left: calc(var(--center-abs-margin) + 105px)
+        }
+
+        .A8SBwf,
+        .IormK {
+          width: 540px
+        }
+
+        .RNNXgb {
+          width: 538px
+        }
+
+        .sbfc.A8SBwf,
+        .emcav.A8SBwf {
+          width: 567px
+        }
+
+        .sbfc .RNNXgb,
+        .emcav .RNNXgb {
+          width: 565px
+        }
+      }
+
+      #logo {
+        overflow: hidden;
+        position: relative;
+        display: block
+      }
+
+      .jfN4p {
+        border: 0
+      }
+
+      .CcAdNb {
+        margin: auto
+      }
+
+      .QCzoEc {
+        color: #9aa0a6
+      }
+
+      .gLFyf,
+      .ql1tMb,
+      .YacQv {
+        font: 16px arial, sans-serif;
+        line-height: 34px;
+        font-size: 16px;
+        flex: 100%;
+        line-height: 39px
+      }
+
+      textarea.gLFyf,
+      .ql1tMb,
+      .YacQv {
+        font-family: arial, sans-serif;
+        font: 16px arial, sans-serif;
+        line-height: 22px;
+        margin-bottom: 8px;
+        overflow-x: hidden
+      }
+
+      textarea.gLFyf {
+        white-space: nowrap;
+        overflow: hidden
+      }
+
+      .minidiv .gLFyf,
+      .minidiv .ql1tMb,
+      .minidiv .YacQv {
+        font-size: 14px;
+        line-height: 22px;
+        min-height: 22px !important
+      }
+
+      .gLFyf {
+        resize: none;
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        padding: 0 0 3px;
+        color: rgba(0, 0, 0, .87);
+        word-wrap: break-word;
+        outline: none;
+        display: flex;
+        -webkit-tap-highlight-color: transparent
+      }
+
+      .a4bIc {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+        margin-top: 6px
+      }
+
+      .YacQv {
+        color: transparent;
+        white-space: pre;
+        position: absolute;
+        pointer-events: none
+      }
+
+      .gLFyf.i4ySpb {
+        display: block;
+        position: absolute
+      }
+
+      .Sxjlmb {
+        white-space: nowrap;
+        margin: 20px;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: normal;
+        color: #fff
+      }
+
+      .qfY0Jf {
+        font-weight: normal;
+        border: 1px solid #fff;
+        border-radius: 3px;
+        padding: 1px 3px 0 3px
+      }
+
+      .dRYYxd {
+        display: flex;
+        flex: 0 0 auto;
+        margin-top: -5px;
+        align-items: stretch;
+        flex-direction: row;
+        height: 44px
+      }
+
+      .BKRPef {
+        background: transparent;
+        align-items: center;
+        flex: 1 0 auto;
+        flex-direction: row;
+        display: flex;
+        cursor: pointer
+      }
+
+      .vOY7J {
+        background: transparent;
+        border: 0;
+        align-items: center;
+        flex: 1 0 auto;
+        cursor: pointer;
+        display: none;
+        height: 100%;
+        line-height: 44px;
+        outline: none;
+        padding: 0 12px
+      }
+
+      .M2vV3 {
+        display: flex
+      }
+
+      .ExCKkf {
+        height: 100%;
+        color: var(--IXoxUe);
+        vertical-align: middle;
+        outline: none
+      }
+
+      .BKRPef {
+        padding-right: 4px
+      }
+
+      .ACRAdd {
+        border-left: 1px solid #dadce0;
+        height: 65%
+      }
+
+      .ACRAdd {
+        display: none
+      }
+
+      .ACRAdd.M2vV3 {
+        display: block
+      }
+
+      .nDcEnd {
+        flex: 1 0 auto;
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        border: 0;
+        background: transparent;
+        outline: none;
+        padding: 0 8px;
+        width: 24px;
+        line-height: 44px
+      }
+
+      .Gdd5U {
+        height: 24px;
+        width: 24px;
+        vertical-align: middle
+      }
+
+      .Tg7LZd {
+        height: 44px;
+        width: 44px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        flex: 0 0 auto;
+        padding: 0
+      }
+
+      .Tg7LZd {
+        flex: 0 0 auto;
+        padding-right: 13px
+      }
+
+      html:not(.zAoYTe) .Tg7LZd:focus {
+        outline: none
+      }
+
+      .zgAlFc {
+        background: none;
+        color: #4285f4;
+        height: 24px;
+        width: 24px;
+        margin: auto
+      }
+
+      .UUbT9 {
+        position: absolute;
+        text-align: left;
+        z-index: 989;
+        cursor: default;
+        width: 100%;
+        margin-top: -1px
+      }
+
+      .aajZCb {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: #fff;
+        border-radius: 0 0 24px 24px;
+        box-shadow: 0 9px 8px -3px rgba(64, 60, 67, .24), 8px 0 8px -7px rgba(64, 60, 67, .24), -8px 0 8px -7px rgba(64, 60, 67, .24);
+        border: 0;
+        padding-bottom: 4px
+      }
+
+      .minidiv .aajZCb {
+        box-shadow: 0 4px 6px rgba(32, 33, 36, .28);
+        border-radius: 0 0 16px 16px
+      }
+
+      .mkHrUc {
+        display: flex;
+      }
+
+      .erkvQe {
+        padding-bottom: 16px;
+        flex: auto;
+        overflow-x: hidden
+      }
+
+      .RjPuVb {
+        height: 1px;
+        margin: 0 26px 0 0
+      }
+
+      .S3nFnd .RjPuVb,
+      .S3nFnd .aajZCb {
+        flex: 0 0 auto
+      }
+
+      .xtSCL {
+        border-top: 1px solid #e8eaed;
+        margin: 0 14px;
+        padding-bottom: 4px
+      }
+
+      .ky4hfd {
+        display: none
+      }
+
+      .YB4h9 {
+        background-color: var(--TMYS9);
+        color: var(--EpFNW);
+        padding: 18px 60px 18px 12px;
+        position: relative
+      }
+
+      .C85rO {
+        font-size: 20px
+      }
+
+      .YB4h9 .Job8vb {
+        padding: 20px;
+        position: absolute;
+        right: 0;
+        top: 0
+      }
+
+      #shJ2Vb {
+        display: none
+      }
+
+      .OBMEnb {
+        padding: 0;
+        margin: 0
+      }
+
+      .OBMEnb:not(:first-child) {
+        padding-top: 8px
+      }
+
+      .G43f7e {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        padding: 0;
+        margin: 0;
+        list-style: none
+      }
+
+      #ynRric {
+        display: none
+      }
+
+      .ynRric {
+        list-style-type: none;
+        flex-direction: column;
+        color: var(--IXoxUe);
+        font-family: Google Sans, arial, sans-serif-medium, sans-serif;
+        font-size: 14px;
+        margin: 0 20px 0 16px;
+        padding: 8px 0 8px 0;
+        line-height: 16px;
+        width: 100%
+      }
+
+      .ynRric {
+        letter-spacing: 0;
+        text-transform: none
+      }
+
+      .sbct {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        overflow: hidden;
+        max-height: none;
+        padding: 0
+      }
+
+      .eIPGRd {
+        flex: auto;
+        display: flex;
+        align-items: center;
+        margin: 0 20px 0 14px
+      }
+
+      .pcTkSc {
+        display: flex;
+        flex: auto;
+        flex-direction: column;
+        min-width: 0;
+        max-height: none;
+        padding: 6px 0
+      }
+
+      .sbic {
+        display: flex;
+        align-items: center;
+        margin-right: 14px
+      }
+
+      .ClJ9Yb {
+        line-height: 12px;
+        font-size: 13px;
+        color: #70757a;
+        margin-top: 2px;
+        padding-right: 8px
+      }
+
+      .wM6W7d {
+        display: flex;
+        font-size: 16px;
+        color: #212121;
+        flex: auto;
+        align-items: center;
+        word-break: break-word;
+        padding-right: 8px
+      }
+
+      .wM6W7d span {
+        flex: auto
+      }
+
+      .AQZ9Vd {
+        display: flex;
+        align-self: stretch
+      }
+
+      .UUbT9.i1eWpb .PZPZlf.sbhl .gmlSVb {
+        background: rgba(234, 67, 53, .12)
+      }
+
+      .TfeWfb {
+        display: none
+      }
+
+      .xAmryf {
+        display: none
+      }
+
+      .DJbVFb .a5RLac {
+        line-height: 24px;
+        font-size: 20px;
+        font-family: arial, sans-serif;
+        padding-top: 16px;
+        color: var(--bbQxAb);
+        margin-bottom: auto
+      }
+
+      .DJbVFb .wM6W7d span {
+        color: var(--YLNNHc);
+        line-height: 36px;
+        font-weight: 400;
+        font-size: 28px;
+        font-family: Google Sans, arial, sans-serif
+      }
+
+      #bgeLZd {
+        display: none
+      }
+
+      .xAmryf {
+        box-sizing: border-box;
+        align-items: center;
+        height: 40px;
+        border-radius: 8px;
+        display: flex;
+        color: var(--bbQxAb);
+        border: 1px solid var(--mXZkqc);
+        background-color: var(--xhUGwc);
+        line-height: 22px
+      }
+
+      .jtAOgd {
+        white-space: nowrap;
+        font-family: Google Sans, arial, sans-serif;
+        font-size: 14px;
+        margin: 0 14px
+      }
+
+      .TfeWfb {
+        gap: 12px 6px;
+        overflow-x: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none
+      }
+
+      .TfeWfb::-webkit-scrollbar {
+        display: none
+      }
+
+      #YMXe {
+        display: none
+      }
+
+      @media (hover:hover) {
+        .sbai {
+          visibility: hidden
+        }
+
+        .sbhl .sbai {
+          visibility: inherit
+        }
+      }
+
+      #d6ItKb {
+        display: none
+      }
+
+      .AB2Fdd {
+        display: flex
+      }
+
+      .ZDHp {
+        position: relative;
+        margin: 20px;
+        display: flex
+      }
+
+      .ZDHp .SHFPkb {
+        margin-bottom: 12px
+      }
+
+      .o6OF0 .SHFPkb {
+        line-height: 48px;
+        font-family: Google Sans, arial, sans-serif;
+        font-weight: 400;
+        color: var(--YLNNHc);
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical
+      }
+
+      .o6OF0 .HrUlUc,
+      .o6OF0 .PnfqLc {
+        font-family: arial, sans-serif;
+        font-weight: 400;
+        max-height: 72px;
+        color: var(--bbQxAb)
+      }
+
+      .ZDHp .HrUlUc,
+      .ZDHp .PnfqLc {
+        font-size: 18px;
+        line-height: 24px
+      }
+
+      .o6OF0 .bTSf5c {
+        font-family: arial, sans-serif;
+        font-weight: 400;
+        color: var(--bbQxAb)
+      }
+
+      .ZDHp .bTSf5c {
+        line-height: 22px;
+        font-size: 14px;
+        margin-bottom: 6px
+      }
+
+      .ZDHp .HrUlUc,
+      .ZDHp .PnfqLc {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical
+      }
+
+      .Vlt3wb {
+        font-style: normal;
+        font-family: arial, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        padding-top: 8px;
+        margin-top: 12px;
+        color: var(--bbQxAb);
+        border-top: 1px solid #dadce0;
+        display: flex;
+        width: 100%
+      }
+
+      .Tnv2td {
+        position: absolute;
+        top: 0;
+        right: 0
+      }
+
+      .z76Rnb {
+        padding: 6px;
+        width: 24px;
+        height: 24px;
+        background-color: var(--xhUGwc);
+        color: var(--amnPwe);
+        border-radius: 9999px;
+        border: 1px solid var(--mXZkqc);
+        cursor: pointer
+      }
+
+      .kZtr1b {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        min-width: 0
+      }
+
+      .XAFD5c {
+        width: 200px;
+        height: 200px;
+        background-color: var(--xhUGwc);
+        border-radius: 20px;
+        margin-left: 20px;
+        flex-shrink: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain
+      }
+
+      .o6OF0 .xAmryf {
+        font-family: Google Sans, arial, sans-serif;
+        margin: 0;
+        height: 38px;
+        background-color: var(--xhUGwc);
+        border-radius: 100px;
+        border: 1px solid var(--mXZkqc);
+        color: var(--bbQxAb);
+        align-items: center;
+        text-align: center;
+        flex: none;
+        cursor: pointer
+      }
+
+      .ZDHp .lnnVSe {
+        font-size: 18px;
+        flex-grow: 1
+      }
+
+      .ZDHp .HrUlUc,
+      .ZDHp .PnfqLc {
+        display: flex;
+        flex-direction: column
+      }
+
+      .AsqS6c {
+        display: block;
+        margin: 20px
+      }
+
+      .gfT7kc {
+        display: flex;
+        flex-grow: 1;
+        max-width: 100%
+      }
+
+      .cJpYle {
+        display: flex;
+        padding-right: 20px;
+        flex-grow: 1;
+        max-width: 50%;
+        box-sizing: border-box
+      }
+
+      .gTtFDd {
+        display: flex;
+        padding-left: 20px;
+        border-left: 1px solid var(--gS5jXb);
+        flex-grow: 1;
+        max-width: 50%;
+        box-sizing: border-box
+      }
+
+      .AsqS6c .SHFPkb,
+      .AsqS6c .bTSf5c,
+      .AsqS6c .PnfqLc {
+        padding-right: 0;
+        margin-bottom: 10px
+      }
+
+      .AsqS6c .bTSf5c,
+      .AsqS6c .PnfqLc {
+        -webkit-line-clamp: 2;
+        line-height: 24px;
+        font-size: 18px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical
+      }
+
+      .AsqS6c .HrUlUc {
+        line-height: 22px;
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap
+      }
+
+      .AsqS6c .XAFD5c {
+        width: 100px;
+        height: 100px;
+        background-color: var(--xhUGwc);
+        border-radius: 16px;
+        background-position: center;
+        background-repeat: no-repeat
+      }
+
+      .j0GJWd {
+        margin-left: 20px
+      }
+
+      .EOLKOc {
+        width: calc(50% - 1px)
+      }
+
+      .iQxPRb {
+        display: flex;
+        gap: 2px
+      }
+
+      .EOLKOc:first-child {
+        border-bottom-left-radius: 20px
+      }
+
+      .EOLKOc:last-child {
+        border-bottom-right-radius: 20px
+      }
+
+      .AZNDm {
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px
+      }
+
+      .MagqMc .ZFiwCf {
+        background-color: #fff;
+        border: 1px solid var(--gS5jXb);
+        width: 100%
+      }
+
+      .MagqMc.U48fD {
+        padding: 0;
+        margin-top: 16px
+      }
+
+      .MagqMc .Bi9oQd {
+        display: none
+      }
+
+      .MagqMc {
+        padding: 0
+      }
+
+      .MagqMc:hover .LGwnxb {
+        color: var(--YLNNHc)
+      }
+
+      .U48fD {
+        -webkit-tap-highlight-color: transparent;
+        cursor: pointer;
+        display: block;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding: 16px;
+        padding-top: 0;
+        margin-top: 24px;
+        position: relative
+      }
+
+      .ZFiwCf {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin: 0 auto;
+        font-size: 14px;
+        font-family: arial, sans-serif;
+        font-weight: 400;
+        width: 100%;
+        max-width: 300px;
+        height: 36px;
+        border-radius: 18px;
+        outline: 1px solid transparent;
+        background-color: #f1f3f4;
+      }
+
+      @media (forced-colors:active) {
+        .ZFiwCf {
+          border: 1px solid transparent
+        }
+      }
+
+      .ZFiwCf:hover {
+        background-color: #D8D7DC
+      }
+
+      .Bi9oQd {
+        background-color: var(--gS5jXb);
+        margin-top: 18px;
+        position: absolute;
+        border: 0;
+        height: 1px;
+        left: 0;
+        width: 100%
+      }
+
+      .w2fKdd svg {
+        width: auto
+      }
+
+      .w2fKdd {
+        color: var(--amnPwe)
+      }
+
+      .LGwnxb {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: auto;
+        padding-left: 0;
+        padding-right: 8px;
+        max-width: min(200px, calc(100% - 44px));
+        color: #202124
+      }
+
+      .LGwnxb:empty {
+        padding-right: 0
+      }
+
+      .LGwnxb span,
+      .LGwnxb div {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: auto
+      }
+
+      #JglY8e {
+        display: none
+      }
+
+      .W3CMNd {
+        display: flex
+      }
+
+      #mitGyb {
+        display: none
+      }
+
+      #TN4rFf {
+        display: none
+      }
+
+      .IDVnvc {
+        display: inline-block;
+        overflow: hidden;
+        max-width: 223px;
+        border-radius: 16px;
+        height: 178px;
+        margin: -2px -10px 2px 10px
+      }
+
+      .OBMEnb:only-child .IDVnvc {
+        margin-right: calc(25% - 113px)
+      }
+
+      .cRV9hb {
+        width: 90px;
+        padding: 6px
+      }
+
+      .cRV9hb .pcTkSc {
+        font-family: arial, sans-serif;
+        overflow: hidden;
+        margin-top: 4px;
+        padding: 0
+      }
+
+      .cRV9hb .pcTkSc .wM6W7d {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 0;
+        color: var(--COEmY)
+      }
+
+      .cRV9hb .pcTkSc .ClJ9Yb {
+        line-height: 16px;
+        font-size: 12px;
+        display: none;
+        display: flex
+      }
+
+      .cRV9hb .pcTkSc .wM6W7d span,
+      .cRV9hb .pcTkSc .ClJ9Yb span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        white-space: normal
+      }
+
+      .cRV9hb .pcTkSc .wM6W7d span {
+        -webkit-line-clamp: 2
+      }
+
+      .cRV9hb .pcTkSc .ClJ9Yb span {
+        -webkit-line-clamp: 2
+      }
+
+      .aVbWac {
+        background: #fff;
+        border-radius: 12px;
+        height: 90px
+      }
+
+      @media (max-width:1300px) {
+        .A8SBwf:not(.pD4qTd) .IDVnvc {
+          height: 167px
+        }
+
+        .A8SBwf:not(.pD4qTd) .cRV9hb {
+          width: 79px
+        }
+
+        .A8SBwf:not(.pD4qTd) .aVbWac {
+          height: 79px
+        }
+
+        .A8SBwf:not(.pD4qTd) .aVbWac .sbic.vYOkbe {
+          height: 79px;
+          width: 79px
+        }
+      }
+
+      .WzNHm {
+        font-size: 11px;
+        font-style: italic;
+        margin-top: -16px;
+        position: absolute;
+        right: 20px;
+        color: var(--IXoxUe)
+      }
+
+      .c58wS {
+        display: flex;
+        margin-right: -14px;
+        position: relative;
+        z-index: 99
+      }
+
+      #gb {
+        height: 0;
+        padding-left: 16px;
+        padding-right: 16px;
+        width: unset
+      }
+    </style>
+    <style>
+      .gb_a {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        height: 64px;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -webkit-justify-content: flex-end;
+        justify-content: flex-end;
+        width: 100%
+      }
+
+      .gb_b {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        height: 48px;
+        padding: 4px
+      }
+
+      .gb_c,
+      .gb_d,
+      .gb_e {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        float: right;
+        outline: none
+      }
+
+      .gb_f {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        display: inline-block;
+        height: 48px;
+        outline: none;
+        padding: 4px
+      }
+
+      .gb_g,
+      .gb_h {
+        fill: #5f6368
+      }
+
+      .gb_i .gb_h,
+      .gb_i .gb_g {
+        fill: rgba(255, 255, 255, .87)
+      }
+
+      .gb_j .gb_d,
+      .gb_k .gb_d {
+        cursor: pointer;
+        padding: 8px
+      }
+
+      .gb_l {
+        display: none
+      }
+
+      a.gb_c {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -webkit-align-items: center;
+        align-items: center;
+        background: #1a73e8;
+        border: 1px solid transparent;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        font-family: Google Sans, Roboto, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        letter-spacing: .25px;
+        line-height: 20px;
+        margin: 2px 4px;
+        min-height: 36px;
+        min-width: 80px;
+        padding: 3px 11px;
+        text-align: center;
+        text-decoration: none;
+        -webkit-font-smoothing: antialiased
+      }
+
+      .gb_i .gb_c {
+        background: #8ab4f8;
+        color: #202124
+      }
+
+      .gb_s {
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        max-height: 40px;
+        max-width: 100%;
+        overflow: hidden;
+        overflow-wrap: break-word;
+        word-break: break-word
+      }
+
+      .gb_t {
+        fill: #1a73e8;
+        margin: 4px
+      }
+
+      .gb_i .gb_t {
+        fill: #8ab4f8
+      }
+
+      .gb_c {
+        position: relative
+      }
+
+      .gb_n {
+        position: absolute;
+        right: 0;
+        top: 0
+      }
+
+      .gb_d {
+        background-color: transparent;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 0;
+        display: inline-block;
+        height: 40px;
+        padding: 4px;
+        position: relative;
+        width: 40px
+      }
+
+      .gb_o {
+        -webkit-border-radius: 50%;
+        border-radius: 50%
+      }
+
+      .gb_d .gb_p.gb_q,
+      .gb_r {
+        display: none
+      }
+
+      .gb_p {
+        display: none
+      }
+
+      .gb_m {
+        display: none
+      }
+
+    </style>
+      <style>
+        table,
+        div,
+        span,
+        p {
+          display: none
+        }
+      </style>
+      <meta content="0;url=/search?q=how+many+benefits+can+i+claim&amp;safe=active&amp;client=safari&amp;sca_esv=334bdb2960993fde&amp;gbv=1&amp;sei=uURDZsnyN5GshbIPwf29wA8" http-equiv="refresh">
+      <div style="display:block">Please click <a href="/search?q=how+many+benefits+can+i+claim&amp;safe=active&amp;client=safari&amp;sca_esv=334bdb2960993fde&amp;gbv=1&amp;sei=uURDZsnyN5GshbIPwf29wA8">here</a> if you are not redirected within a few seconds.</div>
+    </noscript>
+    <style>
+      @font-face {
+        font-family: 'Google Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-display: optional;
+        src: url(//fonts.gstatic.com/s/googlesans/v29/4UaRrENHsxJlGDuGo1OIlJfC6mGS6vhAK1YobMu2vgCIhM907w.woff2)format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      @font-face {
+        font-family: 'Google Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-display: optional;
+        src: url(//fonts.gstatic.com/s/googlesans/v29/4UaRrENHsxJlGDuGo1OIlJfC6mGS6vhAK1YobMu2vgCIhM907w.woff2)format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    </style>
+    <script nonce="V6InwOi0DaW-dBMLd6PwyA">
+      (function() {
+        var w = ["Google Sans", [400, 500]];
+        (function() {
+          for (var a = 0; a < w.length; a += 2)
+            for (var d = w[a], e = w[a + 1], b = 0, c = void 0; c = e[b]; ++b) document.fonts.load(c + " 10pt " + d).catch(function() {})
+        })();
+      })();
+    </script>
+    <h2 class="bNg8Rb OhScic zsYMMe BBwThe" style="clip:rect(1px,1px,1px,1px);height:1px;overflow:hidden;position:absolute;white-space:nowrap;width:1px;z-index:-1000;">Accessibility links</h2>
+    <div jscontroller="EufiNb" class="wYq63b">
+      <div class="S6VXfe"><a jsname="BKxS1e" class="gyPpGe" role="link" tabindex="0" jsaction="i3viod" data-ved="0ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ67oDCAU">Skip to main content</a><a jsname="PwyVob" class="o8xTWc kur4we gyPpGe" href="#" role="link" jsaction="xoizsc">Turn off continuous scrolling</a><a jsname="BzS6B" class="wxIowe kur4we gyPpGe" href="#" role="link" jsaction="XZ94se">Turn on continuous scrolling</a><span id="tsuid_1"></span><a jsname="KI37ad" class="gyPpGe" href="https://support.google.com/websearch/answer/181196?hl=en-GB" data-sb="/url?sa=t&amp;source=web&amp;rct=j&amp;url=https://support.google.com/websearch/answer/181196%3Fhl%3Den-GB&amp;ved=0ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQwcMDCAc&amp;bl=-8wb&amp;opi=89978449&amp;usg=AOvVaw0QyvYMEHgatffPfwR8B-Gh">Accessibility help</a>
+        <div data-async-context="async_id:duf3-78;authority:0;card_id:;entry_point:0;feature_id:;ftoe:0;header:0;is_jobs_spam_form:0;open:0;preselect_answer_index:-1;suggestions:;suggestions_subtypes:;suggestions_types:;surface:0;title:;type:78">
+          <div jscontroller="EkevXb" style="display:none" jsaction="rcuQ6b:npT2md"></div>
+          <div id="duf3-78" data-jiis="up" data-async-type="duffy3" data-async-context-required="type,open,feature_id,async_id,entry_point,authority,card_id,ftoe,title,header,suggestions,surface,suggestions_types,suggestions_subtypes,preselect_answer_index,is_jobs_spam_form" class="yp" data-ved="0ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ-0EICA"></div><a jsname="JUypV" class="gyPpGe" data-async-trigger="duf3-78" role="link" tabindex="0" jsaction="trigger.szjOR">Accessibility feedback</a>
+        </div>
+      </div>
+    </div>
+    <div class="CvDJxb" jscontroller="tIj4fb" jsaction="rcuQ6b:npT2md;" id="searchform">
+      <div style="margin-top:-20px" class="sfbg"></div>
+      <div class="NDnoQ Q3DXx">
+        <form class="tsf" action="/search" id="tsf" autocomplete="off" data-submitfalse="q" method="GET" name="f" role="search">
+          <div jsmodel="ZrDSAb vNzKHd" jsdata="MuIEvd;_;AGk+ME">
+            <div jscontroller="cnjECf" class="A8SBwf">
+              <div class="logo"><a href="#" title="Go to Google Home" id="logo" data-hveid="9"><img class="jfN4p" src="/public/images/googlelogo_color_92x30dp.png" style="background:none" alt="Google" height="30" width="92"></a></div>
+              <div jsname="RNNXgb" class="RNNXgb">
+                <div class="SDkEP">
+                  <div jsname="uFMOof" class="iblpc">
+                    <div class="CcAdNb"><span class="QCzoEc z1asCe MZy1Rb" style="height:20px;line-height:20px;width:20px"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                          <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                        </svg></span></div>
+                  </div>
+                  <div jscontroller="vZr2rb" jsname="gLFyf" class="a4bIc" >
+                    <div jsname="vdLsw" class="YacQv"></div>
+                    <div jsname="aJyGR" jscontroller="xMclgd" class="gLFyf i4ySpb" >
+                      <g-snackbar jsname="nH91he" jscontroller="OZLguc" style="display:none" ">
+                        <div jsname="sM5MNb" aria-live="polite" class="jhZvod">
+                          <div jsname="Ng57nc" class="Wu0v9b v0rrvd" data-ved="0ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ4G8ICw">
+                            <div class="b77HKf">
+                              <div class="rIxsve" jsslot=""><span class="Txngnb wHYlTd yUTMj Sxjlmb">Press <span class="qfY0Jf">/</span> to jump to the search box</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </g-snackbar>
+                    </div><textarea class="gLFyf" aria-controls="Alh6id" aria-owns="Alh6id" jsaction="paste:puy29d; mouseenter:MJEKMe; mouseleave:iFHZnf;" aria-label="Search" aria-autocomplete="both" aria-expanded="false" aria-haspopup="false" autocapitalize="off" autocomplete="off" autocorrect="off" id="APjFqb" maxlength="2048" name="q" role="combobox" rows="1" spellcheck="false" data-ved="0ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ39UDCAw">What help can i get from DWP?</textarea>
+                  </div>
+                  <div class="dRYYxd">
+                    <div jscontroller="PymCCe" jsname="RP0xob" class="BKRPef">
+                      <div class="M2vV3 vOY7J" tabindex="0" jsname="pkjasb" aria-label="Clear" role="button" jsaction="AVsnlb;rcuQ6b:npT2md" data-ved="0ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ05YFCA0"><span jsname="itVqKe" class="ExCKkf z1asCe rzyADb"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+                          </svg></span></div><span jsname="s1VaRe" class="ACRAdd M2vV3"></span>
+                    </div>
+                    <div jscontroller="lpsUAf" jsname="R5mgy" class="nDcEnd"><svg class="Gdd5U" focusable="false" viewbox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+                        <rect fill="none" height="192" width="192"></rect>
+                        <g>
+                          <circle fill="#34a853" cx="144.07" cy="144" r="16"></circle>
+                          <circle fill="#4285f4" cx="96.07" cy="104" r="24"></circle>
+                          <path fill="#ea4335" d="M24,135.2c0,18.11,14.69,32.8,32.8,32.8H96v-16l-40.1-0.1c-8.8,0-15.9-8.19-15.9-17.9v-18H24V135.2z"></path>
+                          <path fill="#fbbc05" d="M168,72.8c0-18.11-14.69-32.8-32.8-32.8H116l20,16c8.8,0,16,8.29,16,18v30h16V72.8z"></path>
+                          <path fill="#4285f4" d="M112,24l-32,0L68,40H56.8C38.69,40,24,54.69,24,72.8V92h16V74c0-9.71,7.2-18,16-18h80L112,24z"></path>
+                        </g>
+                      </svg></div>
+                  </div>
+                </div>
+              </div>
+              <div jscontroller="Dvn7fe" jsname="UUbT9" class="UUbT9 EyBRub" style="display:none" jsaction="mouseout:ItzDCd;mouseleave:MWfikb;hBEIVb:nUZ9le;YMFC3:VKssTb;vklu5c:k02QY;ldyIye:CmVOgc" data-ved="0ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ4tUDCBA">
+                <div jscontroller="Wo3n8" jsname="aadvhe" jsmodel="d5EhJe" data-bkt="searchbox" data-eas="" data-fhs="" data-maindata='[null,null,null,"autocomplete_user_feedback_kp_id",null,11,null,null,null,null,null,5010715,"searchbox",null,"AutocompletePrediction",null,null,null,null,11]' data-pid="5010715" jsdata="vST7rb;_;AGk+MI zEIyGd;_;" jsaction="kPzEO:MlP2je;qjLxRc:FbhRG;w8f1fc:hRwSgb;aIJAdf:UhDUnd;BqbTbe:naa5ve;kYAKrf:CqUGrf;hwhRRe:KyxjCd;rcuQ6b:npT2md">
+                  <div jsname="GkjeIf" id="_uURDZsnyN5GshbIPwf29wA8_4" data-jiis="up" data-async-type="kp_feedback" class="yp" data-ved="0ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ68cECBE"></div>
+                </div>
+                <div jscontroller="P10Owf" class="YB4h9 ky4hfd" jsdata="vST7rb;_;AGk+MI" aria-labelledby="EiQXVd" role="dialog" jsaction="kPzEO:MlP2je;qjLxRc:MlP2je;w8f1fc:hRwSgb" data-ved="0ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQlokGCBI">
+                  <div id="_uURDZsnyN5GshbIPwf29wA8_6"><span class="Job8vb z1asCe wuXmqc" aria-label="Close" role="button" tabindex="0" jsaction="kEOk4d" style="height:20px;line-height:20px;width:20px" data-ved="0ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQmIkGCBM"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+                      </svg></span>
+                    <div class="C85rO" aria-level="1" id="EiQXVd" role="heading">Choose what you’re giving feedback on</div>
+                  </div>
+                </div>
+                <div jsname="RjPuVb" class="RjPuVb"></div>
+                <div jsname="aajZCb" class="aajZCb">
+                  <div class="xtSCL"></div>
+                  <div class="mkHrUc" id="Alh6id" role="presentation">
+                    <div jsname="erkvQe" class="erkvQe"></div>
+                    <div jsname="tovEib" class="rLrQHf" role="presentation"></div>
+                  </div>
+                  <div jsname="E80e9e" class="OBMEnb" id="shJ2Vb" role="presentation">
+                    <ul jsname="bw4e9b" class="G43f7e" role="listbox"></ul>
+                  </div>
+                  <div class="ynRric" id="ynRric" role="presentation"></div>
+                  <li data-view-type="1" class="sbct PZPZlf" id="YMXe" role="presentation" data-attrid="AutocompletePrediction" data-entityid="autocomplete_user_feedback_kp_id">
+                    <div class="eIPGRd">
+                      <div class="sbic"></div>
+                      <div class="pcTkSc">
+                        <div class="lnnVSe" aria-atomic="true" role="option">
+                          <div class="wM6W7d"><span></span></div>
+                          <div class="ClJ9Yb"><span></span></div>
+                          <div class="a5RLac"><span></span></div>
+                        </div>
+                        <div class="TfeWfb"></div>
+                      </div>
+                      <div class="AQZ9Vd" aria-atomic="true" role="button">
+                        <div class="sbai" role="presentation">Delete</div>
+                      </div>
+                    </div>
+                  </li>
+                  <div class="xAmryf" id="bgeLZd"><span class="jtAOgd"></span></div>
+                  <li class="AB2Fdd" data-view-type="9" id="d6ItKb" role="presentation">
+                    <div class="eIPGRd">
+                      <div class="ZDHp" id="fU0xAb" role="presentation" style="display:none">
+                        <div class="kZtr1b">
+                          <div class="lnnVSe" aria-atomic="true" role="option">
+                            <div class="SHFPkb"></div>
+                            <div class="bTSf5c"></div>
+                            <div class="PnfqLc"></div>
+                            <div class="HrUlUc"></div>
+                          </div>
+                          <div class="Tnv2td" aria-atomic="true" role="button" style="display:none"><span class="z76Rnb z1asCe JKu1je"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path>
+                              </svg></span></div>
+                          <div class="xAmryf" id="bgeLZd"><span class="jtAOgd"></span></div>
+                          <div class="TfeWfb" role="presentation" style="display:none"></div>
+                          <div class="Vlt3wb" style="display:none"></div>
+                        </div><span class="XAFD5c" style="display:none"></span>
+                        <div class="j0GJWd" style="display:none">
+                          <div><img class="uHGFVd AZNDm" alt="" style="display:none"></div>
+                          <div class="iQxPRb"><img class="uHGFVd EOLKOc" alt="" style="display:none"><img class="uHGFVd EOLKOc" alt="" style="display:none"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="W3CMNd" data-view-type="10" id="JglY8e" role="option">
+                    <div class="eIPGRd" role="presentation">
+                      <div class="AsqS6c" id="GTYqfc" role="presentation" style="display:none">
+                        <div class="gfT7kc">
+                          <div class="cJpYle">
+                            <div class="lnnVSe" aria-atomic="true" role="option">
+                              <div class="SHFPkb"></div>
+                              <div class="bTSf5c"></div>
+                              <div class="PnfqLc"></div>
+                              <div class="HrUlUc"></div>
+                            </div>
+                            <div class="Tnv2td" aria-atomic="true" role="button" style="display:none"><span class="z76Rnb z1asCe JKu1je"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                  <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path>
+                                </svg></span></div><span class="XAFD5c" style="display:none"></span>
+                          </div>
+                          <div class="gTtFDd">
+                            <div class="lnnVSe" aria-atomic="true" role="option">
+                              <div class="SHFPkb"></div>
+                              <div class="bTSf5c"></div>
+                              <div class="PnfqLc"></div>
+                              <div class="HrUlUc"></div>
+                            </div>
+                            <div class="Tnv2td" aria-atomic="true" role="button" style="display:none"><span class="z76Rnb z1asCe JKu1je"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                  <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path>
+                                </svg></span></div><span class="XAFD5c" style="display:none"></span>
+                          </div>
+                        </div>
+                        <div class="xAmryf" id="bgeLZd"><span class="jtAOgd"></span></div>
+                        <div class="TfeWfb" role="presentation" style="display:none"></div>
+                        <div class="Vlt3wb" style="display:none"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li data-view-type="8" class="sbct PZPZlf" id="mitGyb" role="presentation" data-attrid="AutocompletePrediction" data-entityid="autocomplete_user_feedback_kp_id">
+                    <div class="eIPGRd hdt0ld">
+                      <div class="sbic"></div>
+                      <div class="pcTkSc">
+                        <div>
+                          <div class="wM6W7d"><span></span></div>
+                          <div class="ClJ9Yb"><span></span></div>
+                        </div>
+                      </div>
+                      <div class="AQZ9Vd" aria-atomic="true" role="button">
+                        <div class="sbai" role="presentation">Delete</div>
+                      </div>
+                    </div>
+                  </li>
+                  <div class="ZDHp" id="fU0xAb" role="presentation" style="display:none">
+                    <div class="kZtr1b">
+                      <div class="lnnVSe" aria-atomic="true" role="option">
+                        <div class="SHFPkb"></div>
+                        <div class="bTSf5c"></div>
+                        <div class="PnfqLc"></div>
+                        <div class="HrUlUc"></div>
+                      </div>
+                      <div class="Tnv2td" aria-atomic="true" role="button" style="display:none"><span class="z76Rnb z1asCe JKu1je"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path>
+                          </svg></span></div>
+                      <div class="xAmryf" id="bgeLZd"><span class="jtAOgd"></span></div>
+                      <div class="TfeWfb" role="presentation" style="display:none"></div>
+
+                      <div class="Vlt3wb" style="display:none"></div>
+                    </div><span class="XAFD5c" style="display:none"></span>
+                    <div class="j0GJWd" style="display:none">
+                      <div><img class="uHGFVd AZNDm" alt="" style="display:none"></div>
+                      <div class="iQxPRb"><img class="uHGFVd EOLKOc" alt="" style="display:none"><img class="uHGFVd EOLKOc" alt="" style="display:none"></div>
+                    </div>
+                  </div>
+                  <div class="AsqS6c" id="GTYqfc" role="presentation" style="display:none">
+                    <div class="gfT7kc">
+                      <div class="cJpYle">
+                        <div class="lnnVSe" aria-atomic="true" role="option">
+                          <div class="SHFPkb"></div>
+                          <div class="bTSf5c"></div>
+                          <div class="PnfqLc"></div>
+                          <div class="HrUlUc"></div>
+                        </div>
+                        <div class="Tnv2td" aria-atomic="true" role="button" style="display:none"><span class="z76Rnb z1asCe JKu1je"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                              <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path>
+                            </svg></span></div><span class="XAFD5c" style="display:none"></span>
+                      </div>
+                      <div class="gTtFDd">
+                        <div class="lnnVSe" aria-atomic="true" role="option">
+                          <div class="SHFPkb"></div>
+                          <div class="bTSf5c"></div>
+                          <div class="PnfqLc"></div>
+                          <div class="HrUlUc"></div>
+                        </div>
+                        <div class="Tnv2td" aria-atomic="true" role="button" style="display:none"><span class="z76Rnb z1asCe JKu1je"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                              <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path>
+                            </svg></span></div><span class="XAFD5c" style="display:none"></span>
+                      </div>
+                    </div>
+                    <div class="xAmryf" id="bgeLZd"><span class="jtAOgd"></span></div>
+                    <div class="TfeWfb" role="presentation" style="display:none"></div>
+                    <div class="Vlt3wb" style="display:none"></div>
+                  </div>
+                  <li class="IDVnvc PZPZlf" data-view-type="6" id="TN4rFf" role="presentation" data-attrid="AutocompletePrediction" data-entityid="autocomplete_user_feedback_kp_id">
+                    <div class="cRV9hb">
+                      <div class="aVbWac">
+                        <div class="sbic"></div>
+                      </div>
+                      <div class="pcTkSc" role="presentation">
+                        <div class="lnnVSe" aria-atomic="true" role="option">
+                          <div class="wM6W7d"><span></span></div>
+                          <div class="ClJ9Yb"><span></span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </div>
+              </div>
+              <div jsname="mvaK7d" class="M8H8pb" data-ved="0ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ4d8ICBc"></div>
+            </div>
+            <div style="background:url(/images/searchbox/desktop_searchbox_sprites318_hr.png)"></div>
+            <script nonce="V6InwOi0DaW-dBMLd6PwyA">
+              (function() {
+                var a = this || self;
+                var c = document.querySelector("form");
+                if (c) {
+                  var d = function(b) {
+                    "Enter" !== b.key || b.shiftKey || (b.preventDefault(), c.submit && c.submit())
+                  };
+                  c.addEventListener("keydown", d);
+                  a.sbmlhf = d
+                };
+              }).call(this);
+            </script>
+          </div>
+          <div id="tophf"><input name="safe" value="active" type="hidden"><input name="client" value="safari" type="hidden"><input name="sca_esv" value="334bdb2960993fde" type="hidden"><input value="uURDZsnyN5GshbIPwf29wA8" name="ei" type="hidden"></div>
+        </form>
+        <div class="Q3DXx">
+          <div class="c58wS">
+            <div id="_uURDZsnyN5GshbIPwf29wA8_8" jscontroller="vTw9Fc" jsname="gRWMdb" data-triggering-tag="UMK4Dc" jsaction="fj1r1d:qiause"></div>
+          </div><span class="gb" style="display:none"></span>
+          <header class="gb_a gb_ld" id="gb">
+            <div class="gb_k gb_x gb_K" data-ogsr-fb="true" data-ogsr-alt="" id="gbwa">
+              <div class="gb_f"><a class="gb_d" aria-label="Google apps" href="#" tabindex="0">
+                <svg class="gb_h" focusable="false" viewbox="0 0 24 24">
+                    <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
+                    <image src="https://ssl.gstatic.com/gb/images/bar/al-icon.png" alt="" height="24" width="24" style="border:none;display:none \9"></image>
+                  </svg></a></div>
+            </div>
+            <div class="gb_b" data-ogsr-up=""><a class="gb_c" aria-label="Sign in" href="#" target="_top"><span class="gb_s">Sign in</span></a></div>
+          </header>
+        </div>
+      </div>
+    </div>
+    <div id="gac_scont"></div><span class="kpshf line gsr bilit big mdm" style="display:none"></span>
+    <div class="main" id="main">
+      <div jsmodel=" ROaKxe" class="e9EfHf" id="cnt">
+        <div class="dodTBe" id="sfcnt"></div>
+        <style>
+          .sBbkle {
+            justify-content: space-between
+          }
+        </style>
+        <style>
+          .y3NyWc .TrmO7 {
+            max-width: 960px;
+            min-width: 800px;
+            width: calc(100vw - 480px)
+          }
+        </style>
+        <div class="JryvJ">
+          <div class="ym1pid KLEmSd"></div>
+        </div>
+        <div class="rfiSsc wtAAQb">
+          <div class="sBbkle y3NyWc" role="navigation">
+            <div class="TrmO7"></div>
+          </div>
+        </div>
+        <style>
+          :root {
+            --amnPwe: #5e5e5e;
+            --COEmY: #202124;
+            --xhUGwc: #fff
+          }
+
+          :root {
+            --gS5jXb: #dadce0;
+            --Aqn7xd: #d2d2d2;
+            --EpFNW: #fff;
+            --IXoxUe: #70757a;
+            --bbQxAb: #4d5156;
+            --YLNNHc: #202124;
+            --TMYS9: #1a73e8;
+            --JKqx2: #1a0dab;
+            --rrJJUc: #1a73e8;
+            --mXZkqc: #dadce0;
+            --Nsm0ce: #4285f4;
+            --XKMDxc: #f7f8f9;
+            --aYn2S: #ecedee;
+            --Lm570b: #ecedee
+          }
+
+          :root {
+            --KIZPne: #a3c9ff;
+            --xPpiM: #001d35
+          }
+
+          .YrbPuc {
+            color: var(--IXoxUe);
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px
+          }
+
+          .oPWl9c {
+            color: var(--IXoxUe);
+            font-family: arial, sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20px
+          }
+
+          .BjWz4c {
+            color: var(--IXoxUe);
+            font-family: arial, sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px
+          }
+
+          .cj1ht {
+            color: var(--bbQxAb);
+            font-family: arial, sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px
+          }
+
+          .SGNhVe {
+            font-family: Google Sans, arial, sans-serif;
+            font-size: 48px;
+            letter-spacing: 0;
+            line-height: 56px
+          }
+
+          .EX5Zne {
+            font-family: Google Sans, arial, sans-serif;
+            font-size: 36px;
+            line-height: 48px
+          }
+
+          .JgzqYd {
+            font-family: Google Sans, arial, sans-serif;
+            font-size: 28px;
+            line-height: 36px
+          }
+
+          .aTI8gc {
+            font-family: Google Sans, arial, sans-serif;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 36px
+          }
+
+          .IFnjPb {
+            font-family: Google Sans, arial, sans-serif;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 28px
+          }
+
+          .pb3iw {
+            font-family: Google Sans, arial, sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px
+          }
+
+          .ILxcde {
+            font-family: Google Sans, arial, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px
+          }
+
+          .MBeuO {
+            font-family: arial, sans-serif;
+            font-size: 20px;
+            font-weight: 400
+          }
+
+          .MBeuO {
+            line-height: 24px
+          }
+
+          .tNxQIb {
+            font-family: arial, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px
+          }
+
+          .ZwRhJd {
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            line-height: 18px
+          }
+
+          .NNMgCf {
+            font-family: arial, sans-serif;
+            font-size: 18px;
+            line-height: 24px
+          }
+
+          .Pqkn2e {
+            font-family: arial, sans-serif;
+            font-size: 16px;
+            line-height: 24px
+          }
+
+          .wHYlTd {
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            line-height: 22px
+          }
+
+          .ApHyTb {
+            font-family: arial, sans-serif;
+            font-size: 12px;
+            line-height: 16px
+          }
+
+          .ApHyTb {
+            letter-spacing: 0
+          }
+
+          .sjVJQd {
+            font-family: Google Sans, arial, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px
+          }
+
+          .k1U36b {
+            font-size: 12px
+          }
+
+          .k1U36b {
+            font-family: arial, sans-serif-medium, sans-serif;
+            font-weight: 500;
+            line-height: 16px
+          }
+
+          .TGyDA {
+            height: 66px;
+            display: -css3-box;
+            -css3-box-orient: vertical;
+            -css3-line-clamp: 3;
+            overflow: hidden;
+            white-space: normal
+          }
+
+          .yUTMj {
+            font-family: arial, sans-serif;
+            font-weight: 400
+          }
+
+          .VDgVie {
+            text-align: center
+          }
+
+          .TUOsUe {
+            text-align: left
+          }
+
+          .AraNOb {
+            -webkit-text-decoration: underline;
+            text-decoration: underline
+          }
+
+          .BBwThe {
+            font-weight: 700
+          }
+
+          .RiJqbb {
+            font-family: Google Sans, arial, sans-serif-medium, sans-serif;
+            font-weight: 500
+          }
+
+          .SlP8xc {
+            text-transform: none
+          }
+
+          .n9iHLc {
+            text-transform: uppercase
+          }
+
+          .OSrXXb {
+            overflow: hidden;
+            text-overflow: ellipsis
+          }
+
+          .cHaqb {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap
+          }
+
+          .RES9jf {
+            color: var(--YLNNHc)
+          }
+
+          .GS5rRd {
+            color: var(--JKqx2)
+          }
+
+          .GS5rRd:visited {
+            color: #681da8
+          }
+
+          .q8U8x {
+            font-family: Google Sans, arial, sans-serif;
+            font-weight: 400
+          }
+
+          .OhScic {
+            margin: 0px
+          }
+
+          .zsYMMe {
+            padding: 0px
+          }
+
+          .bNg8Rb {
+            clip: rect(1px, 1px, 1px, 1px);
+            height: 1px;
+            overflow: hidden;
+            position: absolute;
+            white-space: nowrap;
+            width: 1px;
+            z-index: -1000;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none
+          }
+
+          .s6JM6d .eYa01b {
+            width: 148px
+          }
+
+          .s6JM6d .KtfA8c {
+            width: 204px
+          }
+
+          .s6JM6d .APo4S {
+            margin-left: 10px;
+            margin-right: 10px
+          }
+
+          .s6JM6d .THlyec {
+            margin-left: -10px;
+            margin-right: -10px;
+            width: auto
+          }
+
+          .M8OgIe .hhv4Fb {
+            margin-left: -38px;
+            margin-right: -38px
+          }
+
+          .M8OgIe .JL6v7b {
+            margin-left: 38px;
+            margin-right: 38px;
+            padding-left: 0;
+            padding-right: 0
+          }
+
+          .M8OgIe .TRty9d {
+            width: 316px
+          }
+
+          .TQc1id .zLsiYe {
+            margin-left: -21px;
+            padding-left: 0
+          }
+
+          .zJUuqf {
+            margin-bottom: 4px
+          }
+
+          .AB4Wff {
+            margin-left: 16px
+          }
+
+          .v0rrvd {
+            padding-bottom: 16px
+          }
+
+          @keyframes g-snackbar-show {
+            from {
+              pointer-events: none;
+              transform: translateY(0)
+            }
+
+            to {
+              transform: translateY(-100%)
+            }
+          }
+
+          @keyframes g-snackbar-hide {
+            from {
+              transform: translateY(-100%)
+            }
+
+            to {
+              transform: translateY(0)
+            }
+          }
+
+          @keyframes g-snackbar-show-content {
+            from {
+              opacity: 0
+            }
+          }
+
+          @keyframes g-snackbar-hide-content {
+            to {
+              opacity: 0
+            }
+          }
+
+          .LH3wG,
+          .jhZvod {
+            bottom: 0;
+            height: 0;
+            position: fixed;
+            z-index: 999
+          }
+
+          .Ox8Cyd {
+            height: 0;
+            position: fixed;
+            z-index: 999
+          }
+
+          .E7Hdgb {
+            box-sizing: border-box;
+            visibility: hidden;
+            display: inline-block
+          }
+
+          .yK6jqe,
+          .Wu0v9b {
+            box-sizing: border-box;
+            visibility: hidden
+          }
+
+          .rTYTNb {
+            animation: g-snackbar-hide .4s cubic-bezier(0.4, 0, 0.2, 1) both;
+            visibility: inherit
+          }
+
+          .UewPMd {
+            animation: g-snackbar-show .5s cubic-bezier(0.4, 0, 0.2, 1) both;
+            visibility: inherit
+          }
+
+          .b77HKf {
+            background-color: #323232;
+            padding: 0 24px
+          }
+
+          .rIxsve {
+            align-items: center;
+            display: box;
+            display: flex
+          }
+
+          .rTYTNb .rIxsve {
+            animation: g-snackbar-hide-content .35s cubic-bezier(0.4, 0, 0.2, 1) both
+          }
+
+          .UewPMd .rIxsve {
+            animation: g-snackbar-show-content .35s cubic-bezier(0.4, 0, 0.2, 1) .15s both
+          }
+
+          .Txngnb.Txngnb {
+            line-height: 20px
+          }
+
+          .Txngnb {
+            color: #fff;
+            flex: 1 1 auto;
+            margin: 14px 0;
+            word-break: break-word
+          }
+
+          .sHFNYd {
+            margin-right: -8px
+          }
+
+          @media (min-width:569px) and (min-height:569px) {
+
+            .LH3wG,
+            .jhZvod {
+              text-align: center
+            }
+
+            .Wu0v9b,
+            .yK6jqe {
+              display: inline-block;
+              max-width: 568px;
+              min-width: 288px;
+              text-align: left
+            }
+
+            .b77HKf {
+              border-radius: 8px
+            }
+
+            .sHFNYd {
+              margin-left: 40px
+            }
+          }
+
+          .V9O1Yd .rIxsve {
+            display: block;
+            padding: 8px 0
+          }
+
+          .V9O1Yd .sHFNYd {
+            margin-left: 0
+          }
+
+          .V9O1Yd .sHFNYd g-flat-button {
+            padding-left: 0
+          }
+
+          .jhZvod {
+            left: 16px;
+            right: auto
+          }
+
+          .LH3wG,
+          .Ox8Cyd {
+            left: 0;
+            right: 0
+          }
+
+          .yK6jqe,
+          .Wu0v9b,
+          .E7Hdgb {
+            position: relative
+          }
+
+          .G9jore {
+            position: absolute;
+            top: -24px;
+            bottom: -24px;
+            left: -24px;
+            right: -24px
+          }
+
+          .mWcf0e {
+            cursor: pointer
+          }
+
+          @media (forced-colors:active) {
+            .CNbPnc {
+              background-color: ButtonFace;
+              border: 1px solid transparent;
+              border-color: ButtonBorder;
+              color: ButtonText
+            }
+          }
+
+          .VfL2Y {
+            position: relative;
+          }
+
+          .YQpX9d {
+            cursor: pointer;
+            position: relative;
+          }
+
+          .LRZwuc {
+            display: inline-block
+          }
+
+          .nKHyTc {
+            color: var(--IXoxUe);
+            float: right;
+            font-size: 12px;
+            line-height: 16px;
+            padding-bottom: 4px
+          }
+
+          .eDGqNd {
+            color: var(--IXoxUe);
+            float: right;
+            font-size: 12px;
+            line-height: 16px
+          }
+
+          .k62gjb:hover,
+          .k62gjb .W7GCoc:hover {
+            text-decoration: underline
+          }
+
+          .KLEmSd {
+            border-bottom: 1px solid #ecedef
+          }
+        </style>
+        <script nonce="V6InwOi0DaW-dBMLd6PwyA">
+          (function() {
+            google.tick("load", "sct");
+          }).call(this);
+        </script>
+        <style>
+          .sBbkle {
+            justify-content: space-between
+          }
+        </style>
+        <style>
+          .y3NyWc {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0
+          }
+
+          .y3NyWc {
+            width: calc(var(--center-width) + var(--rhs-margin) + var(--rhs-width) + 20px)
+          }
+        </style>
+        <div class="rfiSsc XtQzZd">
+          <div class="sBbkle" role="navigation">
+            <div class="xhjkHe CEXVle">
+              <div class="TrmO7"></div>
+            </div>
+            <div class="WRhYSc VDgVie Y4umW" id="abss-dropdown_1"></div>
+          </div>
+        </div>
+        <style>
+          .GLcBOb {
+            color: var(--IXoxUe);
+            font-size: 14px;
+            font-family: Google Sans, arial, sans-serif;
+            position: relative;
+            z-index: 126
+          }
+
+          .pZvJc {
+            background-color: transparent;
+            display: flex;
+            top: 0;
+            width: 100%;
+            white-space: nowrap;
+            height: 22px;
+            position: absolute;
+          }
+
+          .pZvJc.jf0C1c {
+            display: none
+          }
+
+          .pkWBse {
+            box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2)
+          }
+
+          .pkWBse {
+            border-radius: 8px
+          }
+
+          .UjBGL {
+            display: block
+          }
+
+          .CcNe6e {
+            cursor: pointer;
+            display: inline-block
+          }
+
+          .iRQHZe {
+            position: absolute
+          }
+
+          .Qaqu5 {
+            position: relative
+          }
+
+          .shnMoc.CcNe6e {
+            display: block
+          }
+
+          .v4Zpbe.CcNe6e {
+            display: flex;
+            height: 100%;
+            width: 100%
+          }
+
+          .PBn44e {
+            border-radius: 8px
+          }
+
+          .yTik0 {
+            border: none;
+            display: block;
+            outline: none
+          }
+
+          .wplJBd {
+            white-space: nowrap
+          }
+
+          .JM22S::-webkit-scrollbar {
+            width: 8px
+          }
+
+          .JM22S::-webkit-scrollbar-thumb {
+            background-color: #bababa;
+            border-right: 4px solid #fff
+          }
+
+          .iQXTJe {
+            padding: 5px 0
+          }
+
+          .EpPYLd {
+            display: block;
+            position: relative
+          }
+
+          .YpcDnf {
+            padding: 0 16px;
+            vertical-align: middle
+          }
+
+          .YpcDnf.HG1dvd {
+            padding: 0
+          }
+
+          .HG1dvd>* {
+            padding: 0 16px
+          }
+
+          .WtV5nd .YpcDnf {
+            padding-left: 28px
+          }
+
+          .Zt0a5e .YpcDnf {
+            line-height: 48px
+          }
+
+          .GZnQqe .YpcDnf {
+            line-height: 23px
+          }
+
+          .EpPYLd:hover {
+            cursor: pointer
+          }
+
+          .EpPYLd,
+          .CB8nDe:hover {
+            cursor: default
+          }
+
+          .LGiluc,
+          .EpPYLd[disabled] {
+            pointer-events: none;
+            cursor: default
+          }
+
+          .LGiluc {
+            border-top: 1px solid;
+            height: 0;
+            margin: 5px 0
+          }
+
+          .Zt0a5e.CB8nDe {
+            background: no-repeat left 8px center
+          }
+
+          .Zt0a5e.CB8nDe {
+            background-image: url(https://ssl.gstatic.com/images/icons/material/system/1x/done_black_16dp.png)
+          }
+
+          .GZnQqe.CB8nDe {
+            background: no-repeat left center
+          }
+
+          .GZnQqe.CB8nDe {
+            background-image: url(https://ssl.gstatic.com/ui/v1/menu/checkmark2.png)
+          }
+
+          .GZnQqe.LGiluc,
+          .GZnQqe.EpPYLd[disabled] {
+            color: #dadce0 !important
+          }
+
+          .GZnQqe.LGiluc {
+            border-top-color: var(--gS5jXb)
+          }
+
+          .Zt0a5e.LGiluc {
+            border-top-color: var(--gS5jXb)
+          }
+
+          .Zt0a5e.LGiluc,
+          .Zt0a5e.EpPYLd[disabled] {
+            color: rgba(0, 0, 0, 0.26) !important
+          }
+
+          .CjiZvb,
+          .GZnQqe.EpPYLd:active {
+            background-color: rgba(0, 0, 0, 0.1)
+          }
+
+          @media (min-height:576px) {
+            .uSolm .qk7LXc {
+              height: 100%
+            }
+
+            .uSolm {
+              padding: 64px 0px
+            }
+          }
+
+          @media (max-height:575px) {
+            .uSolm .qk7LXc {
+              height: 100%;
+              max-height: 448px
+            }
+          }
+
+          @media (min-height:496px) {
+            .GeOznc .qk7LXc {
+              height: 100%
+            }
+
+            .GeOznc {
+              padding: 24px 0px
+            }
+          }
+
+          @media (max-height:495px) {
+            .GeOznc .qk7LXc {
+              height: 100%;
+              max-height: 448px
+            }
+          }
+
+          .KUf18.ivkdbf {
+            background-color: rgba(0, 0, 0, 0.6);
+            opacity: 1;
+            visibility: inherit
+          }
+
+          .VfsLpf.ivkdbf {
+            background-color: #000;
+            opacity: .4;
+            visibility: inherit
+          }
+
+          .J3Hnlf.ivkdbf {
+            background-color: #202124;
+            opacity: .7;
+            visibility: inherit
+          }
+
+          .X46m8.ivkdbf {
+            background-color: #000;
+            opacity: .8;
+            visibility: inherit
+          }
+
+          .cBoDed.ivkdbf {
+            background-color: #f8f9fa;
+            opacity: .85;
+            visibility: inherit
+          }
+
+          .kyk7qb.ivkdbf {
+            background-color: #202124;
+            opacity: .6;
+            visibility: inherit
+          }
+
+          .qk7LXc.ivkdbf {
+            opacity: 1
+          }
+
+          .mcPPZ.ivkdbf {
+            opacity: 1;
+            visibility: inherit
+          }
+
+          .mcPPZ.nP0TDe {
+            cursor: pointer
+          }
+
+          .mcPPZ.nP0TDe .qk7LXc {
+            cursor: default
+          }
+
+          .kJFf0c {
+            position: fixed;
+            z-index: 9997;
+            right: 0;
+            bottom: -200px;
+            top: 0;
+            left: 0;
+            transition: opacity .25s;
+            opacity: 0;
+            visibility: hidden
+          }
+
+          .qk7LXc {
+            display: inline-block;
+            z-index: 9997;
+            background-color: #fff;
+            opacity: 0;
+            white-space: normal;
+            overflow: hidden
+          }
+
+          .qk7LXc {
+            border-radius: 8px
+          }
+
+          .qk7LXc {
+            box-shadow: 0px 5px 26px 0px rgba(0, 0, 0, 0.22), 0px 20px 28px 0px rgba(0, 0, 0, 0.3)
+          }
+
+          .qk7LXc.DJEOfc {
+            background-color: transparent
+          }
+
+          .qk7LXc.DJEOfc {
+            box-shadow: none
+          }
+
+          .qk7LXc.Fb1AKc {
+            position: relative;
+            vertical-align: middle
+          }
+
+          .qk7LXc.By9mMc {
+            position: fixed
+          }
+
+          .qk7LXc.ulWzbd {
+            position: absolute
+          }
+
+          .qk7LXc.P1WYLb {
+            border: 1px solid var(--mXZkqc);
+            box-shadow: #dadce0
+          }
+
+          .mcPPZ {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            z-index: 9997;
+            vertical-align: middle;
+            visibility: hidden;
+            white-space: nowrap;
+            max-height: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+            overflow-y: auto
+          }
+
+          .mcPPZ.xg7rAe {
+            text-align: center
+          }
+
+          .mcPPZ::after {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle
+          }
+
+          .LjfRsf {
+            height: 0;
+            opacity: 0;
+            position: absolute;
+            width: 0
+          }
+
+          .VH47ed {
+            visibility: hidden
+          }
+
+          .TaoyYc {
+            overflow: hidden
+          }
+
+          .qk7LXc.aJPx6e {
+            overflow: visible
+          }
+
+          .vAJJzd {
+            opacity: .999
+          }
+
+          .yMNJR .qk7LXc {
+            max-width: 100%
+          }
+
+          .cJFqsd .qk7LXc {
+            height: 100%
+          }
+
+          .rfx2Y .qk7LXc {
+            width: 100%
+          }
+
+          .BhUHze .qk7LXc {
+            width: 75%
+          }
+
+          .dgVGnc .qk7LXc {
+            width: 90%
+          }
+
+          .gTMtLb {
+            z-index: 1001;
+            position: absolute;
+            top: -1000px
+          }
+
+          @keyframes ghost-card-shimmering {
+            0% {
+              transform: translateX(-100%)
+            }
+
+            100% {
+              transform: translateX(100%)
+            }
+          }
+
+          .IiOSLb .rsGxI.Ww4FFb,
+          .Ww4FFb {
+            background-color: var(--xhUGwc);
+            border-radius: 0px;
+            border-width: 0;
+            box-shadow: none
+          }
+
+          .Ww4FFb .mnr-c:not(:empty),
+          .mnr-c:not(:empty) .Ww4FFb,
+          .Ww4FFb .Ww4FFb {
+            box-shadow: none;
+            margin-bottom: 0px
+          }
+
+          .vt6azd {
+            margin: 0px 0px 8px
+          }
+
+          .vt6azd {
+            margin: 0px 0px 30px
+          }
+
+          .CBvvz {
+            margin: -var(--sds-sys-measurement--space-sm) 0px 0px
+          }
+
+          .CBvvz {
+            margin: -30px 0px 0px
+          }
+        </style>
+        <div jscontroller="HYSCof" class="gke0pe" id="top_nav" jsdata="Z1JpA;_;AGk+MM" jsaction="rcuQ6b:npT2md">
+          <div class="GLcBOb" id="hdtb">
+            <div class="pZvJc jf0C1c" data-st-cnt="stb" id="hdtbMenus" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ3B96BAgCEAE">
+              <div class="BfdGL ZkEmPc" id="tn_1"></div>
+            </div>
+          </div>
+        </div>
+        <div id="before-appbar">
+          <div id="_uURDZsnyN5GshbIPwf29wA8_10"></div>
+        </div>
+        <div class="gTMtLb fp-nh" id="lb"></div>
+        <div class="appbar" data-st-cnt="appbar" id="appbar">
+          <div data-st-tgt="appbar">
+            <style>
+              @keyframes loading-pulse {
+                from {
+                  opacity: 0.2
+                }
+
+                to {
+                  opacity: 1
+                }
+              }
+            </style>
+            <div id="tU52Vb">
+              <div style="position:relative">
+                <div class="WE0UJf" id="slim_appbar"></div>
+              </div>
+            </div>
+            <div jscontroller="sYEX8b" jsname="GGAcbc" class="AeB7Sc" data-cssl="/setprefs?hl=en&amp;prev=https://www.google.com/search?q%3Dhow%2Bmany%2Bbenefits%2Bcan%2Bi%2Bclaim%26client%3Dsafari%26sca_esv%3D334bdb2960993fde%26source%3Dhp%26ei%3Dp0RDZs_1HeykhbIP8t2t2AY%26iflsig%3DAL9hbdgAAAAAZkNSt4mKFb5SfxtnEGehwERVoJ3fo-Zh%26oq%3Dhow%2Bmany%2Bbenefits%2Bcan%2Bi%26gs_lp%3DEgdnd3Mtd2l6Ihdob3cgbWFueSBiZW5lZml0cyBjYW4gaSoCCAAyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSIN_UIQIWPhwcAh4AJABA5gBsAOgAdsiqgELMTIuMTEuMy4zLjG4AQHIAQD4AQGYAiKgArEbqAIKwgIQEAAYAxjlAhjqAhiMAxiPAcICEBAuGAMY5QIY6gIYjAMYjwHCAhEQLhiABBixAxjRAxiDARjHAcICCBAuGIAEGLEDwgIOEAAYgAQYsQMYgwEYigXCAgsQLhiABBixAxiDAcICCxAAGIAEGLEDGIMBwgIOEC4YgAQYsQMYgwEYigXCAg4QLhiABBixAxiDARjUAsICBRAuGIAEwgIOEC4YgAQYsQMY0QMYxwHCAgsQLhiABBjRAxjHAcICDhAuGIAEGMcBGI4FGK8BwgIIEAAYgAQYsQPCAgsQLhiABBixAxjUAsICBBAAGAOYA-ACkgcJMTkuMTAuMy4yoAf45gI%26sclient%3Dgws-wiz%26safe%3Dactive%26pccc%3D1&amp;sig=0_rZrDClpJbA9OxAXFaKrmXmSeSD0%3D&amp;cs=2" data-eif="1" data-escd="1" data-kulima="1" id="spic_1" aria-label="Search settings" role="dialog" tabindex="-1" jsaction="rcuQ6b:npT2md;Lhx8ef:hZ2GLc;UVNdjb;keydown:mivSOc" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQzNQJegQIBBAC"></div>
+          </div>
+        </div>
+        <div id="_uURDZsnyN5GshbIPwf29wA8_12"></div>
+        <div data-spl="/setprefs?hl=en&amp;prev=https://www.google.com/search?q%3Dhow%2Bmany%2Bbenefits%2Bcan%2Bi%2Bclaim%26client%3Dsafari%26sca_esv%3D334bdb2960993fde%26source%3Dhp%26ei%3Dp0RDZs_1HeykhbIP8t2t2AY%26iflsig%3DAL9hbdgAAAAAZkNSt4mKFb5SfxtnEGehwERVoJ3fo-Zh%26oq%3Dhow%2Bmany%2Bbenefits%2Bcan%2Bi%26gs_lp%3DEgdnd3Mtd2l6Ihdob3cgbWFueSBiZW5lZml0cyBjYW4gaSoCCAAyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSIN_UIQIWPhwcAh4AJABA5gBsAOgAdsiqgELMTIuMTEuMy4zLjG4AQHIAQD4AQGYAiKgArEbqAIKwgIQEAAYAxjlAhjqAhiMAxiPAcICEBAuGAMY5QIY6gIYjAMYjwHCAhEQLhiABBixAxjRAxiDARjHAcICCBAuGIAEGLEDwgIOEAAYgAQYsQMYgwEYigXCAgsQLhiABBixAxiDAcICCxAAGIAEGLEDGIMBwgIOEC4YgAQYsQMYgwEYigXCAg4QLhiABBixAxiDARjUAsICBRAuGIAEwgIOEC4YgAQYsQMY0QMYxwHCAgsQLhiABBjRAxjHAcICDhAuGIAEGMcBGI4FGK8BwgIIEAAYgAQYsQPCAgsQLhiABBixAxjUAsICBBAAGAOYA-ACkgcJMTkuMTAuMy4yoAf45gI%26sclient%3Dgws-wiz%26safe%3Dactive%26pccc%3D1&amp;sig=0_rZrDClpJbA9OxAXFaKrmXmSeSD0%3D&amp;cs=2" id="YUIDDb" style="display:none"></div>
+        <div data-iatvcap="1" data-st-cnt="atvcap" id="atvcap"></div>
+        <div class="GyAeWb" id="rcnt">
+          <div class="s6JM6d" id="center_col">
+            <style>
+              .hlcw0c {
+                margin-bottom: 44px
+              }
+
+              .tF2Cxc.asEBEc {
+                margin-bottom: 30px
+              }
+
+              .N54PNb {
+                position: relative
+              }
+
+              .kb0PBd {
+                display: block;
+                flex: 0 0 auto
+              }
+
+              .A9Y9g {
+                flex: 1 1 100%;
+                min-width: 0
+              }
+
+              .cvP2Ce {
+                contain: layout paint;
+                overflow: hidden
+              }
+
+              .byrV5b {
+                align-items: center;
+                display: flex;
+                flex-direction: row
+              }
+
+              .sBJG1d {
+                display: flex;
+                flex-direction: row;
+                justify-content: center
+              }
+
+              .kDmHO {
+                align-items: center;
+                display: flex;
+                flex-direction: column
+              }
+
+              .lR4vec {
+                display: flex;
+                flex-direction: column;
+                justify-content: center
+              }
+
+              .xTEyc {
+                align-items: start;
+                display: flex;
+                flex-direction: row
+              }
+
+              .OjFzvd {
+                display: flex;
+                flex-direction: row;
+                justify-content: start
+              }
+
+              .YIPhrb {
+                align-items: start;
+                display: flex;
+                flex-direction: column
+              }
+
+              .BToiNc {
+                display: flex;
+                flex-direction: column;
+                justify-content: start
+              }
+
+              .E4bmEc .Va021 {
+                flex: 1 1 100%
+              }
+
+              .E4bmEc .Y76LGf {
+                flex: 1 1 calc(50% - 4px)
+              }
+
+              a:hover h3.LC20lb {
+                text-decoration: underline
+              }
+
+              .M8OgIe .dG2XIf .fm06If .LC20lb,
+              .n6SJS h3.LC20lb {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                width: 100%
+              }
+
+              .LC20lb {
+                display: inline-block;
+                line-height: 1.3;
+                margin-bottom: 3px;
+              }
+
+              .DKV0Md {
+                padding-top: 4px;
+                padding-top: 5px;
+              }
+
+              .DKV0Md,
+              .Z3xoIb {
+                margin-top: 18px;
+              }
+
+              .VjDLd .TieM1d .tjvcx,
+              .IVvPP .tjvcx,
+              .kno-kp .tjvcx,
+              .VjDLd .kp-wholepage-osrp .tjvcx,
+              #rhs .ss6qqb .tjvcx,
+              #rhs .trNcde .tjvcx {
+                display: inline-block;
+                height: 19px;
+                overflow-y: hidden
+              }
+
+              .ojE3Fb {
+                padding: 0;
+                padding-bottom: 0;
+              }
+
+              .ojE3Fb .q0vns {
+                display: flex;
+                overflow: hidden;
+                padding: 0;
+                padding-bottom: 0;
+                align-items: center;
+              }
+
+              .GvPZzd {
+                font-size: 12px;
+                line-height: 18px;
+              }
+
+              .VuuXrf {
+                color: #202124;
+                font-size: 14px;
+                display: block;
+                line-height: 20px;
+                white-space: nowrap;
+              }
+
+              .CA5RN {
+                overflow: hidden
+              }
+
+              .DDKf1c {
+                margin-right: 12px;
+              }
+
+              .UnOTSe img {
+                border: 1px solid #dadce0;
+                background-color: #f1f3f4;
+                border-radius: 50%;
+              }
+
+              .Vwoesf:not(.oRVWZ) {
+                display: inline-block
+              }
+
+              .Vwoesf {
+                vertical-align: middle
+              }
+
+              .XNo5Ab.XNo5Ab {
+                display: block;
+              }
+
+              .ob9lvb {
+                color: #4d5156
+              }
+
+              .ylgVCe {
+                color: #4d5156
+              }
+
+              .B6fmyf {
+                position: absolute;
+                top: 0;
+                height: 0;
+                visibility: hidden;
+                white-space: nowrap;
+                width: 100%
+              }
+
+              .B6fmyf.Mg1HEd {
+                height: auto
+              }
+
+              .csDOgf {
+                display: inline;
+                visibility: visible
+              }
+
+              .csDOgf.BCF2pd.ezY6nb,
+              .csDOgf.L48a4c {
+                height: 18px
+              }
+
+              .csDOgf {
+                margin-left: 8px;
+                position: relative
+              }
+
+              .csDOgf.L48a4c {
+                margin-top: 16px
+              }
+
+              .csDOgf .MJ8UF {
+                padding-left: 0
+              }
+
+              .Jfbdu {
+                display: contents
+              }
+
+              .N8V7Jc {
+                height: 100%
+              }
+
+              .Vy8GE {
+                display: contents
+              }
+
+              .IjabWd {
+                margin-left: 2px
+              }
+
+              .xTFaxe {
+                top: 2px
+              }
+
+              .xTFaxe {
+                color: #4d5156
+              }
+
+              .D6lY4c {
+                height: 22px;
+                width: 22px;
+                position: absolute;
+                border-radius: 11px
+              }
+
+              .iTPLzd {
+                cursor: pointer;
+                top: 0;
+                line-height: 16px
+              }
+
+              .iTPLzd {
+                left: 0;
+                width: 28px
+              }
+
+              .iTPLzd {
+                z-index: 1
+              }
+
+              .GCkcpb {
+                cursor: pointer;
+                top: 0;
+                padding-bottom: 12px;
+                margin-left: 8px
+              }
+
+              .rNSxBe {
+                padding-bottom: 20px
+              }
+
+              .eY4mx {
+                padding-left: 12px
+              }
+
+              .lUn2nc {
+                padding-right: 12px
+              }
+
+              .yXK7lf em {
+                color: #5f6368
+              }
+
+              .yXK7lf a:visited em,
+              .yXK7lf a em {
+                color: inherit
+              }
+
+
+              .r025kc.lVm3ye {
+                color: #4d5156
+              }
+
+              .Hdw6tb {
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                overflow: hidden
+              }
+
+              .EWpfde {
+                margin-top: 12px
+              }
+
+              .sWISj {
+                color: #4d5156
+              }
+
+              .sWISj.wHYlTd {
+                line-height: 20px
+              }
+
+              hr.dEsxWc,
+              .dEsxWc {
+                margin-top: 8px
+              }
+            </style>
+            <div id="taw">
+              <div id="oFNiHe" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQL3oECAUQAw"></div>
+              <div id="tvcap"></div>
+            </div>
+            <div class="eqAnXb" id="res" role="main">
+              <div id="topstuff"></div>
+              <div id="search">
+                <div data-hveid="CAUQBQ" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQGnoECAUQBQ">
+                  <h1 class="bNg8Rb OhScic zsYMMe BBwThe">Search Results</h1>
+                  <div class="dURPMd" eid="uURDZsnyN5GshbIPwf29wA8" data-async-context="query:how%20many%20benefits%20can%20i%20claim" id="rso">
+                    <div class="hlcw0c">
+                        <div class="MjjYud">
+                        <div jscontroller="SC7lYd" class="g Ww4FFb vt6azd tF2Cxc asEBEc" lang="en" style="width:600px" jsaction="QyLbLe:OMITjf;ewaord:qsYrDe;xd28Mb:A6j43c" data-hveid="CEEQAA" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQFSgAegQIQRAA">
+                          <div class="N54PNb BToiNc cvP2Ce" data-snc="FQmlv">
+                            <div class="kb0PBd cvP2Ce A9Y9g jGGQ5e" data-snf="x5WNvb" data-snhf="0">
+                              <div class="yuRUbf">
+                                <div><span jscontroller="msmzHf" jsaction="rcuQ6b:npT2md;PYDNKe:bLV6Bd;mLt3mc"><a jsname="UWckNb" href="benefits-home" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQFnoECDcQAQ" data-sb="/url?sa=t&amp;source=web&amp;rct=j&amp;opi=89978449&amp;url=https://www.gov.uk/browse/benefits&amp;ved=2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQFnoECDcQAQ&amp;usg=AOvVaw2QeBzrFmt5fb-h2FhjPJ3r"><br>
+                                      <h3 class="LC20lb MBeuO DKV0Md">Benefits</h3>
+                                      <div class="notranslate HGLrXd NJjxre iUh30 ojE3Fb">
+                                        <div class="q0vns"><span class="DDKf1c">
+                                            <div class="eqA2re UnOTSe Vwoesf" aria-hidden="true"><img class="XNo5Ab" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAZlBMVEULDAwAAAC0tLQ2Nja7u7vw7+////8DBQV1dXW2trYCBAQYGRnh4eGhoqL39/elpaUTFBQnKCg5OTlBQUHW1tYcHR3Ly8tVVVXQ0dGUlZVvb29kZGQtLi6cnJxSUlKFhobs7Ox9fn4ESLXQAAAAzklEQVR4AdWQxYEDMRDAVobxMjNf/0UGPuHkdySzZRzvJ4APTineOm2MfmexIva1dOAHgQ/uSYVEcUKaksX5ow6LspK6FCljKcvm3pKKpx1ti6ejh4tB1eAoChzUihtLpziPETnXoDqushef05gg4LQSX/obWQ6MklONY0UuI4O+lROdzF5jbePN0jGVN3KpszG1axrH6WrTMasXbgOXDfU4J9uWzGM9ZHd/YTCotij3vSxahRlupXNyh7sLEW2rlu3rxLaoc5zu4A7vP3IEthwK1c65KPQAAAAASUVORK5CYII=" style="height:26px;width:26px" alt=""></div>
+                                          </span>
+                                          <div class="CA5RN">
+                                            <div><span class="VuuXrf">GOV.UK</span></div>
+                                            <div class="byrV5b"><cite class="qLRx3b tjvcx GvPZzd cHaqb" role="text">https://www.gov.uk<span class="ylgVCe ob9lvb" role="text"> › browse › benefits</span></cite></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a></span>
+                                  <div class="B6fmyf byrV5b Mg1HEd">
+                                    <div class="HGLrXd iUh30 ojE3Fb">
+                                      <div class="q0vns"><span class="DDKf1c">
+                                          <div class="eqA2re UnOTSe" style="height:26px;width:26px"></div>
+                                        </span>
+                                        <div class="CA5RN">
+                                          <div><span class="VuuXrf">GOV.UK</span></div>
+                                          <div class="byrV5b"><cite class="qLRx3b tjvcx GvPZzd cHaqb" role="text">https://www.gov.uk<span class="ylgVCe ob9lvb" role="text"> › browse › benefits</span></cite></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="csDOgf BCF2pd L48a4c">
+                                      <div jscontroller="gOTY1" data-id="atritem-https://www.gov.uk/browse/benefits" jsdata="PFrTzf;_;AGk+Mo" data-viewer-group="1" jsaction="rcuQ6b:npT2md;aevozb:T2P31d;vcOT6c:C6KsF;k7WJpc:beCLof">
+                                        <div>
+                                          <div jsdata="l7Bhpb;_;AGk+Ns" jscontroller="PbHo4e" jsshadow="" jsaction="rcuQ6b:npT2md;h5M12e;jGQF0b:kNqZ1c;" data-viewer-entrypoint="1" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ2esEegQINxAJ">
+                                            <div jsslot="">
+                                              <div jsname="I3kE2c" class="MJ8UF iTPLzd rNSxBe eY4mx lUn2nc" style="position:absolute" aria-label="About this result" role="button" tabindex="0"><span jsname="czHhOd" class="D6lY4c mBswFe"><span jsname="Bil8Ae" class="xTFaxe z1asCe" style="height:18px;line-height:18px;width:18px"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                      <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                                                    </svg></span></span></div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="kb0PBd cvP2Ce A9Y9g" data-snf="nke7rc" data-sncf="1">
+                              <div class="VwiC3b yXK7lf lVm3ye r025kc hJNv6b Hdw6tb" style="-webkit-line-clamp:2"><span>Manage an existing <em>benefit</em>, payment or <em>claim</em>. Sign in to your account, report changes, find out about overpayments, or appeal a decision. Includes existing ...</span></div>
+                            </div>
+                            <div class="kb0PBd cvP2Ce A9Y9g" data-snf="gdePb" data-sncf="2">
+                              <div class="HiHjCd"<a href="https://www.gov.uk/browse/benefits/disability" data-sb="/url?sa=t&amp;source=web&amp;rct=j&amp;opi=89978449&amp;url=https://www.gov.uk/browse/benefits/disability&amp;ved=2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ0gIoAHoECDkQAQ&amp;usg=AOvVaw1wowMmedCIVEJ5a5r1EGFx">Benefits and financial support</a> · ‎<a href="https://www.gov.uk/browse/benefits/manage-your-benefit" data-sb="/url?sa=t&amp;source=web&amp;rct=j&amp;opi=89978449&amp;url=https://www.gov.uk/browse/benefits/manage-your-benefit&amp;ved=2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ0gIoAXoECDkQAg&amp;usg=AOvVaw3TISjOdKpgZGgatPTXnn70">Manage an existing benefit...</a> · ‎<a href="https://www.gov.uk/browse/benefits/unable-to-work" data-sb="/url?sa=t&amp;source=web&amp;rct=j&amp;opi=89978449&amp;url=https://www.gov.uk/browse/benefits/unable-to-work&amp;ved=2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ0gIoAnoECDkQAw&amp;usg=AOvVaw2Mvq4yASX6ZqA2GcjvmCUc">Financial support</a></div>
+                            </div>
+                          </div>
+                        </div>
+                
+                        <style>
+                          .Jj3Uob {
+                            color: #0060f0;
+                          }
+
+                          .cUnQKe {
+                            margin-bottom: 44px;
+                            position: relative
+                          }
+
+                          .cUnQKe.wHYlTd {
+                            line-height: 20px
+                          }
+
+                          .eJH8qe.eJH8qe {
+                            padding: 0 0 8px
+                          }
+
+                          .adDDi {
+                            display: flex;
+                            position: relative;
+                            flex-wrap: wrap;
+                            padding: 0 0 12px;
+                            margin: 0 0
+                          }
+
+                          .T6zPgb {
+                            min-width: 0
+                          }
+
+                          .YC72Wc {
+                            max-width: calc(100% - 34px);
+                          }
+
+                          .mgAbYb {
+                            display: block;
+                            white-space: nowrap
+                          }
+
+                          .YR2tRd {
+                            position: relative;
+                            align-self: center;
+                            height: 22px
+                          }
+
+                          .Bb1JKe {
+                            padding-bottom: 8px
+                          }
+
+                          .ouy7Mc {
+                            padding-left: 16px;
+                            padding-right: 16px
+                          }
+
+                          .Kc1gdb {
+                            padding-top: 4px
+                          }
+
+                          .s8bAkb {
+                            padding-bottom: 0px;
+                            padding-top: 0px
+                          }
+
+                          .eJtrMc {
+                            padding-bottom: 8px;
+                            padding-top: 8px
+                          }
+
+                          .VCOFK {
+                            margin-left: 8px;
+                            margin-right: 8px
+                          }
+
+                          .gduDCb {
+                            margin-left: 12px
+                          }
+
+                          .dG2XIf.cUnQKe .related-question-pair .wDYxhc:not(.NFQFxe),
+                          .cUnQKe .related-question-pair .g {
+                            padding-left: 0px;
+                            padding-right: 0px
+                          }
+
+                          .wQiwMc .g {
+                            margin-bottom: 4px;
+                            clear: both
+                          }
+
+                          .CSkcDe,
+                          .related-question-pair div.iDjcJe {
+                            color: var(--YLNNHc);
+                            font-family: Google Sans, arial, sans-serif;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 24px
+                          }
+
+                          .ilulF .JCzEY,
+                          .ilulF .WltAjf {
+                            -webkit-line-clamp: unset !important
+                          }
+
+                          .oST1qe .JCzEY {
+                            color: var(--YLNNHc)
+                          }
+
+                          .g7pt6d .JCzEY {
+                            font-family: arial, sans-serif;
+                            font-size: 16px
+                          }
+
+                          .o3PDvf .p8Jhnd {
+                            margin-top: 8px !important;
+                            margin-bottom: 8px !important
+                          }
+
+                          .cUnQKe .wDYxhc,
+                          .related-question-pair .wDYxhc,
+                          .M8OgIe .fm06If .wDYxhc {
+                            clear: none
+                          }
+
+                          #res .Jb0Zif .qDOt0b h3,
+                          .IVvPP .qDOt0b h3 {
+                            font-size: 16px;
+                            line-height: 1.375
+                          }
+
+                          .Jb0Zif .qDOt0b .iUh30,
+                          .IVvPP .qDOt0b .iUh30 {
+                            font-size: 14px;
+                            line-height: 1.58
+                          }
+
+                          .cUnQKe .ILfuVd,
+                          .cUnQKe .UiGGAb.ILfuVd,
+                          .w5mTAe .ILfuVd,
+                          .W0urI .ILfuVd {
+                            color: var(--bbQxAb);
+                            font-family: Google Sans, arial, sans-serif;
+                            font-size: 16px;
+                            line-height: 24px
+                          }
+
+                          .fm06If .ILfuVd b,
+                          .trNcde .ILfuVd b,
+                          .cUnQKe .ILfuVd b,
+                          .c2xzTb .ILfuVd b,
+                          .w5mTAe .ILfuVd b,
+                          .W0urI .ILfuVd b {
+                            background-color: #d3e3fd;
+                            color: #040c28;
+                            font-weight: 500
+                          }
+
+                          @media (forced-colors:active) {
+
+                            .fm06If .ILfuVd b,
+                            .c2xzTb .ILfuVd b,
+                            .trNcde .ILfuVd b,
+                            .cUnQKe .ILfuVd b,
+                            .w5mTAe .ILfuVd b,
+                            .W0urI .ILfuVd b {
+                              background-color: Mark;
+                              color: MarkText
+                            }
+                          }
+
+                          .H9lube {
+                            background-color: #f1f3f4;
+                            border: 1px solid #dadce0;
+                            border-radius: 50%;
+                            display: inline-flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 26px;
+                            width: 26px;
+                            margin-right: 12px;
+                            flex-shrink: 0;
+                            vertical-align: middle;
+                          }
+
+                          .fJOpI.H9lube {
+                            background-color: #e2eeff;
+                            border: 1px solid #e2eeff
+                          }
+
+                          .eqA2re.NjwKYd {
+                            margin-right: 0
+                          }
+
+                          .related-question-pair .Crs1tb,
+                          .trNcde .Crs1tb {
+                            font-size: 14px
+                          }
+
+                          .XVdSCb {
+                            height: 16px
+                          }
+
+                          #rhs .KFFQ0c,
+                          .xpd-wa .KFFQ0c {
+                            display: none
+                          }
+
+                          .KFFQ0c {
+                            align-items: center;
+                            display: flex;
+                            margin-bottom: 0px;
+                            width: 652px
+                          }
+
+                          .akqY6 {
+                            background: var(--gS5jXb);
+                            height: 1px;
+                            width: 100%
+                          }
+
+                          .KFFQ0c .YfftMc,
+                          .KFFQ0c .YfftMc span,
+                          .KFFQ0c .YfftMc div,
+                          .KFFQ0c .YfftMc a {
+                            align-items: center;
+                            color: var(--IXoxUe);
+                            display: flex;
+                            font-size: 12px;
+                            font-style: normal;
+                            margin: 0;
+                            padding: 0;
+                            white-space: nowrap
+                          }
+
+                          .KFFQ0c .YfftMc {
+                            flex-shrink: 0;
+                            margin-left: 14px
+                          }
+
+                          .xKf9F {
+                            margin-top: 16px
+                          }
+                        </style>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="MjjYud">
+                        <div jscontroller="Da4hkd" jsname="bq0EGf" class="cUnQKe" data-initq="how many benefits can i claim" data-qc="Ch1ob3cgbWFueSBiZW5lZml0cyBjYW4gaSBjbGFpbRAAfTJWUD8" data-ulkwtsb="1" jsdata="Dmybpc;_;AGk+NA" jsaction="HUiaHb:mlZWMd;FmigO:OKc46b;rcuQ6b:QyrbTd" data-hveid="CB8QAA" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQuU4oAHoECB8QAA">
+                          <div class="Wt5Tfe">
+                            <div class="eJH8qe adDDi">
+                              <div class="T6zPgb YC72Wc">
+                                <div aria-level="2" role="heading"><span class="mgAbYb OSrXXb RES9jf IFnjPb">People also ask</span></div>
+                              </div><span class="YR2tRd">
+                                <div jscontroller="gOTY1" data-id="atritem-" jsdata="PFrTzf;_;AGk+Mo" data-viewer-group="1" jsaction="rcuQ6b:npT2md;aevozb:T2P31d;vcOT6c:C6KsF;k7WJpc:beCLof">
+                                  <div>
+                                    <div jsdata="l7Bhpb;_;AGk+NI" jscontroller="PbHo4e" jsshadow="" jsaction="rcuQ6b:npT2md;h5M12e;jGQF0b:kNqZ1c;" data-viewer-entrypoint="1" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ2esEegQIHxAC">
+                                      <div jsslot="">
+                                        <div jsname="I3kE2c" class="iTPLzd rNSxBe eY4mx lUn2nc" style="position:absolute" aria-label="About this result" role="button" tabindex="0"><span jsname="czHhOd" class="D6lY4c mBswFe"><span jsname="Bil8Ae" class="xTFaxe z1asCe" style="height:18px;line-height:18px;width:18px"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                                              </svg></span></span></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </span>
+                            </div>
+                            <div jsname="N760b" data-bs="c-Py4VJyTsxTqMwvVUhPLVHIzS9KVSjJAIrk56UqJKXmpaZllthL_OE1UpZSTCakkCuGSys8I7FEvRgolaqQm1iRmVuaC5MtBmsGGZKck5iZay_xQtZIW0qznFgNINM98suBqvIqEUpA0okKxZl56TmpCgWpRcX5eSAH2kvsZgWZngHSUJqcQVADVx2XNcjtCpmobknMzS_NK4G7BOR3oIbQvMwyoNbEHAXnotQUUBAdLTCykbIqJ9qEUrgJyWATBBgB" data-sgrd="true" id="_uURDZsnyN5GshbIPwf29wA8_33">
+                              <div jsname="yEVEwb">
+                                <div id="uURDZsnyN5GshbIPwf29wA8__29">
+                                  <div jscontroller="xfmZMb" class="wQiwMc related-question-pair" data-lk="GiFjYW4geW91IGdldCBtb3JlIHRoYW4gb25lIGJlbmVmaXQ" data-q="Can you get more than one benefit?" decode-data-ved="1" jsaction="rcuQ6b:npT2md;aVMkAb:o7YQ2;uUCWgf:NlNJyb" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQq7kBKAB6BAgnEAA">
+                                    <div jsname="YrZdPb" class="HYvwY ilulF roMIYb o3PDvf oST1qe g7pt6d h373nd" jscontroller="aD8OEe" data-dic="" data-g="" data-ullb="" data-sm="" jsshadow="" jsaction="rcuQ6b:npT2md;C0pONd:mhSdVe;A0VnDe:rXa5ib;IKGI6b:VrL1hd">
+                                      <div jsname="clz4Ic" class="ysxiae iRPzcb"></div>
+                                      <div data-hveid="CCcQAQ">
+                                        <div jsname="tJHJj" class="dnXCYb" aria-controls="_uURDZsnyN5GshbIPwf29wA8_39" aria-expanded="false" role="button" tabindex="0" jsaction="AWEk5c">
+                                          <div jsname="lN6iy" class="JlqpRe"><span jsname="r4nke" class="JCzEY tNxQIb"><span class="CSkcDe">Can you get more than one benefit?</span></span></div>
+                                          <div jsname="wgPSWd" class="p8Jhnd">
+                                            <div jsname="Q8Kwad" class="aj35ze"></div>
+                                          </div>
+                                          <div jsname="pcRaIe" class="L3Ezfd" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQuk56BAgnEAI"></div>
+                                          <div jsname="gwzXIc" class="ru2Kjc" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ36YDegQIJxAD"></div>
+                                        </div>
+                                      </div>
+                                      <div jsname="NRdf4c" class="bCOlv" id="_uURDZsnyN5GshbIPwf29wA8_39" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ7NUEegQIJxAE"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div jsname="yEVEwb">
+                                <div id="uURDZsnyN5GshbIPwf29wA8__32">
+                                  <div jscontroller="xfmZMb" class="wQiwMc related-question-pair" data-lk="Gil3aGF0J3MgdGhlIG1heGltdW0gYmVuZWZpdHMgeW91IGNhbiBjbGFpbQ" data-q="What's the maximum benefits you can claim?" decode-data-ved="1" jsaction="rcuQ6b:npT2md;aVMkAb:o7YQ2;uUCWgf:NlNJyb" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQq7kBKAB6BAgjEAA">
+                                    <div jsname="YrZdPb" class="HYvwY ilulF roMIYb o3PDvf oST1qe g7pt6d h373nd" jscontroller="aD8OEe" data-dic="" data-g="" data-ullb="" data-sm="" jsshadow="" jsaction="rcuQ6b:npT2md;C0pONd:mhSdVe;A0VnDe:rXa5ib;IKGI6b:VrL1hd">
+                                      <div jsname="clz4Ic" class="ysxiae iRPzcb"></div>
+                                      <div data-hveid="CCMQAQ">
+                                        <div jsname="tJHJj" class="dnXCYb" aria-controls="_uURDZsnyN5GshbIPwf29wA8_35" aria-expanded="false" role="button" tabindex="0" jsaction="AWEk5c">
+                                          <div jsname="lN6iy" class="JlqpRe"><span jsname="r4nke" class="JCzEY tNxQIb"><span class="CSkcDe">What's the maximum benefits you can claim?</span></span></div>
+                                          <div jsname="wgPSWd" class="p8Jhnd">
+                                            <div jsname="Q8Kwad" class="aj35ze"></div>
+                                          </div>
+                                          <div jsname="pcRaIe" class="L3Ezfd" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQuk56BAgjEAI"></div>
+                                          <div jsname="gwzXIc" class="ru2Kjc" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ36YDegQIIxAD"></div>
+                                        </div>
+                                      </div>
+                                      <div jsname="NRdf4c" class="bCOlv" id="_uURDZsnyN5GshbIPwf29wA8_35" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ7NUEegQIIxAE"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div jsname="yEVEwb">
+                                <div id="uURDZsnyN5GshbIPwf29wA8__35">
+                                  <div jscontroller="xfmZMb" class="wQiwMc related-question-pair" data-lk="Gilob3cgbXVjaCBiZW5lZml0cyBjYW4gYSBzaW5nbGUgcGVyc29uIGdldA" data-q="How many benefits can a single person get?" decode-data-ved="1" jsaction="rcuQ6b:npT2md;aVMkAb:o7YQ2;uUCWgf:NlNJyb" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQq7kBKAB6BAgmEAA">
+                                    <div jsname="YrZdPb" class="HYvwY ilulF roMIYb o3PDvf oST1qe g7pt6d h373nd" jscontroller="aD8OEe" data-dic="" data-g="" data-ullb="" data-sm="" jsshadow="" jsaction="rcuQ6b:npT2md;C0pONd:mhSdVe;A0VnDe:rXa5ib;IKGI6b:VrL1hd">
+                                      <div jsname="clz4Ic" class="ysxiae iRPzcb"></div>
+                                      <div data-hveid="CCYQAQ">
+                                        <div jsname="tJHJj" class="dnXCYb" aria-controls="_uURDZsnyN5GshbIPwf29wA8_38" aria-expanded="false" role="button" tabindex="0" jsaction="AWEk5c">
+                                          <div jsname="lN6iy" class="JlqpRe"><span jsname="r4nke" class="JCzEY tNxQIb"><span class="CSkcDe">How many benefits can a single person get?</span></span></div>
+                                          <div jsname="wgPSWd" class="p8Jhnd">
+                                            <div jsname="Q8Kwad" class="aj35ze"></div>
+                                          </div>
+                                          <div jsname="pcRaIe" class="L3Ezfd" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQuk56BAgmEAI"></div>
+                                          <div jsname="gwzXIc" class="ru2Kjc" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ36YDegQIJhAD"></div>
+                                        </div>
+                                      </div>
+                                      <div jsname="NRdf4c" class="bCOlv" id="_uURDZsnyN5GshbIPwf29wA8_38" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ7NUEegQIJhAE"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div jsname="yEVEwb">
+                                <div id="uURDZsnyN5GshbIPwf29wA8__38">
+                                  <div jscontroller="xfmZMb" class="wQiwMc related-question-pair" data-lk="cwXB0Q2AMAgFwD38enO4zUsllkQgacHW7b07ztWZ0InsAuNWKwMtyhNfFBodtyTCUa6vjMkHbcil-QM" data-q="What is the maximum amount you can get on Universal Credit?" decode-data-ved="1" jsaction="rcuQ6b:npT2md;aVMkAb:o7YQ2;uUCWgf:NlNJyb" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQq7kBKAB6BAggEAA">
+                                    <div jsname="YrZdPb" class="HYvwY ilulF roMIYb o3PDvf oST1qe g7pt6d h373nd" jscontroller="aD8OEe" data-dic="" data-g="" data-ullb="" data-sm="" jsshadow="" jsaction="rcuQ6b:npT2md;C0pONd:mhSdVe;A0VnDe:rXa5ib;IKGI6b:VrL1hd">
+                                      <div jsname="clz4Ic" class="ysxiae iRPzcb"></div>
+                                      <div data-hveid="CCAQAQ">
+                                        <div jsname="tJHJj" class="dnXCYb" aria-controls="_uURDZsnyN5GshbIPwf29wA8_34" aria-expanded="false" role="button" tabindex="0" jsaction="AWEk5c">
+                                          <div jsname="lN6iy" class="JlqpRe"><span jsname="r4nke" class="JCzEY tNxQIb"><span class="CSkcDe">What is the maximum amount you can get on Universal Credit?</span></span></div>
+                                          <div jsname="wgPSWd" class="p8Jhnd">
+                                            <div jsname="Q8Kwad" class="aj35ze"></div>
+                                          </div>
+                                          <div jsname="pcRaIe" class="L3Ezfd" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQuk56BAggEAI"></div>
+                                          <div jsname="gwzXIc" class="ru2Kjc" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ36YDegQIIBAD"></div>
+                                        </div>
+                                      </div>
+                                      <div jsname="NRdf4c" class="bCOlv" id="_uURDZsnyN5GshbIPwf29wA8_34" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ7NUEegQIIBAE"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div jsname="grQLgb" class="yp" data-async-fc="EosBCkxBSkc5SmtQa3licndPdjdqMEhib0FZQ3dIM0ZMNzNSWEJFdnRxMEY0WEk3QTh1N0k3ZHdFLWJ1NTFNS3A5T19HOUlCS3NJTG0taHQwEhd1VVJEWnNueU41R3NoYklQd2YyOXdBOBoiQUZYckVjcE90RGJybFpiOU9oUnJKZ3RvejJQVDBOR2xFUQ" data-async-fcv="3" data-async-ons="10041" id="fc_1" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQzOMHKAF6BAgfEAM"></div>
+                              <g-loading-icon jsname="aZ2wEe" class="uKh9yc S3PB2d" style="display:none;height:24px;width:24px" id="_uURDZsnyN5GshbIPwf29wA8_36"></g-loading-icon>
+                            </div>
+                            <div class="XVdSCb KFFQ0c xKf9F" style="margin-top:0">
+                              <div class="akqY6"></div>
+                              <div class="YfftMc">
+                                <div class="EyBRub">
+                                  <div jscontroller="Wo3n8" jsname="aadvhe" jsmodel="d5EhJe" data-bkt="related_questions" data-eas="" data-fhs="" data-maindata='[0,"","People also ask","_uURDZsnyN5GshbIPwf29wA8_40",null,0,"",0,"","",2,0,"related_questions",[],"",null,null,0,"",18,0,"",0]' jsdata="vST7rb;_;AGk+NM zEIyGd;_;" jsaction="kPzEO:MlP2je;qjLxRc:FbhRG;w8f1fc:hRwSgb;aIJAdf:UhDUnd;BqbTbe:naa5ve;kYAKrf:CqUGrf;hwhRRe:KyxjCd;rcuQ6b:npT2md">
+                                    <div jsname="GkjeIf" id="_uURDZsnyN5GshbIPwf29wA8_42" data-jiis="up" data-async-type="kp_feedback" class="yp" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ68cEKAN6BAgfEAU"></div>
+                                  </div>
+                                  <div jscontroller="gSZvdb" class="mWcf0e nKHyTc" data-dccl="false" role="button" tabindex="0" jsdata="vST7rb;_;AGk+NM" jsaction="i5KCU;kVBCVd:yM1YJe" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ6scEKAR6BAgfEAY">
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="MjjYud">
+                        <div jscontroller="SC7lYd" class="g Ww4FFb vt6azd tF2Cxc asEBEc" lang="en" style="width:600px" jsaction="QyLbLe:OMITjf;ewaord:qsYrDe;xd28Mb:A6j43c" data-hveid="CBcQAA" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQFSgAegQIFxAA">
+                          <div class="N54PNb BToiNc cvP2Ce" data-snc="zVKTsf">
+                            <div class="kb0PBd cvP2Ce A9Y9g jGGQ5e" data-snf="x5WNvb" data-snhf="0">
+                              <div class="yuRUbf">
+                                <div><span jscontroller="msmzHf" jsaction="rcuQ6b:npT2md;PYDNKe:bLV6Bd;mLt3mc"><a jsname="UWckNb" href="#"><br>
+                                      <h3 class="LC20lb MBeuO DKV0Md">Benefits Calculator - entitledto - independent | accurate | reliable</h3>
+                                      <div class="notranslate HGLrXd NJjxre iUh30 ojE3Fb">
+                                        <div class="q0vns"><span class="DDKf1c">
+                                            <div class="eqA2re UnOTSe Vwoesf" aria-hidden="true"><img class="XNo5Ab" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAvklEQVR4AWNwL/ChKx5cFkoXPdAiF5NsoXTxg9dA/J8C/JqwhQjLYkGaKMZFDwLJsXAPEM8B4sWEMFTdRUotjMWiBl9UFJFpIUITHS2kf5DSP9FAs4czENcg+xqU18A0QqwIqu4/1RINLLhgfKniB0JQNReR1NRQHIcIwxGOQE8gIHmQ2NCKQ3Ix3YOU7omG3tni9dBLNLiKMjQ1FyE+ptzCGnwtAvTKFlSe0t1CugbpgGd8ejeiBr6ZOPxb3gCGe+JgmVaufAAAAABJRU5ErkJggg==" style="height:26px;width:26px" alt=""></div>
+                                          </span>
+                                          <div class="CA5RN">
+                                            <div><span class="VuuXrf">Entitled To</span></div>
+                                            <div class="byrV5b"><cite class="tjvcx GvPZzd cHaqb" role="text">https://www.entitledto.co.uk</cite></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a></span>
+                                  <div class="B6fmyf byrV5b Mg1HEd">
+                                    <div class="HGLrXd iUh30 ojE3Fb">
+                                      <div class="q0vns"><span class="DDKf1c">
+                                          <div class="eqA2re UnOTSe" style="height:26px;width:26px"></div>
+                                        </span>
+                                        <div class="CA5RN">
+                                          <div><span class="VuuXrf">Entitled To</span></div>
+                                          <div class="byrV5b"><cite class="tjvcx GvPZzd cHaqb" role="text">https://www.entitledto.co.uk</cite></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="csDOgf BCF2pd L48a4c">
+                                      <div jscontroller="gOTY1" data-id="atritem-https://www.entitledto.co.uk/" jsdata="PFrTzf;_;AGk+Mo" data-viewer-group="1" jsaction="rcuQ6b:npT2md;aevozb:T2P31d;vcOT6c:C6KsF;k7WJpc:beCLof">
+                                        <div>
+                                          <div jsdata="l7Bhpb;_;AGk+M4" jscontroller="PbHo4e" jsshadow="" jsaction="rcuQ6b:npT2md;h5M12e;jGQF0b:kNqZ1c;" data-viewer-entrypoint="1" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ2esEegQIFRAH">
+                                            <div jsslot="">
+                                              <div jsname="I3kE2c" class="MJ8UF iTPLzd rNSxBe eY4mx lUn2nc" style="position:absolute" aria-label="About this result" role="button" tabindex="0"><span jsname="czHhOd" class="D6lY4c mBswFe"><span jsname="Bil8Ae" class="xTFaxe z1asCe" style="height:18px;line-height:18px;width:18px"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                      <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                                                    </svg></span></span></div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="kb0PBd cvP2Ce A9Y9g" data-snf="nke7rc" data-sncf="1">
+                              <div class="VwiC3b yXK7lf lVm3ye r025kc hJNv6b Hdw6tb" style="-webkit-line-clamp:2"><span>Check what <em>benefit</em> entitlement you are entitled to. The entitledto <em>benefits</em> calculator <em>will</em> check which means-tested <em>benefits</em> you <em>may</em> be entitled to e.g. ...</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="MjjYud">
+                        <div jscontroller="SC7lYd" class="g Ww4FFb vt6azd tF2Cxc asEBEc" lang="en" style="width:600px" jsaction="QyLbLe:OMITjf;ewaord:qsYrDe;xd28Mb:A6j43c" data-hveid="CBMQAA" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQFSgAegQIExAA">
+                          <div class="N54PNb BToiNc cvP2Ce" data-snc="jnLuIf">
+                            <div class="kb0PBd cvP2Ce A9Y9g jGGQ5e" data-snf="x5WNvb" data-snhf="0">
+                              <div class="yuRUbf">
+                                <div><span jscontroller="msmzHf" jsaction="rcuQ6b:npT2md;PYDNKe:bLV6Bd;mLt3mc"><a jsname="UWckNb" href="#"><br>
+                                      <h3 class="LC20lb MBeuO DKV0Md">Turn2us Benefits Calculator</h3>
+                                      <div class="notranslate HGLrXd NJjxre iUh30 ojE3Fb">
+                                        <div class="q0vns"><span class="H9lube fJOpI">
+                                            <div class="eqA2re NjwKYd Vwoesf" aria-hidden="true"><span class="Jj3Uob XNo5Ab z1asCe" style="height:18px;line-height:18px;width:18px"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"></path>
+                                                </svg></span></div>
+                                          </span>
+                                          <div class="CA5RN">
+                                            <div><span class="VuuXrf">Turn2us</span></div>
+                                            <div class="byrV5b"><cite class="tjvcx GvPZzd cHaqb" role="text">https://benefits-calculator.turn2us.org.uk</cite></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a></span>
+                                  <div class="B6fmyf byrV5b Mg1HEd">
+                                    <div class="HGLrXd iUh30 ojE3Fb">
+                                      <div class="q0vns"><span class="H9lube fJOpI">
+                                          <div class="eqA2re NjwKYd" style="height:18px;width:18px"></div>
+                                        </span>
+                                        <div class="CA5RN">
+                                          <div><span class="VuuXrf">Turn2us</span></div>
+                                          <div class="byrV5b"><cite class="tjvcx GvPZzd cHaqb" role="text">https://benefits-calculator.turn2us.org.uk</cite></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="csDOgf BCF2pd L48a4c">
+                                      <div jscontroller="gOTY1" data-id="atritem-https://benefits-calculator.turn2us.org.uk/" jsdata="PFrTzf;_;AGk+Mo" data-viewer-group="1" jsaction="rcuQ6b:npT2md;aevozb:T2P31d;vcOT6c:C6KsF;k7WJpc:beCLof">
+                                        <div>
+                                          <div jsdata="l7Bhpb;_;AGk+NE" jscontroller="PbHo4e" jsshadow="" jsaction="rcuQ6b:npT2md;h5M12e;jGQF0b:kNqZ1c;" data-viewer-entrypoint="1" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ2esEegQIEhAH">
+                                            <div jsslot="">
+                                              <div jsname="I3kE2c" class="MJ8UF iTPLzd rNSxBe eY4mx lUn2nc" style="position:absolute" aria-label="About this result" role="button" tabindex="0"><span jsname="czHhOd" class="D6lY4c mBswFe"><span jsname="Bil8Ae" class="xTFaxe z1asCe" style="height:18px;line-height:18px;width:18px"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                      <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                                                    </svg></span></span></div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="kb0PBd cvP2Ce A9Y9g" data-snf="nke7rc" data-sncf="1">
+                              <div class="VwiC3b yXK7lf lVm3ye r025kc hJNv6b Hdw6tb" style="-webkit-line-clamp:2"><span>Use our free and confidential Benefits Calculator to find out what benefits you are entitled to claim. In the last year over 3 <em>million</em> calculations have been ...</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="MjjYud"><span class="oUAcPd" id="fld_2" data-csim=""></span>
+                        <script nonce="V6InwOi0DaW-dBMLd6PwyA">
+                          (function() {
+                            var id = 'fld_2';
+                            document.getElementById(id).setAttribute("lta", Date.now());
+                          })();
+                          (function() {
+                            var eid = 'fld_2';
+                            var a = Date.now(),
+                              b = document.getElementById(eid);
+                            if (b) {
+                              var c = b.getAttribute("lta");
+                              google.c.maft(c ? Number(c) : a, b)
+                            };
+                          })();
+                        </script>
+                        <style>
+                          .RTaUke {
+                            display: none;
+                            opacity: 0
+                          }
+
+                          .LEwnzc {
+                            color: var(--IXoxUe);
+                          }
+
+                          .HiHjCd {
+                            color: var(--IXoxUe)
+                          }
+
+                          .ULSxyf {
+                            margin-bottom: 44px
+                          }
+
+                          .oIk2Cb {
+                            margin: 0
+                          }
+
+                          .y6Uyqe {
+                            padding: 6px 0 0 0;
+                            margin-left: -8px;
+                            margin-right: -8px
+                          }
+
+                          .kfsfbe.kfsfbe {
+                            padding: 0 0 8px
+                          }
+
+                          .EIaa9b {
+                            display: flex;
+                            column-gap: 16px
+                          }
+
+                          .AJLUJb {
+                            display: flex;
+                            flex: 1;
+                            flex-direction: column
+                          }
+
+                          .k8XOCe {
+                            align-items: center;
+                            background-color: #f1f3f4;
+                            border-radius: 100px;
+                            box-sizing: border-box;
+                            display: flex;
+                            max-height: none;
+                            min-height: 48px;
+                            padding-left: 17px;
+                            padding-right: 17px;
+                            position: relative
+                          }
+
+                          .k8XOCe:hover,
+                          .k8XOCe:active {
+                            color: var(--COEmY)
+                          }
+
+                          .s75CSd {
+                            -webkit-box-orient: vertical;
+                            color: var(--COEmY);
+                            display: -webkit-box;
+                            flex: 1;
+                            font-size: 16px;
+                            -webkit-line-clamp: 2;
+                            max-width: 227px;
+                            overflow-wrap: break-word;
+                            overflow: hidden
+                          }
+                        </style>
+                        <div jscontroller="SC7lYd" class="g Ww4FFb vt6azd tF2Cxc asEBEc" lang="en" style="width:600px" jsaction="QyLbLe:OMITjf;ewaord:qsYrDe;xd28Mb:A6j43c" data-hveid="CEAQAA" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQFSgAegQIQBAA">
+                          <div class="N54PNb BToiNc cvP2Ce" data-snc="V1jz2e">
+                            <div class="kb0PBd cvP2Ce A9Y9g jGGQ5e" data-snf="x5WNvb" data-snhf="0">
+                              <div class="yuRUbf">
+                                <div><span jscontroller="msmzHf" jsaction="rcuQ6b:npT2md;PYDNKe:bLV6Bd;mLt3mc"><a jsname="UWckNb" href="#"><br>
+                                      <h3 class="LC20lb MBeuO DKV0Md">Benefits – what am I entitled to?</h3>
+                                      <div class="notranslate HGLrXd NJjxre iUh30 ojE3Fb">
+                                        <div class="q0vns"><span class="DDKf1c">
+                                            <div class="eqA2re UnOTSe Vwoesf" aria-hidden="true"><img class="XNo5Ab" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAABZVBMVEVHcEy7KFqZV02PJWHREXnTEnrQGHvYLoW5FG7BFHLGFHTREnnXIH/bRIvgXZfhcWenE2S1FGvXH3/gY5njdKLYh2GzK0mqE2a0E2nVRInmgKnQWFC4NzibDFuyE2nISDa+PTibDlvOTDG/Pji5OTqipFp/v1mMAVTKSTWjzYSRxHGCwF58vFh1tlNsqlJlpFFKl2RwqVwvUG46td3RUDKYynmWyHaHwmV5ulZvrlNmpFNem1FVkU5NhkcVstjkf1bgYzDcWinaVy3XVTCjz4WfzYFmpFNOjVwOqNTxf0rifVDhdEXhaznfXSur0o2HwmZyslJemk4OkMEApeKSmpblhlzjfE/id0jgYC7eXSrcWioJd6wAi8cAm9fYgFnkimLjf1PieUyezH0LPo4AYJ4AbqwAdrIAj80iS38VP4IAWZgAY58AfLc7UXYjL3gjMHcjNHodOn4HTIwAcKwkM3kQRIQjMXj33QX0AAAAd3RSTlMABwMVW5uTPUa29vz/5JYiWe3m558pJsDQMVVjVmuCN8abceKzBxM9/BhimrS6pY1oQiEWvbb2//79/vzyy3sWSqXa/ZD//aGvy+r3/P/C0nanpNeD////5MOGMvm1c8GumGgJTbH7czmHzP3RbJu42vT/gv+4WJknOVMAAAEfSURBVHgBxdKzYgRRAIXhc9axbZt1mqBOnzJ6ptjJg8S2bXNt3Ml0qzL522/mmgjTXyLpCYVKihzeYKjQUE4v0N9iaSe0Tg354fXHVDq0Xx5lIkg++iGznRrnixeiPLr8UJn7rf8lsICUsISA99IDQFFieZAtNZpqJ1FBESi102C6cAtRJMUkmgAbK6Ilk9EYu9iEo6q7PBLAo4Nt1JMgYsyMoiWKICGRxXv6zHarPuOiBLguFCIAQs2IJhdvIfDHZToHFB3WSBmFuu+2jR6AXQfVowC6STHoyREAR/2cVyFIYEVWLjHeK8yp+Z7xv7KUlFZK2aH7GfFHRXGLVg14YNPPBLvsxial0q0y9iMYojvJ5lzdQnAUPOb5n6fpnw+hJ17F6k9zYgAAAABJRU5ErkJggg==" style="height:26px;width:26px" alt=""></div>
+                                          </span>
+                                          <div class="CA5RN">
+                                            <div><span class="VuuXrf">Age UK</span></div>
+                                            <div class="byrV5b"><cite class="qLRx3b tjvcx GvPZzd cHaqb" role="text">https://www.ageuk.org.uk<span class="ylgVCe ob9lvb" role="text"> › benefits-entitlements › ben...</span></cite></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a></span>
+                                  <div class="B6fmyf byrV5b Mg1HEd">
+                                    <div class="HGLrXd iUh30 ojE3Fb">
+                                      <div class="q0vns"><span class="DDKf1c">
+                                          <div class="eqA2re UnOTSe" style="height:26px;width:26px"></div>
+                                        </span>
+                                        <div class="CA5RN">
+                                          <div><span class="VuuXrf">Age UK</span></div>
+                                          <div class="byrV5b"><cite class="qLRx3b tjvcx GvPZzd cHaqb" role="text">https://www.ageuk.org.uk<span class="ylgVCe ob9lvb" role="text"> › benefits-entitlements › ben...</span></cite></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="csDOgf BCF2pd L48a4c">
+                                      <div jscontroller="gOTY1" data-id="atritem-https://www.ageuk.org.uk/information-advice/money-legal/benefits-entitlements/benefits-calculator/" jsdata="PFrTzf;_;AGk+Mo" data-viewer-group="1" jsaction="rcuQ6b:npT2md;aevozb:T2P31d;vcOT6c:C6KsF;k7WJpc:beCLof">
+                                        <div>
+                                          <div jsdata="l7Bhpb;_;AGk+Nk" jscontroller="PbHo4e" jsshadow="" jsaction="rcuQ6b:npT2md;h5M12e;jGQF0b:kNqZ1c;" data-viewer-entrypoint="1" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ2esEegQIMhAJ">
+                                            <div jsslot="">
+                                              <div jsname="I3kE2c" class="MJ8UF iTPLzd rNSxBe eY4mx lUn2nc" style="position:absolute" aria-label="About this result" role="button" tabindex="0"><span jsname="czHhOd" class="D6lY4c mBswFe"><span jsname="Bil8Ae" class="xTFaxe z1asCe" style="height:18px;line-height:18px;width:18px"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                      <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                                                    </svg></span></span></div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="kb0PBd cvP2Ce A9Y9g" data-snf="nke7rc" data-sncf="1">
+                              <div class="VwiC3b yXK7lf lVm3ye r025kc hJNv6b Hdw6tb" style="-webkit-line-clamp:2"><span class="LEwnzc Sqrs4e"><span>15 Apr 2024</span> — </span><span>Our <em>benefits</em> calculator <em>can</em> tell you if you're potentially entitled to <em>claim</em> extra money. The calculations are based on the information you ...</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="MjjYud">
+                        <div jscontroller="SC7lYd" class="g Ww4FFb vt6azd tF2Cxc asEBEc" lang="en" style="width:600px" jsaction="QyLbLe:OMITjf;ewaord:qsYrDe;xd28Mb:A6j43c" data-hveid="CEYQAA" >
+                          <div class="N54PNb BToiNc cvP2Ce">
+                            <div class="kb0PBd cvP2Ce A9Y9g jGGQ5e" data-snf="x5WNvb" data-snhf="0">
+                              <div class="yuRUbf">
+                                <div><span jscontroller="msmzHf" jsaction="rcuQ6b:npT2md;PYDNKe:bLV6Bd;mLt3mc"><a jsname="UWckNb" href="#"><br>
+                                      <h3 class="LC20lb MBeuO DKV0Md">10-minute Benefits Check</h3>
+                                      <div class="notranslate HGLrXd NJjxre iUh30 ojE3Fb">
+                                        <div class="q0vns"><span class="H9lube">
+                                            <div class="eqA2re NjwKYd Vwoesf"><img class="XNo5Ab" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAb1BMVEVHcEzr6+v///+/AADAwMDY2Njd3d38/f3x8fH29vb78vPjpKr++PnDABrux8v66+3TYWzagYnmt7j65M7E79313d/4mrP7xdP93pqpo7v/7MXMP07Mytjekpjv1NPFEy2e586Z587JMUPNSFbX7tiffzgLAAAACnRSTlMAl///YFCl+9HLDn8huAAAAQZJREFUOI3Vk8lygzAMQB0JAljygid0oyxJ+v/fWKlMCE0T99JL3zCjg54sy8bGmLKp4C5VUxphdz+7sJP6XB6gNE1eaMyD/us+TD4P8I8Ea+0aQsfAVuGr0CMGSSGeISLiQOgktJsW0Q0Ag4vg0UOLQMgct8KpdwCu7yHhCHYU4WaTLk3eTyTWGaMHINe2tBUwUYyUtM5HjD8Ei54R2cuXpBztbYuAHRBBh9xOFgYEXYtOq9DJVGEJfpL50jJmvwocQvhayKo2Xg7KXlsclI83ZXxX/LPCF6E6zvN8PLwo6VWhJ8V+vyzOXFaGPxB+/e3rvFCbIi8Uxuxz+b0+76J+9Pxrqf8E4tsT+Ql9/tMAAAAASUVORK5CYII=" style="height:18px;width:18px" alt=""></div>
+                                          </span>
+                                          <div class="CA5RN">
+                                            <div><span class="VuuXrf">Money Saving Expert</span></div>
+                                            <div class="byrV5b"><cite class="qLRx3b tjvcx GvPZzd cHaqb" role="text">https://www.moneysavingexpert.com<span class="ylgVCe ob9lvb" role="text"> › Family</span></cite></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a></span>
+                                  <div class="B6fmyf byrV5b Mg1HEd">
+                                    <div class="HGLrXd iUh30 ojE3Fb">
+                                      <div class="q0vns"><span class="H9lube">
+                                          <div class="eqA2re NjwKYd" style="height:18px;width:18px"></div>
+                                        </span>
+                                        <div class="CA5RN">
+                                          <div><span class="VuuXrf">Money Saving Expert</span></div>
+                                          <div class="byrV5b"><cite class="qLRx3b tjvcx GvPZzd cHaqb" role="text">https://www.moneysavingexpert.com<span class="ylgVCe ob9lvb" role="text"> › Family</span></cite></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="csDOgf BCF2pd L48a4c">
+                                      <div jscontroller="gOTY1" data-id="atritem-https://www.moneysavingexpert.com/family/benefits-check/" jsdata="PFrTzf;_;AGk+Mo" data-viewer-group="1" jsaction="rcuQ6b:npT2md;aevozb:T2P31d;vcOT6c:C6KsF;k7WJpc:beCLof">
+                                        <div>
+                                          <div jsdata="l7Bhpb;_;AGk+Nw" jscontroller="PbHo4e" jsshadow="" jsaction="rcuQ6b:npT2md;h5M12e;jGQF0b:kNqZ1c;" data-viewer-entrypoint="1" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ2esEegQIOBAJ">
+                                            <div jsslot="">
+                                              <div jsname="I3kE2c" class="MJ8UF iTPLzd rNSxBe eY4mx lUn2nc" style="position:absolute" aria-label="About this result" role="button" tabindex="0"><span jsname="czHhOd" class="D6lY4c mBswFe"><span jsname="Bil8Ae" class="xTFaxe z1asCe" style="height:18px;line-height:18px;width:18px"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                      <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                                                    </svg></span></span></div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="kb0PBd cvP2Ce A9Y9g" data-snf="nke7rc" data-sncf="1">
+                              <div class="VwiC3b yXK7lf lVm3ye r025kc hJNv6b Hdw6tb" style="-webkit-line-clamp:2"><span class="LEwnzc Sqrs4e"><span>26 Apr 2024</span> — </span><span>To qualify, you must be claiming one of the following benefits: <em>Universal credit</em>; Income support; Income-based jobseeker's allowance; Income- ...</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="MjjYud">
+                        <div jscontroller="SC7lYd" class="g Ww4FFb vt6azd tF2Cxc asEBEc" lang="en" style="width:600px" jsaction="QyLbLe:OMITjf;ewaord:qsYrDe;xd28Mb:A6j43c">
+                          <div class="N54PNb BToiNc cvP2Ce" data-snc="Sc7lhf">
+                            <div class="kb0PBd cvP2Ce A9Y9g jGGQ5e" data-snf="x5WNvb" data-snhf="0">
+                              <div class="yuRUbf">
+                                <div><span jscontroller="msmzHf" jsaction="rcuQ6b:npT2md;PYDNKe:bLV6Bd;mLt3mc"><a jsname="UWckNb" href="#"><br>
+                                      <h3 class="LC20lb MBeuO DKV0Md">Money &amp; Benefits - Benefits Calculator</h3>
+                                      <div class="notranslate HGLrXd NJjxre iUh30 ojE3Fb">
+                                        <div class="q0vns"><span class="DDKf1c">
+                                            <div class="eqA2re UnOTSe Vwoesf" aria-hidden="true"><img class="XNo5Ab" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAWlBMVEVHcEwRKEcSLk0RK0gSLk0TRmURK0gSLk0SLk0SLk0SLk0SLk0SLk0SLk0SLk0SLk0SLk0SLk0SLUwSLk0SLk0SLk0Yo8kYoscYocYYo8gYpMkYpcoYoscYocYm1pPjAAAAHnRSTlMALkoROAgfj/7q8sdj4oCiVtdAcbqtXbOfjTAYRnM19mfeAAABA0lEQVR4AdRPhWEAMQgkBgeRj+6/alOXDYq70D8D58MV7nJ0KcQY2cWYKPgbEihiMnCAWS5QFTOtzioaXXq6t9ESiofYjGzLoaF0TyhEtE+rwdR2xxhezUZqwx7CcSowRbe2T4ePztrJ/rgH5KvuNThsGT6OVatK7lz91npnBk4ppERX0CUOFMKHTfvWtiseHj2NLrUu0arP+5sLnVUmipVkgtabK1hMbzARqI5s026yiI5GDpE+k0x6xk63HKu4Bv6TXBFRYMMN05y+k+SIOJC7NAOF+dKtnBQAAMIwEIRHLISe/m1SWhfMM5u3b0ziaaKqNC9kBGOiZ5kZ/QfcUmz95QJeww70TINXigAAAABJRU5ErkJggg==" style="height:26px;width:26px" alt=""></div>
+                                          </span>
+                                          <div class="CA5RN">
+                                            <div><span class="VuuXrf">Carers Trust</span></div>
+                                            <div class="byrV5b"><cite class="qLRx3b tjvcx GvPZzd cHaqb" role="text">https://carers.org<span class="ylgVCe ob9lvb" role="text"> › Help for carers › Money and benefits</span></cite></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a></span>
+                                  <div class="B6fmyf byrV5b Mg1HEd">
+                                    <div class="HGLrXd iUh30 ojE3Fb">
+                                      <div class="q0vns"><span class="DDKf1c">
+                                          <div class="eqA2re UnOTSe" style="height:26px;width:26px"></div>
+                                        </span>
+                                        <div class="CA5RN">
+                                          <div><span class="VuuXrf">Carers Trust</span></div>
+                                          <div class="byrV5b"><cite class="qLRx3b tjvcx GvPZzd cHaqb" role="text">https://carers.org<span class="ylgVCe ob9lvb" role="text"> › Help for carers › Money and benefits</span></cite></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="csDOgf BCF2pd L48a4c">
+                                      <div jscontroller="gOTY1" data-id="atritem-https://carers.org/money-and-benefits/benefits-calculator" jsdata="PFrTzf;_;AGk+Mo" data-viewer-group="1" jsaction="rcuQ6b:npT2md;aevozb:T2P31d;vcOT6c:C6KsF;k7WJpc:beCLof">
+                                        <div>
+                                          <div jsdata="l7Bhpb;_;AGk+Ng" jscontroller="PbHo4e" jsshadow="" jsaction="rcuQ6b:npT2md;h5M12e;jGQF0b:kNqZ1c;" data-viewer-entrypoint="1" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ2esEegQIMRAJ">
+                                            <div jsslot="">
+                                              <div jsname="I3kE2c" class="MJ8UF iTPLzd rNSxBe eY4mx lUn2nc" style="position:absolute" aria-label="About this result" role="button" tabindex="0"><span jsname="czHhOd" class="D6lY4c mBswFe"><span jsname="Bil8Ae" class="xTFaxe z1asCe" style="height:18px;line-height:18px;width:18px"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                      <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                                                    </svg></span></span></div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="kb0PBd cvP2Ce A9Y9g" data-snf="nke7rc" data-sncf="1">
+                              <div class="VwiC3b yXK7lf lVm3ye r025kc hJNv6b Hdw6tb" style="-webkit-line-clamp:2"><span>The online <em>benefits</em> calculator makes it easier to work out which <em>benefits</em> you might be able to <em>claim</em>, and <em>how much</em> you <em>could</em> get.</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="hlcw0c">
+                        <div class="MjjYud">
+                          <div jscontroller="SC7lYd" class="g Ww4FFb vt6azd tF2Cxc asEBEc" lang="en" style="width:600px" jsaction="QyLbLe:OMITjf;ewaord:qsYrDe;xd28Mb:A6j43c" data-hveid="CEQQAA" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQFSgAegQIRBAA">
+                            <div class="N54PNb BToiNc cvP2Ce" data-snc="PsLPEd">
+                              <div class="kb0PBd cvP2Ce A9Y9g jGGQ5e" data-snf="x5WNvb" data-snhf="0">
+                                <div class="yuRUbf">
+                                  <div><span jscontroller="msmzHf" jsaction="rcuQ6b:npT2md;PYDNKe:bLV6Bd;mLt3mc"><a jsname="UWckNb" href="https://www.nidirect.gov.uk/services/benefits-calculator" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQFnoECDMQAQ" data-sb="/url?sa=t&amp;source=web&amp;rct=j&amp;opi=89978449&amp;url=https://www.nidirect.gov.uk/services/benefits-calculator&amp;ved=2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQFnoECDMQAQ&amp;usg=AOvVaw1Aza-g-TXz4OjLtWFkG8pq"><br>
+                                        <h3 class="LC20lb MBeuO DKV0Md">Benefits Calculator</h3>
+                                        <div class="notranslate HGLrXd NJjxre iUh30 ojE3Fb">
+                                          <div class="q0vns"><span class="H9lube fJOpI">
+                                              <div class="eqA2re NjwKYd Vwoesf" aria-hidden="true"><span class="Jj3Uob XNo5Ab z1asCe" style="height:18px;line-height:18px;width:18px"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"></path>
+                                                  </svg></span></div>
+                                            </span>
+                                            <div class="CA5RN">
+                                              <div><span class="VuuXrf">nidirect</span></div>
+                                              <div class="byrV5b"><cite class="qLRx3b tjvcx GvPZzd cHaqb" role="text">https://www.nidirect.gov.uk<span class="ylgVCe ob9lvb" role="text"> › services › benefits-calculator</span></cite></div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </a></span>
+                                    <div class="B6fmyf byrV5b Mg1HEd">
+                                      <div class="HGLrXd iUh30 ojE3Fb">
+                                        <div class="q0vns"><span class="H9lube fJOpI">
+                                            <div class="eqA2re NjwKYd" style="height:18px;width:18px"></div>
+                                          </span>
+                                          <div class="CA5RN">
+                                            <div><span class="VuuXrf">nidirect</span></div>
+                                            <div class="byrV5b"><cite class="qLRx3b tjvcx GvPZzd cHaqb" role="text">https://www.nidirect.gov.uk<span class="ylgVCe ob9lvb" role="text"> › services › benefits-calculator</span></cite></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="csDOgf BCF2pd L48a4c">
+                                        <div jscontroller="gOTY1" data-id="atritem-https://www.nidirect.gov.uk/services/benefits-calculator" jsdata="PFrTzf;_;AGk+Mo" data-viewer-group="1" jsaction="rcuQ6b:npT2md;aevozb:T2P31d;vcOT6c:C6KsF;k7WJpc:beCLof">
+                                          <div>
+                                            <div jsdata="l7Bhpb;_;AGk+No" jscontroller="PbHo4e" jsshadow="" jsaction="rcuQ6b:npT2md;h5M12e;jGQF0b:kNqZ1c;" data-viewer-entrypoint="1" data-ved="2ahUKEwiJs7f7_oyGAxURVkEAHcF-D_gQ2esEegQIMxAJ">
+                                              <div jsslot="">
+                                                <div jsname="I3kE2c" class="MJ8UF iTPLzd rNSxBe eY4mx lUn2nc" style="position:absolute" aria-label="About this result" role="button" tabindex="0"><span jsname="czHhOd" class="D6lY4c mBswFe"><span jsname="Bil8Ae" class="xTFaxe z1asCe" style="height:18px;line-height:18px;width:18px"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                        <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                                                      </svg></span></span></div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="kb0PBd cvP2Ce A9Y9g" data-snf="nke7rc" data-sncf="1">
+                                <div class="VwiC3b yXK7lf lVm3ye r025kc hJNv6b Hdw6tb" style="-webkit-line-clamp:2"><span>Figures given by the <em>benefits</em> calculator give an approximate guide to <em>benefits</em> you <em>may</em> be entitled to based on information you provide about your circumstances.</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>     
+  </body>
+</html>
