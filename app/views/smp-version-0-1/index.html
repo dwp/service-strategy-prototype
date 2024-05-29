@@ -3,137 +3,30 @@
 {% block pageTitle %}
   GOV.UK Prototype Kit
 {% endblock %}
+{% block content %}
 
-{% block main %}
-<div id="home-top">
-    <div class="govuk-width-container">
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds">
-          <h1 class="govuk-heading-xl home-top__title">Welcome to GOV.UK</h1>
-          <p class="home-top__intro">The best place to find government services and information</p>
-          <p class="home-top__intro home-top__intro--simpler">Simpler, clearer, faster</p>
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
 
-          <form action="/search" method="get" role="search">
-            
-          <div class="gem-c-search gem-c-search--on-govuk-blue" data-module="gem-toggle-input-class-on-focus">
-            <label for="search-main-9af718da" class="gem-c-search__label">
-              Search GOV.UK
-            </label>
-            <div class="gem-c-search__item-wrapper">
-              <input type="search" value="" id="search-main-9af718da" name="q" title="Search" aria-controls="" class="gem-c-search__item gem-c-search__input js-class-toggle">
-            <div class="gem-c-search__item gem-c-search__submit-wrapper">
-            <button type="submit" class="gem-c-search__submit">Search</button>
-      </div>
-    </div>
-</div>
+        <span class="govuk-caption-l">User research: onelogin</span>
+        <h2 class="govuk-heading-l">
+            Round 4
+        </h2>
 
-          </form>
-        </div>
+        <ul class="govuk-list govuk-list--bullet">
+            <li>
+                <a class="govuk-link" href="/gds/notification-account-created-email">Email notification – account created</a>
+            </li>
+        </ul>
 
-        <div class="govuk-grid-column-one-third">
-          <div class="home-top__links">
-            <h2 class="home-top__links-title">Popular on GOV.UK</h2>
-            <ul class="home-top__links-list">
-              <li class="home-top__links-item"><a href="/coronavirus" class="home-top__links-link">Coronavirus (COVID‑19): guidance and support</a></li>
-              <li class="home-top__links-item"><a href="/guidance/travel-advice-novel-coronavirus" class="home-top__links-link">Travel advice: coronavirus (COVID‑19)</a></li>
-              <li class="home-top__links-item"><a href="/transition" class="home-top__links-link">Transition period</a></li>
-              <li class="home-top__links-item"><a href="/jobsearch" class="home-top__links-link">Find a job</a></li>
-              <li class="home-top__links-item"><a href="/personal-tax-account" class="home-top__links-link">Personal tax account</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      </div>
-    </div>
+        {{ govukDetails({
+            summaryText: "UR objectives for this round",
+            html: "<a class='govuk-link' href='https://dwpdigital.atlassian.net/wiki/spaces/IDNT/pages/133461508199/Assumptions+for+user+research+round+2'>See Confluence for details - link needs updating" | safe
+        }) }}
 
+        {{ govukButton({
+            text: "Start prototype",
+            href: "/ur-r4/repay/start"
+        }) }}
 
-  
-    
-
-  <div class="govuk-width-container {{ containerClasses }}">
-    <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
-        
-      <div class="govuk-grid-row">
-        <h2 id="services-and-information-label" class="govuk-visually-hidden">Services and information</h2>
-        <div class="govuk-grid-column-one-third">
-  <ul class="govuk-list">
-    <li>
-      <h3 class="home-services__heading"><a href="benefits" class="govuk-link">Benefits</a></h3>
-      <p class="home-services__para">Includes eligibility, appeals, tax credits and Universal Credit</p>
-    </li>
-    <li>
-      <h3 class="home-services__heading"><a href="/browse/births-deaths-marriages" class="govuk-link">Births, deaths, marriages and care</a></h3>
-      <p class="home-services__para">Parenting, civil partnerships, divorce and Lasting Power of Attorney</p>
-    </li>
-    <li>
-      <h3 class="home-services__heading"><a href="/browse/business" class="govuk-link">Business and self-employed</a></h3>
-      <p class="home-services__para">Tools and guidance for businesses</p>
-    </li>
-    <li>
-      <h3 class="home-services__heading"><a href="/browse/childcare-parenting" class="govuk-link">Childcare and parenting</a></h3>
-      <p class="home-services__para">Includes giving birth, fostering, adopting, benefits for children, childcare and schools</p>
-    </li>
-    <li>
-      <h3 class="home-services__heading"><a href="/browse/citizenship" class="govuk-link">Citizenship and living in the UK</a></h3>
-      <p class="home-services__para">Voting, community participation, life in the UK, international projects</p>
-    </li>
-    <li>
-      <h3 class="home-services__heading"><a href="/browse/justice" class="govuk-link">Crime, justice and the law</a></h3>
-      <p class="home-services__para">Legal processes, courts and the police</p>
-    </li>
-  </ul>
-</div>
-<div class="govuk-grid-column-one-third">
-  <ul class="govuk-list">
-    <li>
-      <h3 class="home-services__heading"><a href="/browse/disabilities" class="govuk-link">Disabled people</a></h3>
-      <p class="home-services__para">Includes carers, your rights, benefits and the Equality Act</p>
-    </li>
-    <li>
-      <h3 class="home-services__heading"><a href="/browse/driving" class="govuk-link">Driving and transport</a></h3>
-      <p class="home-services__para">Includes vehicle tax, MOT and driving licences</p>
-    </li>
-    <li>
-      <h3 class="home-services__heading"><a href="/browse/education" class="govuk-link">Education and learning</a></h3>
-      <p class="home-services__para">Includes student loans, admissions and apprenticeships</p>
-    </li>
-    <li>
-      <h3 class="home-services__heading"><a href="/browse/employing-people" class="govuk-link">Employing people</a></h3>
-      <p class="home-services__para">Includes pay, contracts and hiring</p>
-    </li>
-    <li>
-      <h3 class="home-services__heading"><a href="/browse/environment-countryside" class="govuk-link">Environment and countryside</a></h3>
-      <p class="home-services__para">Includes flooding, recycling and wildlife</p>
-    </li>
-    <li>
-      <h3 class="home-services__heading"><a href="/browse/housing-local-services" class="govuk-link">Housing and local services</a></h3>
-      <p class="home-services__para">Owning or renting and council services</p>
-    </li>
-  </ul>
-</div>
-<div class="govuk-grid-column-one-third">
-  <ul class="govuk-list">
-    <li>
-      <h3 class="home-services__heading"><a href="/browse/tax" class="govuk-link">Money and tax</a></h3>
-      <p class="home-services__para">Includes debt and Self Assessment</p>
-    </li>
-    <li>
-      <h3 class="home-services__heading"><a href="/browse/abroad" class="govuk-link">Passports, travel and living abroad</a></h3>
-      <p class="home-services__para">Includes renewing passports and travel advice by country</p>
-    </li>
-    <li>
-      <h3 class="home-services__heading"><a href="/browse/visas-immigration" class="govuk-link">Visas and immigration</a></h3>
-      <p class="home-services__para">Visas, asylum and sponsorship</p>
-    </li>
-    <li>
-      <h3 class="home-services__heading"><a href="/browse/working" class="govuk-link">Working, jobs and pensions</a></h3>
-      <p class="home-services__para">Includes holidays and finding a job</p>
-    </li>
-  </ul>
-</div>
-
-      </div>
-
-    </main>
-  </div>
 {% endblock %}
