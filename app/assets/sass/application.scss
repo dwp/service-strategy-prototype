@@ -4,9 +4,77 @@
 // 
 
 // Add extra styles here
-.inversegovuk{
-    color: white;
+
+.topiclist{
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+.bluetop{
+    margin-top: 15px;
+    border-top: 2px solid #1d70b8;
+    
+}
+.related-nav {
+border-top: 1px solid #b1b4b6;
+padding-top: 15px;
+font-size: 1rem;
+line-height: 1.25;
+}
+
+.browse__section {
+    margin-bottom: 60px;
+  }
+.browse__section {
+    margin-bottom:60px
+  }
+  @media(min-width: 40.0625em) {
+    .browse__section:last-child {
+      margin-bottom:0
     }
+  }
+  .browse__section--top-border {
+    border-top:1px solid #b1b4b6;
+    padding-top:15px
+  }
+
+.browse__action-links {
+    border-bottom: 4px solid #1d70b8;
+    margin-bottom: 20px;
+  }
+  .gem-c-action-link {
+    display:table
+  }
+  .gem-c-action-link::before {
+    content:"";
+    display:table-cell;
+    width:60px;
+    height:45px;
+    background:url(/public/images/action-link-arrow--dark.png);
+    background:url(/public/images/action-link-arrow--dark-2.svg),linear-gradient(transparent, transparent);
+    background-repeat:no-repeat;
+    background-position:0 50%;
+    background-size:45px auto
+  }
+  @media(max-width: 40.0525em) {
+    .gem-c-action-link {
+      max-width:410px
+    }
+  }
+.gem-c-action-link--dark-large-icon::before {
+    background:url(/public/images/action-link-arrow--dark.png);
+    background:url(/public/images/action-link-arrow--dark-2.svg),linear-gradient(transparent, transparent);
+    height:34px;
+    width:40px;
+    background-repeat:no-repeat;
+    background-size:32px auto;
+    background-position:0 2px
+  }
+  @media(max-width: 40.0525em) {
+    .gem-c-action-link--dark-large-icon {
+      margin-bottom:10px
+    }
+  }
 .govuk-back-link { margin-top:-30px; margin-bottom: 30px; }
 
 hr { border-top:1px solid #b1b4b6; border-bottom:0; height:0px; margin-bottom:30px; }
