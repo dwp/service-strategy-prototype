@@ -11,7 +11,7 @@
     "govuk-frontend": "^4.6.0",
     "govuk-one-login-service-header": "github:govuk-one-login/service-header",
     "govuk-prototype-kit": "13.16.2",
-    "gulp": "^3.9.1",
+    "gulp": "^5.0.1",
     "jquery": "3.7.1",
     "notifications-node-client": "8.0.0"
   }
